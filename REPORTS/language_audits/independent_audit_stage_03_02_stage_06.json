@@ -1,0 +1,90 @@
+{
+  "schema": "brs-context-review-independent-audit-v1",
+  "ok": true,
+  "reviewer": "codex_context_review_2026-07-25",
+  "checks": [
+    "entry_count_and_order",
+    "immutable_source_metadata",
+    "nonempty_translation",
+    "protected_control_sequence",
+    "angle_tag_sequence",
+    "emphasis_delimiter_count",
+    "newline_count",
+    "numeric_literal_sequence",
+    "translation_status_and_reviewer",
+    "unexpected_latin_residue"
+  ],
+  "total_entries": 564,
+  "total_issues": 0,
+  "total_warnings": 0,
+  "files": [
+    {
+      "input": "work/localization/mt_results/result_bscr_stage_03_02.json",
+      "output": "work/localization/reviewed/result_bscr_stage_03_02.json",
+      "input_sha256": "b9c235baca880035301b1ae1e933da42686fb970ae50d9491691b0ba2e675f8d",
+      "output_sha256": "337ab6146d4bc287ec51f4ac3cd542936d30f9d06ad771f259abf4bb54d3e8d7",
+      "entry_count": 110,
+      "status_counts": {
+        "context_reviewed": 110
+      },
+      "reviewer_counts": {
+        "codex_context_review_2026-07-25": 110
+      },
+      "issue_count": 0,
+      "warning_count": 0,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "input": "work/localization/mt_results/result_bscr_stage_04.json",
+      "output": "work/localization/reviewed/result_bscr_stage_04.json",
+      "input_sha256": "6d03e21265b13f7b7bab4a959cc36ea2253758b8251c35549dbd4151823767fa",
+      "output_sha256": "933ebf59c21cb6068f72078f36758a3d15eb878c1d8aca13c48e9f3f6cbb51af",
+      "entry_count": 260,
+      "status_counts": {
+        "context_reviewed": 260
+      },
+      "reviewer_counts": {
+        "codex_context_review_2026-07-25": 260
+      },
+      "issue_count": 0,
+      "warning_count": 0,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "input": "work/localization/mt_results/result_bscr_stage_05.json",
+      "output": "work/localization/reviewed/result_bscr_stage_05.json",
+      "input_sha256": "bd20ab83eaced2c6af70dc324c1bf8852b50be2713c2401ec22384e7b52cecff",
+      "output_sha256": "7b8d998ece777fb07f589e6094b10f161d19073ff947b22c410d58626461b7f9",
+      "entry_count": 97,
+      "status_counts": {
+        "context_reviewed": 97
+      },
+      "reviewer_counts": {
+        "codex_context_review_2026-07-25": 97
+      },
+      "issue_count": 0,
+      "warning_count": 0,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "input": "work/localization/mt_results/result_bscr_stage_06.json",
+      "output": "work/localization/reviewed/result_bscr_stage_06.json",
+      "input_sha256": "431f12b034ddd9f0487dd4b701f91b755305f1f403cf393ede8d4e3fc6d8dd75",
+      "output_sha256": "8572c3d6779daa9dd465162d7e402788a76d55a97a46570398f7f4bd424bd148",
+      "entry_count": 97,
+      "status_counts": {
+        "context_reviewed": 97
+      },
+      "reviewer_counts": {
+        "codex_context_review_2026-07-25": 97
+      },
+      "issue_count": 0,
+      "warning_count": 0,
+      "issues": [],
+      "warnings": []
+    }
+  ]
+}

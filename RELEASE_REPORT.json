@@ -1,0 +1,178 @@
+{
+  "schema": "brs-korean-distribution/v1",
+  "package_name": "BRS_Korean_NPUH10126_v1.0",
+  "version": "1.0",
+  "product_id": "NPUH10126",
+  "passed": true,
+  "source": {
+    "size": 1360363520,
+    "sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e"
+  },
+  "target": {
+    "size": 1368082432,
+    "sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139",
+    "iso_included": false
+  },
+  "patch": {
+    "name": "BRS_Korean_NPUH10126_v1.0.brspatch",
+    "size": 39426892,
+    "sha256": "6f7f56d43ab2506b82e415813d3a8efc8fa4ef9ade2e3e45abcaebff18ec6b53",
+    "schema": "brs-binary-delta/v1",
+    "compression": "zlib",
+    "record_count": 3662
+  },
+  "translation": {
+    "entry_count": 3395,
+    "semantic_id_count": 3395,
+    "hangul_closure_count": 861,
+    "error_count": 0,
+    "warning_count": 0,
+    "independent_audit_count": 6
+  },
+  "ui_graphics": {
+    "embedded_in_iso": true,
+    "requires_external_texture_pack": false,
+    "patched_ptmd_count": 27,
+    "labels_replaced_count": 100,
+    "integrated_output_count": 9,
+    "independent_visual_audit_passed": true,
+    "contact_sheet": "REPORTS/ui_graphics/root_ui_fallback_contact.png",
+    "contact_sheet_sha256": "191ee35bc34b8e3e6069ee0dd25010443ab0a3895d43de8319a2e75486518457"
+  },
+  "ppsspp_qa": {
+    "ok": true,
+    "version": null,
+    "boot_marker_found": true,
+    "runtime_error_count": 0
+  },
+  "powershell_patcher_qa_included": true,
+  "textures": {
+    "included": false,
+    "file_count": 0,
+    "total_size": 0
+  },
+  "package": {
+    "archive_name": "BRS_Korean_NPUH10126_v1.0.zip",
+    "checksum_file": "CHECKSUMS.sha256",
+    "deterministic_zip_timestamp": "2026-07-25T00:00:00",
+    "file_count_including_report_and_checksums": 25,
+    "absolute_paths_redacted": true
+  },
+  "payload_before_report_and_checksums": [
+    {
+      "path": "Apply-KoreanPatch.bat",
+      "size": 752,
+      "sha256": "4fd3871bd7950016aa0ee884347cd3fbdf4af929083fae791e82618188a6b383"
+    },
+    {
+      "path": "Apply-KoreanPatch.ps1",
+      "size": 12336,
+      "sha256": "9e86105772badba3c97b207a739e11b6b3cffea9959866b3801044d8da247b76"
+    },
+    {
+      "path": "BRS_Korean_NPUH10126_v1.0.brspatch",
+      "size": 39426892,
+      "sha256": "6f7f56d43ab2506b82e415813d3a8efc8fa4ef9ade2e3e45abcaebff18ec6b53"
+    },
+    {
+      "path": "LICENSES/NotoSansKR-NOTICE_KO.txt",
+      "size": 492,
+      "sha256": "a7d17ad85a245f79f8a7618dc666991236629d3f094ca00541b98998c652a281"
+    },
+    {
+      "path": "LICENSES/NotoSansKR-OFL.txt",
+      "size": 4237,
+      "sha256": "44b333b6f238a035b69de766bbaa995f6bfaa94f163a1a1d3c1088d92006e609"
+    },
+    {
+      "path": "README_KO.md",
+      "size": 3305,
+      "sha256": "9efed95382e1f7ffb3273f874e3b4158c47bc54993e966167e9a46abc2b07b40"
+    },
+    {
+      "path": "REPORTS/font_verification.json",
+      "size": 628,
+      "sha256": "2808c321dbd6cdc76e49193f690aec252508a8c588567f18c92c3bfcdc9d4a3e"
+    },
+    {
+      "path": "REPORTS/language_audits/independent_audit_sscr_challenges.json",
+      "size": 1459,
+      "sha256": "5c19aa3e5925bb8255349f90d22044429bce9fab7167d499e6aab634751b8209"
+    },
+    {
+      "path": "REPORTS/language_audits/independent_audit_stage_01_stage_02_01.json",
+      "size": 1422,
+      "sha256": "3ad5cf9a2a3033c64d01d9c73ed59f4946b72b89b01fb866876a32e44e3948b6"
+    },
+    {
+      "path": "REPORTS/language_audits/independent_audit_stage_03_02_stage_06.json",
+      "size": 2950,
+      "sha256": "9e43f966734f25b2846c22b9ed95c0e2be99a5ca4ea26d5f83be95429b7363f9"
+    },
+    {
+      "path": "REPORTS/language_audits/independent_final_language_audit.json",
+      "size": 3609,
+      "sha256": "2cc0711e026a9d566d32691b5c2df2875dd28bd0513a87cc93598ae9d9284785"
+    },
+    {
+      "path": "REPORTS/language_audits/independent_validation_bscr_stage_02_02_02_03_03_01.json",
+      "size": 5080,
+      "sha256": "9f31af34470f214522c56060731e9edd3c0291c1fa08bf6f4b19d64e2768426f"
+    },
+    {
+      "path": "REPORTS/language_audits/independent_validation_sscr_missions_maps.json",
+      "size": 790,
+      "sha256": "58a4bbd21ce3495e926b67188fcc0989e1d3441a9c16bf752795d518673da9aa"
+    },
+    {
+      "path": "REPORTS/language_release_gate_report.json",
+      "size": 3183,
+      "sha256": "22d734255ff4a35f7f381f10f878af584e78f4591674ccd24a8cc0262fa24df4"
+    },
+    {
+      "path": "REPORTS/powershell_patcher_test_report.json",
+      "size": 30122,
+      "sha256": "c3b50aea2b7203876fb8c01135eae62516ec81a1ed609f98659760060799446d"
+    },
+    {
+      "path": "REPORTS/ppsspp_evidence/final_font_atlas_4x.png",
+      "size": 9420,
+      "sha256": "fcee847203b56e342f2bcd977f06658491696815e31f7d694840a52d793c7bc6"
+    },
+    {
+      "path": "REPORTS/ppsspp_final_qa_report.json",
+      "size": 21662,
+      "sha256": "914d7447a7a2631c7d9f6f427f9c45d69529aabaff0d9032cf0fed578285b509"
+    },
+    {
+      "path": "REPORTS/release_build_report.json",
+      "size": 4959,
+      "sha256": "ff6600a88116d7bc01b513fbc12eb3f33be6db30643fa4095bcdcd017e07eb5c"
+    },
+    {
+      "path": "REPORTS/ui_graphics/independent_ui_visual_audit.json",
+      "size": 21658,
+      "sha256": "74794a9c4645c40c3778c3505524d04ca81a755d3872e0b6d14f446364b7538c"
+    },
+    {
+      "path": "REPORTS/ui_graphics/root_ui_fallback_contact.png",
+      "size": 414975,
+      "sha256": "191ee35bc34b8e3e6069ee0dd25010443ab0a3895d43de8319a2e75486518457"
+    },
+    {
+      "path": "REPORTS/ui_graphics/ui_integration_report.json",
+      "size": 29145,
+      "sha256": "2753d3d9da85b9fa31d3f06e71509c2624a9653252affb12da2678836b13302e"
+    },
+    {
+      "path": "Restore-Original.bat",
+      "size": 571,
+      "sha256": "cb0aec17b7bb5cfd79a4207e851218f7494b503fcd0964b7de56e5593ed2d1cb"
+    },
+    {
+      "path": "Restore-Original.ps1",
+      "size": 3809,
+      "sha256": "6b7e2ceb2c7bc9d469ef74b4002c70e0d4d0ed660d339ef1a426f90157e197d1"
+    }
+  ]
+}

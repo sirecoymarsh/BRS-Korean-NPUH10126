@@ -1,0 +1,11 @@
+﻿# Never commit game images or emulator-generated binaries.
+*.iso
+*.cso
+*.chd
+*.pbp
+*.elf
+*.prx
+*.sav
+*.ppst
+*.bak
+*.tmp

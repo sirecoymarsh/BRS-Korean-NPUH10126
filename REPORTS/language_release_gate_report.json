@@ -1,0 +1,106 @@
+{
+  "schema": "brs-korean-translation-release-gate-v1",
+  "passed": true,
+  "require_reviewed": true,
+  "selected": [
+    {
+      "result": "result_bscr_common.json",
+      "selected_source": "work\\localization\\assembled_draft_v2\\result_bscr_common.json",
+      "entry_count": 86
+    },
+    {
+      "result": "result_bscr_extra.json",
+      "selected_source": "work\\localization\\assembled_draft_v2\\result_bscr_extra.json",
+      "entry_count": 13
+    },
+    {
+      "result": "result_bscr_stage_01.json",
+      "selected_source": "work\\localization\\reviewed\\result_bscr_stage_01.json",
+      "entry_count": 204
+    },
+    {
+      "result": "result_bscr_stage_02_01.json",
+      "selected_source": "work\\localization\\reviewed\\result_bscr_stage_02_01.json",
+      "entry_count": 260
+    },
+    {
+      "result": "result_bscr_stage_02_02.json",
+      "selected_source": "work\\localization\\reviewed\\result_bscr_stage_02_02.json",
+      "entry_count": 260
+    },
+    {
+      "result": "result_bscr_stage_02_03.json",
+      "selected_source": "work\\localization\\reviewed\\result_bscr_stage_02_03.json",
+      "entry_count": 43
+    },
+    {
+      "result": "result_bscr_stage_03_01.json",
+      "selected_source": "work\\localization\\reviewed\\result_bscr_stage_03_01.json",
+      "entry_count": 260
+    },
+    {
+      "result": "result_bscr_stage_03_02.json",
+      "selected_source": "work\\localization\\reviewed\\result_bscr_stage_03_02.json",
+      "entry_count": 110
+    },
+    {
+      "result": "result_bscr_stage_04.json",
+      "selected_source": "work\\localization\\reviewed\\result_bscr_stage_04.json",
+      "entry_count": 260
+    },
+    {
+      "result": "result_bscr_stage_05.json",
+      "selected_source": "work\\localization\\reviewed\\result_bscr_stage_05.json",
+      "entry_count": 97
+    },
+    {
+      "result": "result_bscr_stage_06.json",
+      "selected_source": "work\\localization\\reviewed\\result_bscr_stage_06.json",
+      "entry_count": 97
+    },
+    {
+      "result": "result_xtc_items_system_ui.json",
+      "selected_source": "work\\localization\\reviewed\\result_xtc_items_system_ui.json",
+      "entry_count": 789
+    },
+    {
+      "result": "result_bxcb_names.json",
+      "selected_source": "work\\localization\\reviewed\\result_bxcb_names.json",
+      "entry_count": 278
+    },
+    {
+      "result": "result_sscr_display.json",
+      "selected_source": "work\\localization\\reviewed\\result_sscr_display.json",
+      "entry_count": 638
+    }
+  ],
+  "entry_count": 3395,
+  "semantic_id_count": 3395,
+  "lane_counts": {
+    "common": 86,
+    "extra": 13,
+    "stage_01": 204,
+    "stage_02": 563,
+    "stage_03": 370,
+    "stage_04": 260,
+    "stage_05": 97,
+    "stage_06": 97,
+    "xtc_items_system_ui": 789,
+    "bxcb_enemy_names_parts_and_battle_messages": 278,
+    "challenge_ui": 297,
+    "field_location": 48,
+    "mission_ui": 287,
+    "stage_select": 5,
+    "minigame_goal": 1
+  },
+  "status_counts": {
+    "translated_root": 99,
+    "context_reviewed": 3296
+  },
+  "hangul_closure_count": 861,
+  "unchanged_latin_entry_count": 0,
+  "latin_residue_entry_count": 0,
+  "error_count": 0,
+  "warning_count": 0,
+  "issues": []
+}

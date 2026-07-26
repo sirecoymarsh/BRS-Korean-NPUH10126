@@ -1,0 +1,44 @@
+{
+  "schema": "brs-context-review-independent-audit-v1",
+  "ok": true,
+  "reviewer": "codex_context_review_2026-07-25",
+  "total_entries": 464,
+  "total_issues": 0,
+  "total_warnings": 0,
+  "files": [
+    {
+      "input": "work/localization/mt_results/result_bscr_stage_01.json",
+      "output": "work/localization/reviewed/result_bscr_stage_01.json",
+      "input_sha256": "8b89f050842f91c4f80a9bc2b6b51ecd5190d355167fb655f8e427966201bc17",
+      "output_sha256": "2896683cd2ffb4cf8dbd3d4d1d9575294519a0721b66dd63656d96c550e6dbde",
+      "entry_count": 204,
+      "status_counts": {
+        "context_reviewed": 204
+      },
+      "reviewer_counts": {
+        "codex_context_review_2026-07-25": 204
+      },
+      "issue_count": 0,
+      "warning_count": 0,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "input": "work/localization/mt_results/result_bscr_stage_02_01.json",
+      "output": "work/localization/reviewed/result_bscr_stage_02_01.json",
+      "input_sha256": "e7bbe7659ec335dcf95ffcc3ba89adf908d2188c5a8ce6d8a28fb991697e621e",
+      "output_sha256": "15503da56ecb38c301f36b8487a089e220f014a83db896fcffdc1dbe36686194",
+      "entry_count": 260,
+      "status_counts": {
+        "context_reviewed": 260
+      },
+      "reviewer_counts": {
+        "codex_context_review_2026-07-25": 260
+      },
+      "issue_count": 0,
+      "warning_count": 0,
+      "issues": [],
+      "warnings": []
+    }
+  ]
+}

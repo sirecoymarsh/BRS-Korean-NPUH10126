@@ -1,0 +1,24 @@
+{
+  "schema": "brs-sscr-independent-audit-v1",
+  "source": "work/localization/review_packets/sscr_missions_maps.json",
+  "output": "work/localization/reviewed/subpackets/sscr_missions_maps.json",
+  "entry_count": 341,
+  "semantic_id_count": 341,
+  "context_reviewed_count": 341,
+  "terminology_checks_run": 148,
+  "checks": {
+    "schema_order_and_metadata": true,
+    "source_byte_manifests": true,
+    "protected_controls": true,
+    "line_number_symbol_fidelity": true,
+    "glossary_consistency": true,
+    "duplicate_source_consistency": true,
+    "review_provenance": true,
+    "residue_and_mt_artifact_scan": true
+  },
+  "error_count": 0,
+  "warning_count": 0,
+  "errors": [],
+  "warnings": [],
+  "output_sha256": "9be4d62569d04bbe064a501f1355f419021cdeed8764721db1332a855fabc4f8"
+}

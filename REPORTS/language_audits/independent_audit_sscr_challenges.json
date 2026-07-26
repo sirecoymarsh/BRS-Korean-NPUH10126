@@ -1,0 +1,37 @@
+{
+  "schema": "brs-ko-sscr-independent-audit-v1",
+  "audit_kind": "independent_read_only_second_pass",
+  "ok": true,
+  "reviewer_expected": "codex_context_review_2026-07-25",
+  "baseline": "work/localization/review_packets/sscr_challenges.json",
+  "reviewed": "work/localization/reviewed/subpackets/sscr_challenges.json",
+  "baseline_sha256": "d3a16626bf7d7decd0bb0ec43efd4a202546f298fe3e60499843ae0a5f6fbdef",
+  "reviewed_sha256": "3b529fd49b70102bc1558582342977a6be39cd25ce779b1bdb4da4a4f00249ce",
+  "entry_count": 297,
+  "physical_occurrence_count": 949,
+  "enumerated_occurrence_count": 493,
+  "passed_entry_count": 297,
+  "failed_entry_count": 0,
+  "status_counts": {
+    "context_reviewed": 297
+  },
+  "reviewer_counts": {
+    "codex_context_review_2026-07-25": 297
+  },
+  "checks": [
+    "entry count, semantic-ID uniqueness, and exact source order",
+    "immutable entry and top-level source metadata",
+    "non-empty translations and review notes",
+    "independently scanned engine/declaration control sequence",
+    "exact newline, numeric-literal, and protected-symbol preservation",
+    "unapproved Latin, Japanese kana, and replacement-character residue",
+    "locked proper-name and gameplay terminology consistency",
+    "source UTF-8 byte count and physical occurrence integrity",
+    "per-entry and packet-level context-review metadata"
+  ],
+  "issue_count": 0,
+  "warning_count": 0,
+  "issue_totals": {},
+  "issues": [],
+  "warnings": []
+}

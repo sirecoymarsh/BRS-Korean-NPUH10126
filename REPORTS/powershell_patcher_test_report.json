@@ -1,0 +1,617 @@
+{
+  "schema": "brs-powershell-patcher-test/v1",
+  "generated_utc": "2026-07-25T14:25:45.038013+00:00",
+  "environment": {
+    "os": "nt",
+    "powershell_executable": "<external>/powershell.exe",
+    "workspace": "<external>/new-chat-2"
+  },
+  "artifacts": {
+    "apply_script": "work/release_pipeline/Apply-KoreanPatch.ps1",
+    "restore_script": "work/release_pipeline/Restore-Original.ps1",
+    "patch": "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch",
+    "release_build_report": "work/release_build/final/release_build_report.json",
+    "source_iso": "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+    "temporary_output": "work/release_build/final_patcher_test/ps_apply_test.iso"
+  },
+  "expectations": {
+    "source_size": 1360363520,
+    "source_sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e",
+    "target_size": 1368082432,
+    "target_sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139",
+    "patch_sha256": "6f7f56d43ab2506b82e415813d3a8efc8fa4ef9ade2e3e45abcaebff18ec6b53",
+    "patch_size": 39426892,
+    "patch_record_count": 3662
+  },
+  "code_audit_fixes": [
+    "Windows PowerShell 5.1이 한국어 스크립트를 오해하지 않도록 UTF-8 BOM을 적용",
+    "함수 반환 byte[]가 PowerShell 파이프라인에서 단일 byte로 풀리는 문제를 unary comma로 방지",
+    "RFC 1950 zlib 헤더, dictionary 비트, Adler-32 trailer를 검증",
+    "패치 schema, compression, source/target size와 SHA-256, record_count 범위를 검증",
+    "UInt64 오프셋 덧셈 overflow와 Int32 byte-array 한계를 명시적으로 거부",
+    "GUID 기반 전용 임시 파일에 작성한 뒤 File.Move로 승격하고 모든 실패 경로에서 정리",
+    "기존 비완성 출력은 보존하며 거부하고 이미 검증된 완성 출력은 멱등 처리",
+    "복원 전 target size와 SHA-256을 모두 검증하여 확인된 패치 출력과 sidecar만 제거"
+  ],
+  "test_count": 15,
+  "passed_count": 15,
+  "failed_count": 0,
+  "passed": true,
+  "tests": [
+    {
+      "name": "windows_powershell_5_1_and_script_encoding",
+      "passed": true,
+      "details": {
+        "probe": {
+          "command": [
+            "powershell.exe",
+            "-NoProfile",
+            "-NonInteractive",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-Command",
+            "$e=@();$a=$null;$b=$null;[System.Management.Automation.Language.Parser]::ParseFile('<workspace>\\work\\release_pipeline\\Apply-KoreanPatch.ps1',[ref]$a,[ref]$e)|Out-Null;if($e.Count){throw ($e|ForEach-Object Message|Out-String)};$e=@();$a=$null;[System.Management.Automation.Language.Parser]::ParseFile('<workspace>\\work\\release_pipeline\\Restore-Original.ps1',[ref]$a,[ref]$e)|Out-Null;if($e.Count){throw ($e|ForEach-Object Message|Out-String)};[ordered]@{version=$PSVersionTable.PSVersion.ToString();edition=$PSVersionTable.PSEdition;parse_ok=$true}|ConvertTo-Json -Compress"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 0.458,
+          "stdout": "{\"version\":\"5.1.26100.8894\",\"edition\":\"Desktop\",\"parse_ok\":true}",
+          "stderr": ""
+        },
+        "apply_utf8_bom": true,
+        "restore_utf8_bom": true
+      }
+    },
+    {
+      "name": "release_manifest_and_patch_header_match",
+      "passed": true,
+      "details": {
+        "patch": {
+          "size": 39426892,
+          "sha256": "6f7f56d43ab2506b82e415813d3a8efc8fa4ef9ade2e3e45abcaebff18ec6b53"
+        },
+        "header": {
+          "schema": "brs-binary-delta/v1",
+          "source": {
+            "size": 1360363520,
+            "sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e"
+          },
+          "target": {
+            "size": 1368082432,
+            "sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139"
+          },
+          "record_count": 3662,
+          "changed_bytes": 50075200,
+          "compression": "zlib"
+        }
+      }
+    },
+    {
+      "name": "trusted_original_precheck",
+      "passed": true,
+      "details": {
+        "size": 1360363520,
+        "sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e",
+        "mtime_ns": 1366817381446815500
+      }
+    },
+    {
+      "name": "direct_original_overwrite_rejected",
+      "passed": true,
+      "details": {
+        "command": [
+          "powershell.exe",
+          "-NoProfile",
+          "-NonInteractive",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "work/release_pipeline/Apply-KoreanPatch.ps1",
+          "-SourceIso",
+          "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+          "-OutputIso",
+          "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+          "-PatchFile",
+          "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+        ],
+        "exit_code": 1,
+        "duration_seconds": 0.876,
+        "stdout": "",
+        "stderr": "원본 ISO를 직접 덮어쓰지 않습니다. 다른 출력 경로를 지정하세요.\r\nAt <workspace>\\work\\release_pipeline\\Apply-KoreanPatch.ps1:144 char:5\r\n+     throw '원본 ISO를 직접 덮어쓰지 않습니다. 다른 출력 경로를 지정하세요.'\r\n+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : OperationStopped: (원본 ISO를 직접 덮어쓰지 않습니다. 다른 출력 경로를 지정하세요.:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : 원본 ISO를 직접 덮어쓰지 않습니다. 다른 출력 경로를 지정하세요."
+      }
+    },
+    {
+      "name": "wrong_original_rejected_before_output",
+      "passed": true,
+      "details": {
+        "command": [
+          "powershell.exe",
+          "-NoProfile",
+          "-NonInteractive",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "work/release_pipeline/Apply-KoreanPatch.ps1",
+          "-SourceIso",
+          "work/release_build/final_patcher_test/ps_bad_source.iso",
+          "-OutputIso",
+          "work/release_build/final_patcher_test/ps_wrong_source_output.iso",
+          "-PatchFile",
+          "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+        ],
+        "exit_code": 1,
+        "duration_seconds": 0.898,
+        "stdout": "",
+        "stderr": "원본 ISO 크기가 일치하지 않습니다: 21 != 1360363520\r\nAt <workspace>\\work\\release_pipeline\\Apply-KoreanPatch.ps1:194 char:9\r\n+         throw \"원본 ISO 크기가 일치하지 않습니다: $($sourceInfo.Length) != $source ...\r\n+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : OperationStopped: (원본 ISO 크기가 일치하지 않습니다: 21 != 1360363520:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : 원본 ISO 크기가 일치하지 않습니다: 21 != 1360363520"
+      }
+    },
+    {
+      "name": "existing_non_target_output_refused_and_preserved",
+      "passed": true,
+      "details": {
+        "process": {
+          "command": [
+            "powershell.exe",
+            "-NoProfile",
+            "-NonInteractive",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-File",
+            "work/release_pipeline/Apply-KoreanPatch.ps1",
+            "-SourceIso",
+            "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+            "-OutputIso",
+            "work/release_build/final_patcher_test/ps_existing_output.iso",
+            "-PatchFile",
+            "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+          ],
+          "exit_code": 1,
+          "duration_seconds": 2.672,
+          "stdout": "원본 ISO SHA-256을 확인하는 중...",
+          "stderr": "출력 파일이 이미 있고 완성본 해시와 다릅니다: <workspace>\\work\\release_build\\final_patcher_\r\ntest\\ps_existing_output.iso\r\nAt <workspace>\\work\\release_pipeline\\Apply-KoreanPatch.ps1:211 char:9\r\n+         throw \"출력 파일이 이미 있고 완성본 해시와 다릅니다: $outputPath\"\r\n+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : OperationStopped: (출력 파일이 이미 있고 완성...ting_output.iso:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : 출력 파일이 이미 있고 완성본 해시와 다릅니다: <workspace>\\wo \r\n   rk\\release_build\\final_patcher_test\\ps_existing_output.iso"
+        },
+        "preserved_sha256": "708a546f370dee0ec382f9bf24102af0124ee649e0add925c577539e44e04f54"
+      }
+    },
+    {
+      "name": "corrupted_zlib_adler_rejected_and_temp_cleaned",
+      "passed": true,
+      "details": {
+        "corruption": {
+          "header_schema": "brs-binary-delta/v1",
+          "first_record_header_offset": 322,
+          "mutated_offset": 353,
+          "original_byte": 73,
+          "mutated_byte": 72,
+          "sha256": "acfb1e74b8ef070d8ce3d0e972b5f1a108c0e29488cc9cb650bfab93ba67fa4b"
+        },
+        "process": {
+          "command": [
+            "powershell.exe",
+            "-NoProfile",
+            "-NonInteractive",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-File",
+            "work/release_pipeline/Apply-KoreanPatch.ps1",
+            "-SourceIso",
+            "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+            "-OutputIso",
+            "work/release_build/final_patcher_test/ps_corrupt_patch_output.iso",
+            "-PatchFile",
+            "work/release_build/final_patcher_test/ps_corrupt_adler.brspatch"
+          ],
+          "exit_code": 1,
+          "duration_seconds": 5.768,
+          "stdout": "원본 ISO SHA-256을 확인하는 중...\n원본을 보존한 채 새 ISO를 만드는 중...",
+          "stderr": "zlib Adler-32 검증에 실패했습니다: 05cc0149 != 05cc0148\r\nAt <workspace>\\work\\release_pipeline\\Apply-KoreanPatch.ps1:112 char:13\r\n+             throw (\r\n+             ~~~~~~~\r\n    + CategoryInfo          : OperationStopped: (zlib Adler-32 검...149 != 05cc0148:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : zlib Adler-32 검증에 실패했습니다: 05cc0149 != 05cc0148"
+        },
+        "leftover_temporary_files": []
+      }
+    },
+    {
+      "name": "normal_apply_end_to_end_target_hash",
+      "passed": true,
+      "details": {
+        "process": {
+          "command": [
+            "powershell.exe",
+            "-NoProfile",
+            "-NonInteractive",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-File",
+            "work/release_pipeline/Apply-KoreanPatch.ps1",
+            "-SourceIso",
+            "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+            "-OutputIso",
+            "work/release_build/final_patcher_test/ps_apply_test.iso",
+            "-PatchFile",
+            "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+          ],
+          "exit_code": 0,
+          "duration_seconds": 14.938,
+          "stdout": "원본 ISO SHA-256을 확인하는 중...\n원본을 보존한 채 새 ISO를 만드는 중...\n완성된 ISO SHA-256을 확인하는 중...\n\n한국어 패치 적용 및 검증 완료\n출력: <workspace>\\work\\release_build\\final_patcher_test\\ps_apply_test.iso\nSHA-256: 266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139\n원본 ISO는 변경하지 않았습니다.",
+          "stderr": ""
+        },
+        "output_size": 1368082432,
+        "output_sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139",
+        "journal": {
+          "schema": "brs-korean-install-journal/v1",
+          "source_iso": "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+          "source_sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e",
+          "patched_iso": "work/release_build/final_patcher_test/ps_apply_test.iso",
+          "patched_sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139",
+          "patch_file": "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch",
+          "installed_utc": "2026-07-25T14:25:31.0549307Z"
+        }
+      }
+    },
+    {
+      "name": "duplicate_install_is_idempotent",
+      "passed": true,
+      "details": {
+        "command": [
+          "powershell.exe",
+          "-NoProfile",
+          "-NonInteractive",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "work/release_pipeline/Apply-KoreanPatch.ps1",
+          "-SourceIso",
+          "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+          "-OutputIso",
+          "work/release_build/final_patcher_test/ps_apply_test.iso",
+          "-PatchFile",
+          "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+        ],
+        "exit_code": 0,
+        "duration_seconds": 4.725,
+        "stdout": "원본 ISO SHA-256을 확인하는 중...\n이미 적용되어 있습니다: <workspace>\\work\\release_build\\final_patcher_test\\ps_apply_test.iso",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "restore_refuses_unverified_output",
+      "passed": true,
+      "details": {
+        "process": {
+          "command": [
+            "powershell.exe",
+            "-NoProfile",
+            "-NonInteractive",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-File",
+            "work/release_pipeline/Restore-Original.ps1",
+            "-PatchedIso",
+            "work/release_build/final_patcher_test/ps_restore_wrong.iso",
+            "-PatchFile",
+            "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+          ],
+          "exit_code": 1,
+          "duration_seconds": 0.702,
+          "stdout": "",
+          "stderr": "알 수 없거나 수정된 ISO이므로 삭제하지 않습니다(크기 불일치): 27 != 1368082432\r\nAt <workspace>\\work\\release_pipeline\\Restore-Original.ps1:91 char:5\r\n+     throw (\r\n+     ~~~~~~~\r\n    + CategoryInfo          : OperationStopped: (알 수 없거나 수정된 ISO...7 != 1368082432:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : 알 수 없거나 수정된 ISO이므로 삭제하지 않습니다(크기 불일치): 27 != 1368082432"
+        },
+        "preserved_sha256": "061359029c075a1552a8637a92348c31269f7a01c25c6d0182d8adc70394da00"
+      }
+    },
+    {
+      "name": "restore_removes_only_verified_output_and_journal",
+      "passed": true,
+      "details": {
+        "command": [
+          "powershell.exe",
+          "-NoProfile",
+          "-NonInteractive",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "work/release_pipeline/Restore-Original.ps1",
+          "-PatchedIso",
+          "work/release_build/final_patcher_test/ps_apply_test.iso",
+          "-PatchFile",
+          "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+        ],
+        "exit_code": 0,
+        "duration_seconds": 2.796,
+        "stdout": "삭제 전 패치 ISO SHA-256을 확인하는 중...\n복원 완료: 한국어 패치 ISO만 제거했으며 원본 ISO는 변경되지 않았습니다.",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "duplicate_restore_is_idempotent",
+      "passed": true,
+      "details": {
+        "command": [
+          "powershell.exe",
+          "-NoProfile",
+          "-NonInteractive",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "work/release_pipeline/Restore-Original.ps1",
+          "-PatchedIso",
+          "work/release_build/final_patcher_test/ps_apply_test.iso",
+          "-PatchFile",
+          "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+        ],
+        "exit_code": 0,
+        "duration_seconds": 0.666,
+        "stdout": "이미 복원된 상태입니다(패치 ISO 없음): <workspace>\\work\\release_build\\final_patcher_test\\ps_apply_test.iso",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "uint64_offset_and_int64_filestream_position",
+      "passed": true,
+      "details": {
+        "command": [
+          "powershell.exe",
+          "-NoProfile",
+          "-NonInteractive",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-Command",
+          "$ErrorActionPreference='Stop';[UInt64]$offset=4294967419;[UInt32]$raw=1048576;[Int64]$targetSize=4296017000;[UInt64]$end=$offset+[UInt64]$raw;if($end -gt [UInt64]$targetSize){throw 'bounds';};$bytes=[BitConverter]::GetBytes($offset);$m=New-Object IO.MemoryStream(,$bytes);$r=New-Object IO.BinaryReader($m);try{[UInt64]$round=$r.ReadUInt64();if($round -ne $offset){throw 'read64';}}finally{$r.Dispose();$m.Dispose();};$p='<workspace>\\work\\release_build\\final_patcher_test\\ps_offset_probe.bin';$f=[IO.File]::Open($p,[IO.FileMode]::CreateNew,[IO.FileAccess]::ReadWrite,[IO.FileShare]::None);try{$f.SetLength(1);$f.Position=[Int64]$offset;if([UInt64]$f.Position -ne $offset){throw 'position64';};if($f.Length -ne 1){throw 'unexpected-allocation';}}finally{$f.Dispose();};Remove-Item -LiteralPath $p -Force;[ordered]@{offset=$offset;record_end=$end;target_size=$targetSize;roundtrip=$round;position_ok=$true}|ConvertTo-Json -Compress"
+        ],
+        "exit_code": 0,
+        "duration_seconds": 0.75,
+        "stdout": "{\"offset\":4294967419,\"record_end\":4296015995,\"target_size\":4296017000,\"roundtrip\":4294967419,\"position_ok\":true}",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "atomic_temporary_cleanup",
+      "passed": true,
+      "details": {
+        "leftover_temporary_files": []
+      }
+    },
+    {
+      "name": "original_iso_and_patch_package_unchanged",
+      "passed": true,
+      "details": {
+        "original_before": {
+          "size": 1360363520,
+          "sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e",
+          "mtime_ns": 1366817381446815500
+        },
+        "original_after": {
+          "size": 1360363520,
+          "sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e",
+          "mtime_ns": 1366817381446815500
+        },
+        "patch_before": {
+          "size": 39426892,
+          "sha256": "6f7f56d43ab2506b82e415813d3a8efc8fa4ef9ade2e3e45abcaebff18ec6b53"
+        },
+        "patch_after": {
+          "size": 39426892,
+          "sha256": "6f7f56d43ab2506b82e415813d3a8efc8fa4ef9ade2e3e45abcaebff18ec6b53"
+        }
+      }
+    }
+  ],
+  "commands": {
+    "powershell_5_1_parse_probe": {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "$e=@();$a=$null;$b=$null;[System.Management.Automation.Language.Parser]::ParseFile('<workspace>\\work\\release_pipeline\\Apply-KoreanPatch.ps1',[ref]$a,[ref]$e)|Out-Null;if($e.Count){throw ($e|ForEach-Object Message|Out-String)};$e=@();$a=$null;[System.Management.Automation.Language.Parser]::ParseFile('<workspace>\\work\\release_pipeline\\Restore-Original.ps1',[ref]$a,[ref]$e)|Out-Null;if($e.Count){throw ($e|ForEach-Object Message|Out-String)};[ordered]@{version=$PSVersionTable.PSVersion.ToString();edition=$PSVersionTable.PSEdition;parse_ok=$true}|ConvertTo-Json -Compress"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.458,
+      "stdout": "{\"version\":\"5.1.26100.8894\",\"edition\":\"Desktop\",\"parse_ok\":true}",
+      "stderr": ""
+    },
+    "direct_original_overwrite_rejection": {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "work/release_pipeline/Apply-KoreanPatch.ps1",
+        "-SourceIso",
+        "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+        "-OutputIso",
+        "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+        "-PatchFile",
+        "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+      ],
+      "exit_code": 1,
+      "duration_seconds": 0.876,
+      "stdout": "",
+      "stderr": "원본 ISO를 직접 덮어쓰지 않습니다. 다른 출력 경로를 지정하세요.\r\nAt <workspace>\\work\\release_pipeline\\Apply-KoreanPatch.ps1:144 char:5\r\n+     throw '원본 ISO를 직접 덮어쓰지 않습니다. 다른 출력 경로를 지정하세요.'\r\n+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : OperationStopped: (원본 ISO를 직접 덮어쓰지 않습니다. 다른 출력 경로를 지정하세요.:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : 원본 ISO를 직접 덮어쓰지 않습니다. 다른 출력 경로를 지정하세요."
+    },
+    "wrong_source_rejection": {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "work/release_pipeline/Apply-KoreanPatch.ps1",
+        "-SourceIso",
+        "work/release_build/final_patcher_test/ps_bad_source.iso",
+        "-OutputIso",
+        "work/release_build/final_patcher_test/ps_wrong_source_output.iso",
+        "-PatchFile",
+        "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+      ],
+      "exit_code": 1,
+      "duration_seconds": 0.898,
+      "stdout": "",
+      "stderr": "원본 ISO 크기가 일치하지 않습니다: 21 != 1360363520\r\nAt <workspace>\\work\\release_pipeline\\Apply-KoreanPatch.ps1:194 char:9\r\n+         throw \"원본 ISO 크기가 일치하지 않습니다: $($sourceInfo.Length) != $source ...\r\n+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : OperationStopped: (원본 ISO 크기가 일치하지 않습니다: 21 != 1360363520:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : 원본 ISO 크기가 일치하지 않습니다: 21 != 1360363520"
+    },
+    "existing_output_rejection": {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "work/release_pipeline/Apply-KoreanPatch.ps1",
+        "-SourceIso",
+        "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+        "-OutputIso",
+        "work/release_build/final_patcher_test/ps_existing_output.iso",
+        "-PatchFile",
+        "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+      ],
+      "exit_code": 1,
+      "duration_seconds": 2.672,
+      "stdout": "원본 ISO SHA-256을 확인하는 중...",
+      "stderr": "출력 파일이 이미 있고 완성본 해시와 다릅니다: <workspace>\\work\\release_build\\final_patcher_\r\ntest\\ps_existing_output.iso\r\nAt <workspace>\\work\\release_pipeline\\Apply-KoreanPatch.ps1:211 char:9\r\n+         throw \"출력 파일이 이미 있고 완성본 해시와 다릅니다: $outputPath\"\r\n+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : OperationStopped: (출력 파일이 이미 있고 완성...ting_output.iso:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : 출력 파일이 이미 있고 완성본 해시와 다릅니다: <workspace>\\wo \r\n   rk\\release_build\\final_patcher_test\\ps_existing_output.iso"
+    },
+    "corrupt_zlib_rejection": {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "work/release_pipeline/Apply-KoreanPatch.ps1",
+        "-SourceIso",
+        "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+        "-OutputIso",
+        "work/release_build/final_patcher_test/ps_corrupt_patch_output.iso",
+        "-PatchFile",
+        "work/release_build/final_patcher_test/ps_corrupt_adler.brspatch"
+      ],
+      "exit_code": 1,
+      "duration_seconds": 5.768,
+      "stdout": "원본 ISO SHA-256을 확인하는 중...\n원본을 보존한 채 새 ISO를 만드는 중...",
+      "stderr": "zlib Adler-32 검증에 실패했습니다: 05cc0149 != 05cc0148\r\nAt <workspace>\\work\\release_pipeline\\Apply-KoreanPatch.ps1:112 char:13\r\n+             throw (\r\n+             ~~~~~~~\r\n    + CategoryInfo          : OperationStopped: (zlib Adler-32 검...149 != 05cc0148:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : zlib Adler-32 검증에 실패했습니다: 05cc0149 != 05cc0148"
+    },
+    "normal_apply": {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "work/release_pipeline/Apply-KoreanPatch.ps1",
+        "-SourceIso",
+        "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+        "-OutputIso",
+        "work/release_build/final_patcher_test/ps_apply_test.iso",
+        "-PatchFile",
+        "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 14.938,
+      "stdout": "원본 ISO SHA-256을 확인하는 중...\n원본을 보존한 채 새 ISO를 만드는 중...\n완성된 ISO SHA-256을 확인하는 중...\n\n한국어 패치 적용 및 검증 완료\n출력: <workspace>\\work\\release_build\\final_patcher_test\\ps_apply_test.iso\nSHA-256: 266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139\n원본 ISO는 변경하지 않았습니다.",
+      "stderr": ""
+    },
+    "duplicate_apply": {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "work/release_pipeline/Apply-KoreanPatch.ps1",
+        "-SourceIso",
+        "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+        "-OutputIso",
+        "work/release_build/final_patcher_test/ps_apply_test.iso",
+        "-PatchFile",
+        "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 4.725,
+      "stdout": "원본 ISO SHA-256을 확인하는 중...\n이미 적용되어 있습니다: <workspace>\\work\\release_build\\final_patcher_test\\ps_apply_test.iso",
+      "stderr": ""
+    },
+    "restore_unknown_rejection": {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "work/release_pipeline/Restore-Original.ps1",
+        "-PatchedIso",
+        "work/release_build/final_patcher_test/ps_restore_wrong.iso",
+        "-PatchFile",
+        "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+      ],
+      "exit_code": 1,
+      "duration_seconds": 0.702,
+      "stdout": "",
+      "stderr": "알 수 없거나 수정된 ISO이므로 삭제하지 않습니다(크기 불일치): 27 != 1368082432\r\nAt <workspace>\\work\\release_pipeline\\Restore-Original.ps1:91 char:5\r\n+     throw (\r\n+     ~~~~~~~\r\n    + CategoryInfo          : OperationStopped: (알 수 없거나 수정된 ISO...7 != 1368082432:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : 알 수 없거나 수정된 ISO이므로 삭제하지 않습니다(크기 불일치): 27 != 1368082432"
+    },
+    "restore_verified_output": {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "work/release_pipeline/Restore-Original.ps1",
+        "-PatchedIso",
+        "work/release_build/final_patcher_test/ps_apply_test.iso",
+        "-PatchFile",
+        "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 2.796,
+      "stdout": "삭제 전 패치 ISO SHA-256을 확인하는 중...\n복원 완료: 한국어 패치 ISO만 제거했으며 원본 ISO는 변경되지 않았습니다.",
+      "stderr": ""
+    },
+    "restore_idempotent": {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "work/release_pipeline/Restore-Original.ps1",
+        "-PatchedIso",
+        "work/release_build/final_patcher_test/ps_apply_test.iso",
+        "-PatchFile",
+        "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.666,
+      "stdout": "이미 복원된 상태입니다(패치 ISO 없음): <workspace>\\work\\release_build\\final_patcher_test\\ps_apply_test.iso",
+      "stderr": ""
+    },
+    "uint64_offset_probe": {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "$ErrorActionPreference='Stop';[UInt64]$offset=4294967419;[UInt32]$raw=1048576;[Int64]$targetSize=4296017000;[UInt64]$end=$offset+[UInt64]$raw;if($end -gt [UInt64]$targetSize){throw 'bounds';};$bytes=[BitConverter]::GetBytes($offset);$m=New-Object IO.MemoryStream(,$bytes);$r=New-Object IO.BinaryReader($m);try{[UInt64]$round=$r.ReadUInt64();if($round -ne $offset){throw 'read64';}}finally{$r.Dispose();$m.Dispose();};$p='<workspace>\\work\\release_build\\final_patcher_test\\ps_offset_probe.bin';$f=[IO.File]::Open($p,[IO.FileMode]::CreateNew,[IO.FileAccess]::ReadWrite,[IO.FileShare]::None);try{$f.SetLength(1);$f.Position=[Int64]$offset;if([UInt64]$f.Position -ne $offset){throw 'position64';};if($f.Length -ne 1){throw 'unexpected-allocation';}}finally{$f.Dispose();};Remove-Item -LiteralPath $p -Force;[ordered]@{offset=$offset;record_end=$end;target_size=$targetSize;roundtrip=$round;position_ok=$true}|ConvertTo-Json -Compress"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.75,
+      "stdout": "{\"offset\":4294967419,\"record_end\":4296015995,\"target_size\":4296017000,\"roundtrip\":4294967419,\"position_ok\":true}",
+      "stderr": ""
+    }
+  },
+  "safety": {
+    "original_iso_was_never_opened_for_write": true,
+    "all_generated_files_were_under_final_patcher_test": true,
+    "temporary_test_artifacts_cleaned": true
+  }
+}

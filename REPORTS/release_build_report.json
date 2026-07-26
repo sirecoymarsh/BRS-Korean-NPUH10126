@@ -1,0 +1,131 @@
+{
+  "schema": "brs-korean-release-build-v1",
+  "source": {
+    "path": "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
+    "size": 1360363520,
+    "sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e"
+  },
+  "translation_map": {
+    "path": "work/localization/final_results/translation_map.json",
+    "entry_count": 3395,
+    "sha256": "c3646461cc41abd6b3eb8115bfbb9b408ec7c7f63f683a1dee5a642ea38bae33"
+  },
+  "font": {
+    "mapping_sha256": "697a0516e2d9bc23992a42b2ea5184b5da01c31be9c2eebff76e9be4a99451f9",
+    "verification": {
+      "schema": "brs-font-verification-v1",
+      "ok": true,
+      "errors": [],
+      "glyph_count": 861,
+      "font_changed_byte_count": 79481,
+      "ucs2jis_changed_byte_count": 1722,
+      "unexpected_font_byte_count": 0,
+      "unexpected_ucs2jis_byte_count": 0,
+      "hashes": {
+        "original_font_lpk": "7e606174dbba6a2207f842acc1a065e2116610c34d09d9a5c0e35803d678bcdd",
+        "original_ucs2jis": "349e34b8841c6429a4c973c43545ac32496a50cf08a5ad5fd03b3cd27c1e11b0",
+        "patched_font_lpk": "c5a4861132b534fa676fecf7c7a830a7775bbf97b255441be127ad83b3ce6810",
+        "patched_ucs2jis": "a8238107d3e742aa04d8bea81ce8ff834dc6c8b931431e3f473e020a236bd82e"
+      }
+    }
+  },
+  "volume_count": 89,
+  "volume_entry_replacement_count": 96,
+  "direct_gzip_count": 96,
+  "additional_replacements": {
+    "count": 9,
+    "files": [
+      {
+        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/IF_MISSION_FAILED.GZ",
+        "size": 4924,
+        "sha256": "4d47209dc13ef288f2afca902a539ddfc173d0124f145ea17a59b35ea52227b2",
+        "overrode": null
+      },
+      {
+        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/IF_REC_INFO.GZ",
+        "size": 60547,
+        "sha256": "c9a8efa3a33305d20b68f09f259f3fcdd4c224cfe82264ddb626b476bc7a54bc",
+        "overrode": {
+          "size": 60531,
+          "sha256": "c0a35a595a9ecffe6341864776cdffbf6b7d0f2c2c4ce333666527ffca908f75"
+        }
+      },
+      {
+        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/IF_STAGE_SELECT.GZ",
+        "size": 220478,
+        "sha256": "60afb7c5775d7f7511bdb7041a16230991b4f549d0212e35c2d938dc9a8e45b4",
+        "overrode": {
+          "size": 224111,
+          "sha256": "cfba7b08c049caa6721cc6a9fafb9231f01d3838e24f6f0fd513866287420b2a"
+        }
+      },
+      {
+        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_CUSTOM.GZ",
+        "size": 22049,
+        "sha256": "52cc94954c76fb0ca74ad14c6f3794792e60a86a30bd1ce1546aa9e0d873cbc7",
+        "overrode": {
+          "size": 22671,
+          "sha256": "38777389abf2ee2caef050d54f30ab80d77ff5c44d0d9a0c134cd510d08f8844"
+        }
+      },
+      {
+        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_GALLERY.GZ",
+        "size": 380552,
+        "sha256": "e878599e554aaf87430565c3166e85d581042d09d2a04a155b6b676beae40ccd",
+        "overrode": {
+          "size": 381478,
+          "sha256": "b628fc3f6d0e91314bb2bd15c7e5b4acbe3ccf2a62428f7fce08bc0de6ef496c"
+        }
+      },
+      {
+        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_ITEM.GZ",
+        "size": 18392,
+        "sha256": "8183a856032dcf568a33e2ddc5ea496d6feea25947077f3ab615af3916b8ed66",
+        "overrode": {
+          "size": 18819,
+          "sha256": "5bb23a147e76475cb1060bfaae4e5c1e7858ea0155cb0d5348af6e1465bda69e"
+        }
+      },
+      {
+        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_LIBRARY.GZ",
+        "size": 60743,
+        "sha256": "fb1afaeeaf2ea025b8a0f29b6dc052dbbf45c933e8d1a9b1ea64ba18e58350e3",
+        "overrode": {
+          "size": 60714,
+          "sha256": "b765058f2053f8ee12e25cc32b5b03a4901bd99d2fde0af122a212586ea68458"
+        }
+      },
+      {
+        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_OPTION.GZ",
+        "size": 16487,
+        "sha256": "50610d4ebeeaf2204b4674f2523d5516ca572d8fa2af2ed1da2f6b4fda8bf908",
+        "overrode": {
+          "size": 16792,
+          "sha256": "58b9cd157f1c2950469151ac560a39f0028e6214b5f3dd6d4cd2f53f7f307166"
+        }
+      },
+      {
+        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/SYSTEM.VOL",
+        "size": 4018080,
+        "sha256": "4ef745b1c9ac6af60a3775be1f650186399e2a27c11c604b46cb5fee60f11134",
+        "overrode": {
+          "size": 4018080,
+          "sha256": "c82f860425d922fe4f84e8dbdf6b1eed44d63851307681045c6064f1b5812a96"
+        }
+      }
+    ]
+  },
+  "replacement_file_count": 186,
+  "patched_iso": {
+    "path": "work/release_build/final/BRS_Korean_v1.0.iso",
+    "size": 1368082432,
+    "sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139"
+  },
+  "delta": {
+    "path": "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch",
+    "size": 39426892,
+    "sha256": "6f7f56d43ab2506b82e415813d3a8efc8fa4ef9ade2e3e45abcaebff18ec6b53"
+  },
+  "delta_roundtrip_sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139",
+  "passed": true
+}

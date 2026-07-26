@@ -1,0 +1,88 @@
+{
+  "schema": "brs-independent-final-language-audit-v2",
+  "audit_kind": "independent_post_correction_language_and_structure_audit",
+  "ok": true,
+  "passed": true,
+  "status": "passed",
+  "error_count": 0,
+  "warning_count": 0,
+  "issue_count": 0,
+  "audited_file": "work/localization/final_results/translation_map.json",
+  "audited_sha256": "c3646461cc41abd6b3eb8115bfbb9b408ec7c7f63f683a1dee5a642ea38bae33",
+  "entry_count": 3395,
+  "declared_entry_count": 3395,
+  "unique_semantic_id_count": 3395,
+  "map_modified_by_auditor": false,
+  "correction_verification": {
+    "checked_target_entry_count": 7,
+    "all_targets_match_canonical_terms": true,
+    "iksa_blade": {
+      "corrected_semantic_id": "bxcb:cf762942cf76bddbae7c",
+      "corrected_translation": "<actor>\\b(60)이크사 블레이드",
+      "canonical_term": "이크사 블레이드",
+      "global_source_occurrence_count": 5,
+      "globally_consistent": true
+    },
+    "coda": {
+      "related_entry_count": 6,
+      "globally_consistent": true,
+      "canonical_titles": {
+        "Coda: September 24th": "종장: 9월 24일",
+        "Coda: Whimsical Girl": "종장: 변덕스러운 소녀"
+      },
+      "verified_entries": [
+        {
+          "semantic_id": "sscr:mission_ui:2254febf0fe06fc35bb1",
+          "translation": "종장: 9월 24일"
+        },
+        {
+          "semantic_id": "sscr:challenge_ui:8170d0f0d2a9115d74b7",
+          "translation": "“종장: 9월 24일” 감상"
+        },
+        {
+          "semantic_id": "sscr:challenge_ui:d7461cedaed7ded1f1a9",
+          "translation": "“종장: 9월 24일”을 획득했습니다."
+        },
+        {
+          "semantic_id": "sscr:mission_ui:06a0b2d5d945a257350c",
+          "translation": "종장: 변덕스러운 소녀"
+        },
+        {
+          "semantic_id": "sscr:challenge_ui:e408e0108aead1bf1fa3",
+          "translation": "“종장: 변덕스러운 소녀” 감상"
+        },
+        {
+          "semantic_id": "sscr:challenge_ui:ffff67aacb87013011aa",
+          "translation": "“종장: 변덕스러운 소녀”를 획득했습니다."
+        }
+      ]
+    }
+  },
+  "structure_checks": {
+    "strict_utf8_decode": true,
+    "json_parse": true,
+    "declared_entry_count_match": true,
+    "semantic_ids_unique": true,
+    "empty_translation_count": 0,
+    "engine_token_mismatch_count": 0,
+    "declared_control_mismatch_count": 0,
+    "newline_mismatch_count": 0,
+    "symbol_mismatch_count": 0,
+    "intentional_equ_placeholder_count": 118,
+    "intentional_equ_placeholder_mismatch_count": 0,
+    "exact_duplicate_source_conflict_count": 0
+  },
+  "residue_checks": {
+    "mojibake_count": 0,
+    "unicode_replacement_character_count": 0,
+    "unclassified_untranslated_residue_count": 0,
+    "reviewed_numeric_heuristic_candidate_count": 28,
+    "reviewed_latin_residue_candidate_count": 22,
+    "reviewed_no_hangul_candidate_count": 10,
+    "reviewed_japanese_kana_candidate_count": 1,
+    "all_residue_candidates_classified": true,
+    "classification_note": "숫자 후보는 한국어식 날짜·수량 표기 또는 정규식 오탐이며, 라틴 문자와 한글 미포함 문자열은 약어·고유 토큰·의도된 플레이스홀더다. 일본어 가나 후보 1건은 원문 버튼 구분점 보존 사례다."
+  },
+  "issues": [],
+  "conclusion": "수정된 3,395개 번역 맵을 재감사한 결과 Iksa Blade와 Coda 계열 제목이 전역에서 일치하며, 구조·제어 코드·줄바꿈·플레이스홀더·잔여 문자열·문자 인코딩 검사에서 해결되지 않은 오류나 경고가 없다."
+}
