@@ -20,7 +20,7 @@
 - `Restore-Original.ps1` / `Restore-Original.bat`: 검증된 한국어판 출력 제거
 - `CHECKSUMS.sha256`: 배포 파일 무결성 목록
 - `REPORTS`: 빌드, 언어/그래픽 UI 감사 및 PPSSPP QA 보고서
-- `LICENSES`: Noto Sans KR 관련 OFL 고지
+- `LICENSES`: Noto Sans KR 및 Galmuri 관련 OFL 고지
 
 ## 설치
 
@@ -41,16 +41,28 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\Apply-KoreanPatch.ps1
 완성본 검증값:
 
 - 크기: `1,370,918,912`바이트
-- SHA-256: `0cfbb39f574e4230ed3e47de35520c31c3ad32ad7bad6fa0c5710aefd83b1126`
+- SHA-256: `554b67aff4fc0fd95ad50a2ac5f470192a40d0b868cdc2f5bbfd2e2ad4f5b313`
 
 ## 그래픽 UI 한글화
 
-메뉴, 아이템, 옵션, 전투/필드 시스템 UI의 그래픽 라벨
+주요 메뉴, 아이템, 옵션, 전투/필드 시스템 UI의 그래픽 라벨
 `100`개를
 `27`개 PTMD에 반영했습니다.
 결과물은 `9`개 게임 컨테이너를
 통해 ISO에 직접 내장되어 있으므로, 이 그래픽 UI 한글화를 위해 별도의
 PPSSPP 텍스처 교체 기능이나 외부 텍스처 팩을 설치할 필요가 없습니다.
+
+메뉴 아틀라스는 원본 알파 행에서 측정한 UV 영역을 그대로 유지하며,
+Galmuri 픽셀 한글을 안티앨리어싱 없이 각 영역 안에만 렌더링했습니다.
+PPSSPP 스테이지 선택 화면에서 `저장`, `로드`, `메뉴`가 서로 섞이거나
+위아래로 갈라지지 않는 것을 실기 확인했습니다.
+
+필드의 `★MENU` 화면에 있는 `CUSTOMIZE / ITEMS / CHALLENGES / OPTIONS /
+EXP / NEXT / LEVEL`은 여러 고정 UV 조각을 조합하는 초소형 아틀라스입니다.
+이 영역은 한글을 강제로 넣었을 때 글자가 잘리거나 다른 라벨과 섞이는 것이
+런타임에서 확인되어, 가독성을 우선해 원문 영문을 유지합니다. 대사, 아이템
+이름·설명, 일반 시스템 문구 및 위에 집계된 안정적인 그래픽 UI에는 영향을
+주지 않습니다.
 
 ## 컷씬 자막 수정
 
@@ -59,7 +71,6 @@ PPSSPP 텍스처 교체 기능이나 외부 텍스처 팩을 설치할 필요가
   `37,139`개를 모두 재배치했습니다.
 - PPSSPP에서 STG04 컷씬을 직접 재생해 한국어 자막 표시와 `@@@@`
   플레이스홀더 미출력을 확인했습니다.
-- 메뉴 갈라짐/잘림도 레이아웃과 여백 검증을 거쳐 수정했습니다.
 
 ## 복원
 
@@ -83,8 +94,8 @@ Get-FileHash ".\BRS_Korean_NPUH10126_v1.0.brspatch" -Algorithm SHA256
 
 패치 파일:
 
-- 크기: `39,495,805`바이트
-- SHA-256: `5fc5adbbb18e22ef48f7899e69aaade8ab37e879bad098cd2bbfeeb692ae58a0`
+- 크기: `39,494,639`바이트
+- SHA-256: `d42ef76ca9c8ca37b2f449b63e74e4434d8caf1afe0dd32473777a0835ef5b89`
 
 ## 검수 상태
 

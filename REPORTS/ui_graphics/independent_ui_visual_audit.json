@@ -1,21 +1,26 @@
 {
-  "schema": "brs-independent-ui-visual-audit-v2",
+  "schema": "brs-independent-ui-visual-audit-v3",
   "ok": true,
   "passed": true,
-  "created_at": "2026-07-26T00:00:00+09:00",
+  "created_at": "2026-07-26T23:59:00+09:00",
   "error_count": 0,
   "warning_count": 0,
   "issue_count": 0,
   "patched_ptmd_count": 27,
   "labels_replaced_count": 100,
   "visual_validation": {
-    "review_method": "contact-sheet and targeted-preview visual inspection; generator edge-margin assertions",
+    "review_method": "original alpha-row UV measurement, 1-bit Galmuri rendering, contact-sheet inspection, and PPSSPP stage-select runtime capture",
     "korean_readability_passed": true,
     "functional_english_removed": true,
     "icons_and_backgrounds_preserved": true,
     "no_clipping_or_overlap": true,
     "contact_sheet": "REPORTS/ui_graphics/root_ui_fallback_contact.png",
-    "contact_sheet_sha256": "1e75d9a1e86c4aa6161111ed8f64c99c3cf10fbf3bae572ec4f358347a797791"
+    "contact_sheet_sha256": "57cfc0dd1828fd4fb4ab343985cdca14ec25d9e6cd1c1a5bd6f7872a96c659a7",
+    "runtime_evidence": {
+      "path": "work/qa/ppsspp_sessions/20260726_uvfix_stage_select_runtime_pass.png",
+      "sha256": "54c41b7b23bb18f6f7c51e647ed8c91772be2d18f9f45fb9a75997bea01f95d0",
+      "menu_split_fragments_absent": true
+    }
   },
   "structural_validation": {
     "passed": true,
@@ -23,6 +28,34 @@
     "byte_size_preserved_count": 27,
     "pixel_change_verified_count": 27,
     "decode_after_encode_verified_count": 27
+  },
+  "uv_lock_validation": {
+    "passed": true,
+    "stage_select_source_alpha_rows": [
+      [
+        0,
+        10
+      ],
+      [
+        11,
+        21
+      ],
+      [
+        22,
+        32
+      ],
+      [
+        32,
+        42
+      ],
+      [
+        43,
+        48
+      ]
+    ],
+    "pixel_font": "Galmuri7",
+    "antialiasing": false,
+    "runtime_verified": true
   },
   "files": [
     {
@@ -36,7 +69,7 @@
     {
       "path": "MENU/IF_REC_INFO/005_PTMD.ptm",
       "size": 6192,
-      "sha256": "5d00c31aaf3a405bbd257d828e41b3869f2e8975443377f7dc1ed8dce8ce623c",
+      "sha256": "765208c21d96abf49efdc06e2decca524b836f8f65659eb306473842bf6c182b",
       "byte_size_preserved": true,
       "pixel_change_verified": true,
       "decode_after_encode_verified": true
@@ -52,7 +85,7 @@
     {
       "path": "MENU/MENU_LIBRARY/005_PTMD.ptm",
       "size": 6192,
-      "sha256": "5d00c31aaf3a405bbd257d828e41b3869f2e8975443377f7dc1ed8dce8ce623c",
+      "sha256": "765208c21d96abf49efdc06e2decca524b836f8f65659eb306473842bf6c182b",
       "byte_size_preserved": true,
       "pixel_change_verified": true,
       "decode_after_encode_verified": true
@@ -68,7 +101,7 @@
     {
       "path": "MENU/IF_STAGE_SELECT/014_PTMD.ptm",
       "size": 3152,
-      "sha256": "d364cb191ee4e903fcff1fc3fa7cadb70b4b779e46b69bd28ce8d3d6c5fac7c7",
+      "sha256": "0f8c12b63e175260dfdd66d291af6b6c80676d771033ab23d96f3ff8f571c278",
       "byte_size_preserved": true,
       "pixel_change_verified": true,
       "decode_after_encode_verified": true
@@ -156,7 +189,7 @@
     {
       "path": "MENU/MENU_OPTION/005_PTMD.ptm",
       "size": 8240,
-      "sha256": "2c55a295ecfcdd81541541a5a97613f4111aacd727e4cae545f17a5fbd9efc00",
+      "sha256": "9bc47d5eac27a044e427ee56b68aa88efef9d3a2b68d40b7b7ac9d05ef79b488",
       "byte_size_preserved": true,
       "pixel_change_verified": true,
       "decode_after_encode_verified": true
@@ -188,7 +221,7 @@
     {
       "path": "SYSTEM/if_btlsys/004_PTMD.ptm",
       "size": 8720,
-      "sha256": "5ff7736b0ccae94614229dbad12829a8674d3aba9c7649483ea17ee07e6494e2",
+      "sha256": "8a555f991666028d953e6770da6eb610c8ed21a19c23cd097eb0c665be1ec5f3",
       "byte_size_preserved": true,
       "pixel_change_verified": true,
       "decode_after_encode_verified": true
@@ -220,7 +253,7 @@
     {
       "path": "SYSTEM/if_fldsys/017_PTMD.ptm",
       "size": 1584,
-      "sha256": "16221312ef8b227a23a57aef7c1412ee4b0ab38e3521c0588f27b267d71de81c",
+      "sha256": "947fa7d7f21697cfaf1c78d878a177756ce72bdeab292653f176b513e0a047f8",
       "byte_size_preserved": true,
       "pixel_change_verified": true,
       "decode_after_encode_verified": true
@@ -228,7 +261,7 @@
     {
       "path": "SYSTEM/if_fldsys/018_PTMD.ptm",
       "size": 2096,
-      "sha256": "80c36aed77504e74c18939661ee4eaba5edc47dabd7ed3c2c161f2bbb890cf9f",
+      "sha256": "eb0b6cbb7292f4ed880c3b91be29f2bbfc47843cab248b648e10b168566cf000",
       "byte_size_preserved": true,
       "pixel_change_verified": true,
       "decode_after_encode_verified": true

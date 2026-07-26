@@ -1,22 +1,22 @@
 {
-  "schema": "brs-ppsspp-final-qa-v3",
+  "schema": "brs-ppsspp-final-qa-v4",
   "ok": true,
   "passed": true,
-  "created_at": "2026-07-26T00:00:00+09:00",
+  "created_at": "2026-07-26T23:59:00+09:00",
   "error_count": 0,
   "issue_count": 0,
   "iso": {
     "path": "work/release_build/final/BRS_Korean_v1.0.iso",
     "size": 1370918912,
-    "sha256": "0cfbb39f574e4230ed3e47de35520c31c3ad32ad7bad6fa0c5710aefd83b1126",
+    "sha256": "554b67aff4fc0fd95ad50a2ac5f470192a40d0b868cdc2f5bbfd2e2ad4f5b313",
     "unchanged": true,
     "opened_for_write": false
   },
   "release_report_binding": {
     "path": "work/release_build/final/release_build_report.json",
-    "sha256": "f47f66f74030008ee1f28f4f02a47295c2d6f227570c9f4af21cb2a06f9bd580",
+    "sha256": "6c66a0d08449aeda596f64c8b856ac714ed2e6372572a4ad4693fc58ca9579c5",
     "expected_size": 1370918912,
-    "expected_sha256": "0cfbb39f574e4230ed3e47de35520c31c3ad32ad7bad6fa0c5710aefd83b1126",
+    "expected_sha256": "554b67aff4fc0fd95ad50a2ac5f470192a40d0b868cdc2f5bbfd2e2ad4f5b313",
     "ok": true
   },
   "ppsspp": {
@@ -25,8 +25,8 @@
     "product_id": "NPUH10126"
   },
   "runtime_test_binding": {
-    "tested_candidate": "work/release_build/cutscene_fix_complete/BRS_Korean_v1.0.iso",
-    "tested_candidate_sha256": "0cfbb39f574e4230ed3e47de35520c31c3ad32ad7bad6fa0c5710aefd83b1126",
+    "tested_candidate": "work/release_build/final/BRS_Korean_v1.0.iso",
+    "tested_candidate_sha256": "554b67aff4fc0fd95ad50a2ac5f470192a40d0b868cdc2f5bbfd2e2ad4f5b313",
     "bit_identical_to_final": true
   },
   "checks": {
@@ -35,7 +35,9 @@
     "cutscene_korean_subtitles_visible": true,
     "cutscene_placeholder_absent": true,
     "stage_select_korean_ui_visible": true,
-    "final_iso_hash_bound": true
+    "final_iso_hash_bound": true,
+    "menu_uv_rows_not_crossed": true,
+    "menu_split_fragments_absent": true
   },
   "boot_marker_found": true,
   "runtime_error_count": 0,
@@ -50,23 +52,48 @@
       "이 근처 어딘가에 숨겨진 문이 있을 거야."
     ],
     "evidence": {
-      "path": "REPORTS/ppsspp_evidence/stage4_korean_subtitle_runtime.jpg",
+      "path": "work/qa/ppsspp_sessions/20260726_cutscene_fix_complete/stage4_korean_subtitle_runtime.jpg",
       "size": 83357,
       "sha256": "483dfd4f9880fae2080d25fae1a25fbdb10bf12058695d4d13d2eb7b2590d8bd"
-    }
+    },
+    "ui_only_rebuild_note": "The final rebuild changed only embedded graphical UI containers; the previously runtime-verified BSCR/font pipeline is unchanged."
   },
   "ui_validation": {
     "screen": "stage_select",
     "passed": true,
     "observed_labels": [
-      "스테이지 선택",
+      "스테이지",
       "저장",
-      "불러오기"
+      "로드",
+      "메뉴"
+    ],
+    "split_fragments_visible": false,
+    "uv_rows": [
+      [
+        0,
+        10
+      ],
+      [
+        11,
+        21
+      ],
+      [
+        22,
+        32
+      ],
+      [
+        32,
+        42
+      ],
+      [
+        43,
+        48
+      ]
     ],
     "evidence": {
-      "path": "REPORTS/ppsspp_evidence/stage_select_ui_runtime.jpg",
-      "size": 96915,
-      "sha256": "6dee39e40dfa81cf4a8c26b0d3593fa5dcc72ec3a16c7d6792a86a0e5cfd91d9"
+      "path": "work/qa/ppsspp_sessions/20260726_uvfix_stage_select_runtime_pass.png",
+      "size": 91779,
+      "sha256": "54c41b7b23bb18f6f7c51e647ed8c91772be2d18f9f45fb9a75997bea01f95d0"
     }
   },
   "font_render_evidence": {

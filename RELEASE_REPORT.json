@@ -10,13 +10,13 @@
   },
   "target": {
     "size": 1370918912,
-    "sha256": "0cfbb39f574e4230ed3e47de35520c31c3ad32ad7bad6fa0c5710aefd83b1126",
+    "sha256": "554b67aff4fc0fd95ad50a2ac5f470192a40d0b868cdc2f5bbfd2e2ad4f5b313",
     "iso_included": false
   },
   "patch": {
     "name": "BRS_Korean_NPUH10126_v1.0.brspatch",
-    "size": 39495805,
-    "sha256": "5fc5adbbb18e22ef48f7899e69aaade8ab37e879bad098cd2bbfeeb692ae58a0",
+    "size": 39494639,
+    "sha256": "d42ef76ca9c8ca37b2f449b63e74e4434d8caf1afe0dd32473777a0835ef5b89",
     "schema": "brs-binary-delta/v1",
     "compression": "zlib",
     "record_count": 3652
@@ -37,7 +37,7 @@
     "integrated_output_count": 9,
     "independent_visual_audit_passed": true,
     "contact_sheet": "REPORTS/ui_graphics/root_ui_fallback_contact.png",
-    "contact_sheet_sha256": "1e75d9a1e86c4aa6161111ed8f64c99c3cf10fbf3bae572ec4f358347a797791"
+    "contact_sheet_sha256": "57cfc0dd1828fd4fb4ab343985cdca14ec25d9e6cd1c1a5bd6f7872a96c659a7"
   },
   "ppsspp_qa": {
     "ok": true,
@@ -55,7 +55,7 @@
     "archive_name": "BRS_Korean_NPUH10126_v1.0.zip",
     "checksum_file": "CHECKSUMS.sha256",
     "deterministic_zip_timestamp": "2026-07-25T00:00:00",
-    "file_count_including_report_and_checksums": 31,
+    "file_count_including_report_and_checksums": 25,
     "absolute_paths_redacted": true
   },
   "payload_before_report_and_checksums": [
@@ -71,8 +71,13 @@
     },
     {
       "path": "BRS_Korean_NPUH10126_v1.0.brspatch",
-      "size": 39495805,
-      "sha256": "5fc5adbbb18e22ef48f7899e69aaade8ab37e879bad098cd2bbfeeb692ae58a0"
+      "size": 39494639,
+      "sha256": "d42ef76ca9c8ca37b2f449b63e74e4434d8caf1afe0dd32473777a0835ef5b89"
+    },
+    {
+      "path": "LICENSES/Galmuri-OFL.txt",
+      "size": 4360,
+      "sha256": "86a3ee9495f942f0243f18c103da9faca27adb88142613edb8bb852e56c892c1"
     },
     {
       "path": "LICENSES/NotoSansKR-NOTICE_KO.txt",
@@ -86,8 +91,8 @@
     },
     {
       "path": "README_KO.md",
-      "size": 3305,
-      "sha256": "fd4bd9be4ce9e48640d7f95ed03e31284651545332d8f5bbae77fe60d1887e3c"
+      "size": 4645,
+      "sha256": "1dfc67d1a2b1ee3202ce1d23620ed186e2d69f5700dd2b693b02a67835b8cd20"
     },
     {
       "path": "REPORTS/font_verification.json",
@@ -136,28 +141,28 @@
     },
     {
       "path": "REPORTS/ppsspp_final_qa_report.json",
-      "size": 2559,
-      "sha256": "83b013847fdf28a2b2963c01ae1a7d1f692c5c6fc7e3396444346f2f13f7dcfd"
+      "size": 3032,
+      "sha256": "96a45ee424fe7c83dc064256e5d55b18edb46d5ae874190db816563b7b3a0ee7"
     },
     {
       "path": "REPORTS/release_build_report.json",
       "size": 7362,
-      "sha256": "cfec4c892e7ef2fb1d9efc92b1af9daed51f80f4531eb5d2968d64e8e9611dad"
+      "sha256": "86866384c0b9a1702523a521f0aa8c2b63a9a4859a53c6a5c9661c9a8c235969"
     },
     {
       "path": "REPORTS/ui_graphics/independent_ui_visual_audit.json",
-      "size": 8521,
-      "sha256": "192c336d6776d24995a77b26e13e01e01897d48965e647164f77db4e794229e6"
+      "size": 9187,
+      "sha256": "f8e566bea15d282eee92ddd6beae546b05ed1103bad6eddd7dcb94c31b952e72"
     },
     {
       "path": "REPORTS/ui_graphics/root_ui_fallback_contact.png",
-      "size": 413741,
-      "sha256": "1e75d9a1e86c4aa6161111ed8f64c99c3cf10fbf3bae572ec4f358347a797791"
+      "size": 404554,
+      "sha256": "57cfc0dd1828fd4fb4ab343985cdca14ec25d9e6cd1c1a5bd6f7872a96c659a7"
     },
     {
       "path": "REPORTS/ui_graphics/ui_integration_report.json",
-      "size": 29280,
-      "sha256": "2c84e12cf7015c14f91cdfe1306307bc19162acc5aa92a67c550136d7839c0f6"
+      "size": 29279,
+      "sha256": "43d16bc86b5c0ef4e6efd2f59327a7cc608432efba0dff4c9dce19c07e03488d"
     },
     {
       "path": "Restore-Original.bat",
@@ -169,10 +174,5 @@
       "size": 3809,
       "sha256": "6b7e2ceb2c7bc9d469ef74b4002c70e0d4d0ed660d339ef1a426f90157e197d1"
     }
-  ],
-  "runtime_evidence": {
-    "cutscene_subtitle": "REPORTS/ppsspp_evidence/stage4_korean_subtitle_runtime.jpg",
-    "stage_select_ui": "REPORTS/ppsspp_evidence/stage_select_ui_runtime.jpg",
-    "cutscene_placeholder_absent": true
-  }
+  ]
 }
