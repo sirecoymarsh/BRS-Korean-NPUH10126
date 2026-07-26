@@ -3,14 +3,14 @@
   "ok": true,
   "errors": [],
   "glyph_count": 861,
-  "font_changed_byte_count": 79481,
+  "font_changed_byte_count": 79479,
   "ucs2jis_changed_byte_count": 1722,
   "unexpected_font_byte_count": 0,
   "unexpected_ucs2jis_byte_count": 0,
   "hashes": {
     "original_font_lpk": "7e606174dbba6a2207f842acc1a065e2116610c34d09d9a5c0e35803d678bcdd",
     "original_ucs2jis": "349e34b8841c6429a4c973c43545ac32496a50cf08a5ad5fd03b3cd27c1e11b0",
-    "patched_font_lpk": "c5a4861132b534fa676fecf7c7a830a7775bbf97b255441be127ad83b3ce6810",
+    "patched_font_lpk": "a5de202d3b3cbed590705e1e350a5e88ef0dc991901e999ff154227044c86145",
     "patched_ucs2jis": "a8238107d3e742aa04d8bea81ce8ff834dc6c8b931431e3f473e020a236bd82e"
   }
 }

@@ -8,24 +8,24 @@
   "translation_map": {
     "path": "work/localization/final_results/translation_map.json",
     "entry_count": 3395,
-    "sha256": "c3646461cc41abd6b3eb8115bfbb9b408ec7c7f63f683a1dee5a642ea38bae33"
+    "sha256": "3e34a20cde1082c0553d8417a96fee8f3226dc444b2512565bef4bbf18da6b1c"
   },
   "font": {
-    "mapping_sha256": "697a0516e2d9bc23992a42b2ea5184b5da01c31be9c2eebff76e9be4a99451f9",
+    "mapping_sha256": "bc1fe7996437b214c691508b8cd8a85e4668d0e023fd10ef5d0d9342e4f051f1",
     "bscr_encoding": "utf8_cjk_alias",
     "verification": {
       "schema": "brs-font-verification-v1",
       "ok": true,
       "errors": [],
       "glyph_count": 861,
-      "font_changed_byte_count": 79481,
+      "font_changed_byte_count": 79479,
       "ucs2jis_changed_byte_count": 1722,
       "unexpected_font_byte_count": 0,
       "unexpected_ucs2jis_byte_count": 0,
       "hashes": {
         "original_font_lpk": "7e606174dbba6a2207f842acc1a065e2116610c34d09d9a5c0e35803d678bcdd",
         "original_ucs2jis": "349e34b8841c6429a4c973c43545ac32496a50cf08a5ad5fd03b3cd27c1e11b0",
-        "patched_font_lpk": "c5a4861132b534fa676fecf7c7a830a7775bbf97b255441be127ad83b3ce6810",
+        "patched_font_lpk": "a5de202d3b3cbed590705e1e350a5e88ef0dc991901e999ff154227044c86145",
         "patched_ucs2jis": "a8238107d3e742aa04d8bea81ce8ff834dc6c8b931431e3f473e020a236bd82e"
       }
     }
@@ -51,8 +51,8 @@
       },
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/IF_REC_INFO.GZ",
-        "size": 60301,
-        "sha256": "96e28224a73d2c9477147e4f76a84df29c75ce5bc3f1f036ed2bb46eb170dbac",
+        "size": 60299,
+        "sha256": "a3ab381986ca18522d37952401cf85724959166d128e246b34388feb8a2281c7",
         "ui_snapshot_sha256": "96e28224a73d2c9477147e4f76a84df29c75ce5bc3f1f036ed2bb46eb170dbac",
         "merge": {
           "kind": "lpk_ptmd_entries",
@@ -63,13 +63,13 @@
         },
         "overrode": {
           "size": 60531,
-          "sha256": "c0a35a595a9ecffe6341864776cdffbf6b7d0f2c2c4ce333666527ffca908f75"
+          "sha256": "2d5c04f0848d13217a1d5fd1957a3b0dc8e44e0cf47c2e7e5f5c41e2817084e3"
         }
       },
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/IF_STAGE_SELECT.GZ",
         "size": 219884,
-        "sha256": "0220171e4b602fe048f134be0d9e9fca499f0128cb62d447e133ef43d98d5380",
+        "sha256": "56107d9d53f6ac245bf2157cabaa4f5b63faa26d0ad00d4b33e294bd2bedf240",
         "ui_snapshot_sha256": "0220171e4b602fe048f134be0d9e9fca499f0128cb62d447e133ef43d98d5380",
         "merge": {
           "kind": "lpk_ptmd_entries",
@@ -81,14 +81,14 @@
           ]
         },
         "overrode": {
-          "size": 224111,
-          "sha256": "cfba7b08c049caa6721cc6a9fafb9231f01d3838e24f6f0fd513866287420b2a"
+          "size": 224113,
+          "sha256": "c52eac4e7ee569ca926b15762d67a91a8b91f52701632408156d8cb0b91b1a02"
         }
       },
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_CUSTOM.GZ",
         "size": 22049,
-        "sha256": "52cc94954c76fb0ca74ad14c6f3794792e60a86a30bd1ce1546aa9e0d873cbc7",
+        "sha256": "69ba7e9100958ebd921297d1b8e43d6a75614feebda4dcc4855176cbc436ec0c",
         "ui_snapshot_sha256": "52cc94954c76fb0ca74ad14c6f3794792e60a86a30bd1ce1546aa9e0d873cbc7",
         "merge": {
           "kind": "lpk_ptmd_entries",
@@ -99,14 +99,14 @@
           ]
         },
         "overrode": {
-          "size": 22671,
-          "sha256": "38777389abf2ee2caef050d54f30ab80d77ff5c44d0d9a0c134cd510d08f8844"
+          "size": 22672,
+          "sha256": "2396975fe1c16c8f3ffe4aad054918b272f34675e75fe322fcccfd3cfd4a9a78"
         }
       },
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_GALLERY.GZ",
-        "size": 380552,
-        "sha256": "e878599e554aaf87430565c3166e85d581042d09d2a04a155b6b676beae40ccd",
+        "size": 380548,
+        "sha256": "fae60c0b23b44f7bf786f7572d0368b79337ac992faccd2cc4b5a43021e755de",
         "ui_snapshot_sha256": "e878599e554aaf87430565c3166e85d581042d09d2a04a155b6b676beae40ccd",
         "merge": {
           "kind": "lpk_ptmd_entries",
@@ -116,14 +116,14 @@
           ]
         },
         "overrode": {
-          "size": 381478,
-          "sha256": "b628fc3f6d0e91314bb2bd15c7e5b4acbe3ccf2a62428f7fce08bc0de6ef496c"
+          "size": 381473,
+          "sha256": "6675cc0119b281acae7af4ebfe1dcd48e1ba07b98e7fe49f2d10fd562581ecfe"
         }
       },
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_ITEM.GZ",
-        "size": 18392,
-        "sha256": "8183a856032dcf568a33e2ddc5ea496d6feea25947077f3ab615af3916b8ed66",
+        "size": 18394,
+        "sha256": "09745aefa0561d3233db04bea1d4b72489d6eb0b5137cb430ec24fe10a9ec02d",
         "ui_snapshot_sha256": "8183a856032dcf568a33e2ddc5ea496d6feea25947077f3ab615af3916b8ed66",
         "merge": {
           "kind": "lpk_ptmd_entries",
@@ -133,14 +133,14 @@
           ]
         },
         "overrode": {
-          "size": 18819,
-          "sha256": "5bb23a147e76475cb1060bfaae4e5c1e7858ea0155cb0d5348af6e1465bda69e"
+          "size": 18817,
+          "sha256": "216dca2a9c1e213fe1e1133404c77fdf4d3075e379f990829ee1f39ece50c256"
         }
       },
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_LIBRARY.GZ",
-        "size": 60492,
-        "sha256": "f121598de03fc3ca5e934a5c5bcfe74a0549a7193a85369f16a1da3cf82122c1",
+        "size": 60493,
+        "sha256": "912be1ad5c4f353c91dd35dadb1b2ab1b72dad940f254edbdaac6003e3fff45e",
         "ui_snapshot_sha256": "f121598de03fc3ca5e934a5c5bcfe74a0549a7193a85369f16a1da3cf82122c1",
         "merge": {
           "kind": "lpk_ptmd_entries",
@@ -151,13 +151,13 @@
         },
         "overrode": {
           "size": 60714,
-          "sha256": "b765058f2053f8ee12e25cc32b5b03a4901bd99d2fde0af122a212586ea68458"
+          "sha256": "a71adc0848b7e3f8bb8e56cc03d265ad5cac0db4597ca73ab73376ab98a58802"
         }
       },
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_OPTION.GZ",
-        "size": 16050,
-        "sha256": "26a4a969d5904965ea62bd49c3c4272346583f1a46ec4ad2c1581b8eaed0eeef",
+        "size": 16049,
+        "sha256": "4791609e1a08960c8de969536c54cd60d0929f463d8f651df1ab01f3b820976c",
         "ui_snapshot_sha256": "26a4a969d5904965ea62bd49c3c4272346583f1a46ec4ad2c1581b8eaed0eeef",
         "merge": {
           "kind": "lpk_ptmd_entries",
@@ -169,13 +169,13 @@
         },
         "overrode": {
           "size": 16792,
-          "sha256": "58b9cd157f1c2950469151ac560a39f0028e6214b5f3dd6d4cd2f53f7f307166"
+          "sha256": "21d30e7f13cdeb582cb1be2489b33ac44c7f922b406aa75e6c86b1b23caef32d"
         }
       },
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/SYSTEM.VOL",
         "size": 4018080,
-        "sha256": "3c65eeef4cafa5a754252304238c1e283cdf3d653c04297721be5a41b1521a48",
+        "sha256": "a90a8128111d8788ac83ca94ae62a17ef5f90d33ab758b16e69daecfce0f5f38",
         "ui_snapshot_sha256": "3c65eeef4cafa5a754252304238c1e283cdf3d653c04297721be5a41b1521a48",
         "merge": {
           "kind": "rtdp_nested_lpk_ptmd_entries",
@@ -196,22 +196,22 @@
         },
         "overrode": {
           "size": 4018080,
-          "sha256": "c82f860425d922fe4f84e8dbdf6b1eed44d63851307681045c6064f1b5812a96"
+          "sha256": "1a35dd2ddc2c9ba63fd2cb27e7c9f854f5b5321e62070a222a3c719ed2b4a3d7"
         }
       }
     ]
   },
   "replacement_file_count": 186,
   "patched_iso": {
-    "path": "work/release_build/final/BRS_Korean_v1.0.iso",
+    "path": "work/release_build/governor_fix/BRS_Korean_v1.0.iso",
     "size": 1370918912,
-    "sha256": "554b67aff4fc0fd95ad50a2ac5f470192a40d0b868cdc2f5bbfd2e2ad4f5b313"
+    "sha256": "cd475f41f918e918415ed3b15e6b4a7428a3bdd927917326c980c040f9752bec"
   },
   "delta": {
-    "path": "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch",
-    "size": 39494639,
-    "sha256": "d42ef76ca9c8ca37b2f449b63e74e4434d8caf1afe0dd32473777a0835ef5b89"
+    "path": "work/release_build/governor_fix/BRS_Korean_NPUH10126_v1.0.brspatch",
+    "size": 39495566,
+    "sha256": "659d975b08c7cbedfbb2ee1cf2fa1f8fd07690bee3cd02dc994eb201067f7efb"
   },
-  "delta_roundtrip_sha256": "554b67aff4fc0fd95ad50a2ac5f470192a40d0b868cdc2f5bbfd2e2ad4f5b313",
+  "delta_roundtrip_sha256": "cd475f41f918e918415ed3b15e6b4a7428a3bdd927917326c980c040f9752bec",
   "passed": true
 }

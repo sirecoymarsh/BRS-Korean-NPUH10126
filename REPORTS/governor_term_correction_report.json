@@ -1,0 +1,230 @@
+{
+  "schema": "brs-terminology-correction-v1",
+  "term": {
+    "source": "General",
+    "before": "장군",
+    "after": "총독"
+  },
+  "changed_entry_count": 31,
+  "changed_file_count": 9,
+  "changes_applied_this_run": 0,
+  "changes": [
+    {
+      "file": "result_bscr_stage_01.json",
+      "semantic_id": "bscr:5886c7d1c800a346964f",
+      "source": "The General's decided to give you one last chance.\nIt won't be like how it's been up till now!",
+      "before": "장군님이 너한테 마지막 기회를 주기로 하셨어.\n지금까지와는 다를 거야!",
+      "after": "총독님이 너한테 마지막 기회를 주기로 하셨어.\n지금까지와는 다를 거야!"
+    },
+    {
+      "file": "result_bscr_stage_01.json",
+      "semantic_id": "bscr:57605c66c5c6238ef17d",
+      "source": "I never understood... Why did the General\noffer up the technology?",
+      "before": "이해가 안 돼... 장군은 왜\n그 기술을 넘겨준 거지?",
+      "after": "이해가 안 돼... 총독은 왜\n그 기술을 넘겨준 거지?"
+    },
+    {
+      "file": "result_bscr_stage_02_01.json",
+      "semantic_id": "bscr:35d649167913e8c1f3d9",
+      "source": "Fine. Grays are cloned bio-weapons created\nby the Stocks, with help from the General.",
+      "before": "좋아. 그레이는 장군의 도움을 받아\n스톡들이 만든 복제 생체 병기야.",
+      "after": "좋아. 그레이는 총독의 도움을 받아\n스톡들이 만든 복제 생체 병기야."
+    },
+    {
+      "file": "result_bscr_stage_02_01.json",
+      "semantic_id": "bscr:7b0dfaa765dff6a27649",
+      "source": "From now on, I'm the General!\nI'm the ruler! I'm the GOD!",
+      "before": "지금부터 내가 장군이야!\n내가 지배자고! 내가 신이라고!",
+      "after": "지금부터 내가 총독이야!\n내가 지배자고! 내가 신이라고!"
+    },
+    {
+      "file": "result_bscr_stage_02_01.json",
+      "semantic_id": "bscr:99247fef755dcd5cb7f3",
+      "source": "General...you finally did it.",
+      "before": "장군...드디어 해냈군.",
+      "after": "총독...드디어 해냈군."
+    },
+    {
+      "file": "result_bscr_stage_02_02.json",
+      "semantic_id": "bscr:f4abd5109e5be8ca22b5",
+      "source": "At the same time, they're also\nthe General's most desired tribute.",
+      "before": "동시에 그레이들은 장군이 가장 원하는\n공물이기도 해.",
+      "after": "동시에 그레이들은 총독이 가장 원하는\n공물이기도 해."
+    },
+    {
+      "file": "result_bscr_stage_03_01.json",
+      "semantic_id": "bscr:0a3657c2b7aa161e3c83",
+      "source": "<Nafe>, save me...\nI won't tell the General about your plans...",
+      "before": "<Nafe>, 살려 줘...\n장군에게 네 계획은 말하지 않을게...",
+      "after": "<Nafe>, 살려 줘...\n총독에게 네 계획은 말하지 않을게..."
+    },
+    {
+      "file": "result_bscr_stage_03_01.json",
+      "semantic_id": "bscr:1153bc51dfbc759f7343",
+      "source": "When the General gets mad, she goes insane.\nShe'd probably try to destroy us, too.",
+      "before": "장군이 화나면 완전히 미쳐 버려.\n우리까지 없애려 들 거야.",
+      "after": "총독이 화나면 완전히 미쳐 버려.\n우리까지 없애려 들 거야."
+    },
+    {
+      "file": "result_bscr_stage_03_01.json",
+      "semantic_id": "bscr:4c157649ec0d17fab88f",
+      "source": "Yeah! She's trying to spoil\nthe General's fun, too!",
+      "before": "맞아! 저 여자도 장군의\n즐거움을 망치려 하고 있어!",
+      "after": "맞아! 저 여자도 총독의\n즐거움을 망치려 하고 있어!"
+    },
+    {
+      "file": "result_bscr_stage_04.json",
+      "semantic_id": "bscr:0738042008bfaeb817a8",
+      "source": "Oh well...\nI'll just do as the General said.",
+      "before": "뭐, 됐어...\n장군이 말한 대로 할게.",
+      "after": "뭐, 됐어...\n총독이 말한 대로 할게."
+    },
+    {
+      "file": "result_bscr_stage_04.json",
+      "semantic_id": "bscr:76c74ca0e6c70f94ccee",
+      "source": "I don't care about the General's orders!",
+      "before": "장군의 명령 따윈 상관없어!",
+      "after": "총독의 명령 따윈 상관없어!"
+    },
+    {
+      "file": "result_bscr_stage_05.json",
+      "semantic_id": "bscr:42657c19652cb1b6986d",
+      "source": "The only thing the General\ndesires is to neblade herself.",
+      "before": "장군이 바라는 건 오직\n자신을 네블레이드하는 것뿐이야.",
+      "after": "총독이 바라는 건 오직\n자신을 네블레이드하는 것뿐이야."
+    },
+    {
+      "file": "result_bscr_stage_05.json",
+      "semantic_id": "bscr:68b4671d5868f6090eb2",
+      "source": "I'm a special Gray\u001702no, I'm a White.\nTake me to the General.",
+      "before": "난 특별한 그레이\u001702아니, 화이트야.\n장군에게 데려가.",
+      "after": "난 특별한 그레이\u001702아니, 화이트야.\n총독에게 데려가."
+    },
+    {
+      "file": "result_bscr_stage_05.json",
+      "semantic_id": "bscr:98ecfd3b564b523f2eb5",
+      "source": "There's no way she'll forgive me.",
+      "before": "장군이 날 용서할 리 없어.",
+      "after": "총독이 날 용서할 리 없어."
+    },
+    {
+      "file": "result_bscr_stage_05.json",
+      "semantic_id": "bscr:d1ae67b1816a9d886391",
+      "source": "I tried to take the General's fun away.",
+      "before": "난 장군의 즐거움을 빼앗으려 했어.",
+      "after": "난 총독의 즐거움을 빼앗으려 했어."
+    },
+    {
+      "file": "result_bscr_stage_05.json",
+      "semantic_id": "bscr:d2af643cceaef512c6d3",
+      "source": "That's dumb. There's no way\nshe can trick the General.",
+      "before": "바보 같은 짓이야. 장군을\n속일 수 있을 리 없어.",
+      "after": "바보 같은 짓이야. 총독을\n속일 수 있을 리 없어."
+    },
+    {
+      "file": "result_bscr_stage_05.json",
+      "semantic_id": "bscr:fb19fb5d07370d2f493b",
+      "source": "Are you the General?",
+      "before": "네가 장군이야?",
+      "after": "네가 총독이야?"
+    },
+    {
+      "file": "result_bscr_stage_05.json",
+      "semantic_id": "bscr:fce5de50c4eaabeb59f0",
+      "source": "Just a little longer, General...",
+      "before": "조금만 더 기다려 주세요, 장군님...",
+      "after": "조금만 더 기다려 주세요, 총독님..."
+    },
+    {
+      "file": "result_bscr_stage_05.json",
+      "semantic_id": "bscr:2ffa3d029947647f1df4",
+      "source": "I almost don't want to\nturn you over to the General.",
+      "before": "장군에게 넘기기\n아까울 정도야.",
+      "after": "총독에게 넘기기\n아까울 정도야."
+    },
+    {
+      "file": "result_bscr_stage_06.json",
+      "semantic_id": "bscr:05516a9facea1be4b9e4",
+      "source": "The General will handle...the rest.",
+      "before": "나머지는...장군이 처리할 거야.",
+      "after": "나머지는...총독이 처리할 거야."
+    },
+    {
+      "file": "result_bscr_stage_06.json",
+      "semantic_id": "bscr:0e3b07a4f43d0a8cf925",
+      "source": "General...I'll leave the rest...to you...",
+      "before": "장군...나머지는...부탁해...",
+      "after": "총독...나머지는...부탁해..."
+    },
+    {
+      "file": "result_bscr_stage_06.json",
+      "semantic_id": "bscr:40231a7650ad8d6dd3d8",
+      "source": "I'm sure the General will be very interested\nto learn how she lasted so long.",
+      "before": "어떻게 그렇게 오래 버텼는지 알면\n장군도 무척 흥미로워할 거야.",
+      "after": "어떻게 그렇게 오래 버텼는지 알면\n총독도 무척 흥미로워할 거야."
+    },
+    {
+      "file": "result_bscr_stage_06.json",
+      "semantic_id": "bscr:6dbb495504305fa95a5d",
+      "source": "Take the General her appetizer.",
+      "before": "장군에게 전채 요리를 바쳐.",
+      "after": "총독에게 전채 요리를 바쳐."
+    },
+    {
+      "file": "result_bscr_stage_06.json",
+      "semantic_id": "bscr:9ddb9038a90b730804fa",
+      "source": "You'll never defeat the General\nwith a weapon like that.",
+      "before": "그런 무기로는\n절대 장군을 이길 수 없어.",
+      "after": "그런 무기로는\n절대 총독을 이길 수 없어."
+    },
+    {
+      "file": "result_bscr_stage_06.json",
+      "semantic_id": "bscr:ac699bd5dd70e126c80a",
+      "source": "Ahh, General...this will be a fine neblade!",
+      "before": "아아, 장군...멋진 네블레이드가 되겠군!",
+      "after": "아아, 총독...멋진 네블레이드가 되겠군!"
+    },
+    {
+      "file": "result_sscr_display.json",
+      "semantic_id": "sscr:mission_ui:3f44cdcfd678e04810d8",
+      "source": "Listen, we can't delay anymore.\nWe wanted to play with you more, but...\nWe just can't make the \\c(1)General\\c(0) wait any longer.",
+      "before": "잘 들어, 더는 미룰 수 없어.\n너와 더 놀고 싶었지만...\n\\c(1)장군\\c(0)을 더 기다리게 할 순 없거든.",
+      "after": "잘 들어, 더는 미룰 수 없어.\n너와 더 놀고 싶었지만...\n\\c(1)총독\\c(0)을 더 기다리게 할 순 없거든."
+    },
+    {
+      "file": "result_sscr_display.json",
+      "semantic_id": "sscr:mission_ui:0dcf35f8fc9ad5427a1f",
+      "source": "I want to do something to make the \\c(1)General\\c(0)\nproud. So...come over here, please!\nBe quiet, but make sure you really get hurt!",
+      "before": "\\c(1)장군\\c(0)을 자랑스럽게 만들고 싶어.\n그러니까...이리 와 줘!\n조용히, 하지만 제대로 아프게 해 줄게!",
+      "after": "\\c(1)총독\\c(0)을 자랑스럽게 만들고 싶어.\n그러니까...이리 와 줘!\n조용히, 하지만 제대로 아프게 해 줄게!"
+    },
+    {
+      "file": "result_sscr_display.json",
+      "semantic_id": "sscr:mission_ui:8506596dc15a650a8c55",
+      "source": "You have much promise as a fighter.\nBut...still not enough to please the \\c(1)General\\c(0).\nLet me \\c(1)train\\c(0) you a little bit more...",
+      "before": "전사로서 큰 가능성을 지녔군.\n하지만...아직 \\c(1)장군\\c(0)을 만족시키기엔 부족해.\n조금 더 \\c(1)단련\\c(0)시켜 주지...",
+      "after": "전사로서 큰 가능성을 지녔군.\n하지만...아직 \\c(1)총독\\c(0)을 만족시키기엔 부족해.\n조금 더 \\c(1)단련\\c(0)시켜 주지..."
+    },
+    {
+      "file": "result_sscr_display.json",
+      "semantic_id": "sscr:mission_ui:073e30de952fceff12b5",
+      "source": "Time to apply the finishing touches. Destroy \\c(1)3\\c(0)\nof \\c(1)my Symbols\\c(0)! Hmm...my blood is boiling.\nBefore I hand you over to the General...",
+      "before": "마무리할 시간이다. \\c(1)3개\\c(0)의\n\\c(1)내 심벌\\c(0)을 파괴해라! 흠...피가 끓는군.\n장군께 넘기기 전에...",
+      "after": "마무리할 시간이다. \\c(1)3개\\c(0)의\n\\c(1)내 심벌\\c(0)을 파괴해라! 흠...피가 끓는군.\n총독께 넘기기 전에..."
+    },
+    {
+      "file": "result_sscr_display.json",
+      "semantic_id": "sscr:mission_ui:77c554d3f08a42a07e64",
+      "source": "The \\c(1)General\\c(0) has gone \\c(1)missing\\c(0)...",
+      "before": "\\c(1)장군\\c(0)이 \\c(1)실종\\c(0)됐어...",
+      "after": "\\c(1)총독\\c(0)이 \\c(1)실종\\c(0)됐어..."
+    },
+    {
+      "file": "result_xtc_items_system_ui.json",
+      "semantic_id": "xtc:fb9a97eca273fd5bbf7d",
+      "source": "After losing, Nafe is sent to see the General...",
+      "before": "패배한 나페가 장군에게 보내지고...",
+      "after": "패배한 나페가 총독에게 보내지고..."
+    }
+  ]
+}

@@ -21,6 +21,7 @@
 - `CHECKSUMS.sha256`: 배포 파일 무결성 목록
 - `REPORTS`: 빌드, 언어/그래픽 UI 감사 및 PPSSPP QA 보고서
 - `LICENSES`: Noto Sans KR 및 Galmuri 관련 OFL 고지
+- `BRS_Korean_HD_UI_Pack.zip`: PPSSPP용 선택 설치 고해상도 UI 팩
 
 ## 설치
 
@@ -41,7 +42,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\Apply-KoreanPatch.ps1
 완성본 검증값:
 
 - 크기: `1,370,918,912`바이트
-- SHA-256: `554b67aff4fc0fd95ad50a2ac5f470192a40d0b868cdc2f5bbfd2e2ad4f5b313`
+- SHA-256: `cd475f41f918e918415ed3b15e6b4a7428a3bdd927917326c980c040f9752bec`
 
 ## 그래픽 UI 한글화
 
@@ -71,6 +72,8 @@ EXP / NEXT / LEVEL`은 여러 고정 UV 조각을 조합하는 초소형 아틀�
   `37,139`개를 모두 재배치했습니다.
 - PPSSPP에서 STG04 컷씬을 직접 재생해 한국어 자막 표시와 `@@@@`
   플레이스홀더 미출력을 확인했습니다.
+- 외계 세력의 칭호 `General`은 문맥에 맞게 `장군`이 아닌 `총독`으로
+  통일했습니다(대사·미션 UI·시스템 문구 총 `31`개 항목).
 
 ## 복원
 
@@ -94,8 +97,14 @@ Get-FileHash ".\BRS_Korean_NPUH10126_v1.0.brspatch" -Algorithm SHA256
 
 패치 파일:
 
-- 크기: `39,494,639`바이트
-- SHA-256: `d42ef76ca9c8ca37b2f449b63e74e4434d8caf1afe0dd32473777a0835ef5b89`
+- 크기: `39,495,566`바이트
+- SHA-256: `659d975b08c7cbedfbb2ee1cf2fa1f8fd07690bee3cd02dc994eb201067f7efb`
+
+## 선택 설치: PPSSPP HD UI 팩
+
+`BRS_Korean_HD_UI_Pack.zip`의 `PSP` 폴더를 PPSSPP 메모리 스틱
+루트에 합친 뒤 **Replace Textures(텍스처 교체)** 를 켜십시오.
+27개 UI 자산이 모두 해시 매핑되어 있으며 ISO 자체는 변경하지 않습니다.
 
 ## 검수 상태
 

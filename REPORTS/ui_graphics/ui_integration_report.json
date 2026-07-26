@@ -739,7 +739,7 @@
     "embedded_in_iso": true,
     "target_iso": {
       "size": 1370918912,
-      "sha256": "554b67aff4fc0fd95ad50a2ac5f470192a40d0b868cdc2f5bbfd2e2ad4f5b313"
+      "sha256": "cd475f41f918e918415ed3b15e6b4a7428a3bdd927917326c980c040f9752bec"
     },
     "integrated_output_count": 9,
     "patched_ptmd_count": 27,
