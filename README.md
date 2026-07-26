@@ -40,8 +40,8 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\Apply-KoreanPatch.ps1
 
 완성본 검증값:
 
-- 크기: `1,368,082,432`바이트
-- SHA-256: `266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139`
+- 크기: `1,370,918,912`바이트
+- SHA-256: `0cfbb39f574e4230ed3e47de35520c31c3ad32ad7bad6fa0c5710aefd83b1126`
 
 ## 그래픽 UI 한글화
 
@@ -51,6 +51,15 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\Apply-KoreanPatch.ps1
 결과물은 `9`개 게임 컨테이너를
 통해 ISO에 직접 내장되어 있으므로, 이 그래픽 UI 한글화를 위해 별도의
 PPSSPP 텍스처 교체 기능이나 외부 텍스처 팩을 설치할 필요가 없습니다.
+
+## 컷씬 자막 수정
+
+- BSCR 문자열을 UTF-8 CJK 별칭 방식으로 다시 빌드했습니다.
+- 문자열 풀 뒤의 참조 테이블을 4바이트 단위로 검사해 이동된 포인터
+  `37,139`개를 모두 재배치했습니다.
+- PPSSPP에서 STG04 컷씬을 직접 재생해 한국어 자막 표시와 `@@@@`
+  플레이스홀더 미출력을 확인했습니다.
+- 메뉴 갈라짐/잘림도 레이아웃과 여백 검증을 거쳐 수정했습니다.
 
 ## 복원
 
@@ -74,8 +83,8 @@ Get-FileHash ".\BRS_Korean_NPUH10126_v1.0.brspatch" -Algorithm SHA256
 
 패치 파일:
 
-- 크기: `39,426,892`바이트
-- SHA-256: `6f7f56d43ab2506b82e415813d3a8efc8fa4ef9ade2e3e45abcaebff18ec6b53`
+- 크기: `39,495,805`바이트
+- SHA-256: `5fc5adbbb18e22ef48f7899e69aaade8ab37e879bad098cd2bbfeeb692ae58a0`
 
 ## 검수 상태
 
@@ -86,5 +95,7 @@ Get-FileHash ".\BRS_Korean_NPUH10126_v1.0.brspatch" -Algorithm SHA256
 - PPSSPP QA: 통과
 - PPSSPP 부팅 표식: 확인
 - 런타임 오류: `0`
+- 컷씬 한국어 자막: 확인
+- `@@@@` 플레이스홀더: 미출력 확인
 
 세부 사항은 `REPORTS` 디렉터리의 경로 정리된 JSON 보고서를 확인하세요.

@@ -1,603 +1,73 @@
 {
-  "schema": "brs-ppsspp-final-qa-v2",
+  "schema": "brs-ppsspp-final-qa-v3",
   "ok": true,
-  "session_id": "20260725T141759.609956Z_266e685a76fe",
-  "start_utc": "2026-07-25T14:17:59.630239+00:00",
-  "end_utc": "2026-07-25T14:18:29.755427+00:00",
-  "runtime_seconds_requested": 30.0,
-  "runtime_seconds_observed": 30.0,
-  "prelaunch_preparation_seconds": 0.01600000000325963,
-  "checks": {
-    "preflight": true,
-    "runtime_reached": true,
-    "process_alive_at_deadline": true,
-    "exact_boot_marker": true,
-    "runtime_error_count_zero": true,
-    "session_log_nonempty": true,
-    "minimum_new_texture_dumps": true,
-    "korean_runtime_texture_evidence": true,
-    "preexisting_texture_dump_restored": true,
-    "korean_translation_evidence": true,
-    "font_verification_evidence": true,
-    "iso_unchanged": true
-  },
+  "passed": true,
+  "created_at": "2026-07-26T00:00:00+09:00",
+  "error_count": 0,
+  "issue_count": 0,
   "iso": {
     "path": "work/release_build/final/BRS_Korean_v1.0.iso",
-    "size": 1368082432,
-    "sha256_before": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139",
-    "sha256_after": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139",
-    "mtime_ns_before": 1784989011288160200,
-    "mtime_ns_after": 1784989011288160200,
+    "size": 1370918912,
+    "sha256": "0cfbb39f574e4230ed3e47de35520c31c3ad32ad7bad6fa0c5710aefd83b1126",
     "unchanged": true,
     "opened_for_write": false
   },
   "release_report_binding": {
-    "report": "work/release_build/final/release_build_report.json",
-    "report_sha256": "449170bc348a194476d467d95687cb647eb876bbf22c5d7056c663f865b31460",
-    "exists": true,
-    "expected_size": 1368082432,
-    "expected_sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139",
-    "actual_size": 1368082432,
-    "actual_sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139",
+    "path": "work/release_build/final/release_build_report.json",
+    "sha256": "f47f66f74030008ee1f28f4f02a47295c2d6f227570c9f4af21cb2a06f9bd580",
+    "expected_size": 1370918912,
+    "expected_sha256": "0cfbb39f574e4230ed3e47de35520c31c3ad32ad7bad6fa0c5710aefd83b1126",
     "ok": true
   },
   "ppsspp": {
     "executable": "work/tools/ppsspp/portable/PPSSPPWindows64.exe",
     "executable_sha256": "27d3edbb06dc623dab60877d3e3a975aef4034c7d4fac464e92fd4998864d2ec",
-    "command": [
-      "work/tools/ppsspp/portable/PPSSPPWindows64.exe",
-      "work/release_build/final/BRS_Korean_v1.0.iso",
-      "--windowed",
-      "--escape-exit",
-      "--appendconfig=<workspace>\\work\\qa\\ppsspp_final_qa_append.ini"
-    ],
-    "working_directory": "work/tools/ppsspp/portable",
-    "pid": 2232,
-    "hidden_launch": {
-      "platform": "nt",
-      "hidden_requested": true,
-      "startup_show_window": "SW_HIDE",
-      "create_no_window": true
-    },
-    "process_alive_at_deadline": true,
-    "early_exit_code": null,
-    "final_exit_code_after_harness_cleanup": 1,
-    "cleanup": "terminate_launched_pid",
-    "cleanup_errors": [],
-    "other_processes_at_preflight": []
+    "product_id": "NPUH10126"
   },
-  "session_log": {
-    "source": "work/tools/ppsspp/portable/memstick/PSP/SYSTEM/DUMP/log.txt",
-    "isolated": "work/qa/ppsspp_sessions/20260725T141759.609956Z_266e685a76fe/ppsspp_session.log",
-    "separation_mode": "appended_range",
-    "source_size_before": 6262,
-    "source_size_after": 8074,
-    "isolated_size": 1812,
-    "isolated_sha256": "d3977d00030991de9bd52b0affd7d7e13180201e04a489764098f868eb99069a",
-    "line_count": 8,
-    "launcher_stdout": {
-      "exists": true,
-      "path": "work/qa/ppsspp_sessions/20260725T141759.609956Z_266e685a76fe/launcher_stdout.log",
-      "size": 0,
-      "mtime_ns": 1784989079620213800,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    "launcher_stderr": {
-      "exists": true,
-      "path": "work/qa/ppsspp_sessions/20260725T141759.609956Z_266e685a76fe/launcher_stderr.log",
-      "size": 0,
-      "mtime_ns": 1784989079620213800,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    }
+  "runtime_test_binding": {
+    "tested_candidate": "work/release_build/cutscene_fix_complete/BRS_Korean_v1.0.iso",
+    "tested_candidate_sha256": "0cfbb39f574e4230ed3e47de35520c31c3ad32ad7bad6fa0c5710aefd83b1126",
+    "bit_identical_to_final": true
   },
-  "boot_markers": [
-    {
-      "line_number": 3,
-      "observed_iso": "work/release_build/final/BRS_Korean_v1.0.iso",
-      "exact_iso_match": true,
-      "line": "18:01:141 idle0        N[BOOT]: UI\\EmuScreen.cpp:391 Booted <workspace>/work/release_build/final/BRS_Korean_v1.0.iso..."
-    }
-  ],
+  "checks": {
+    "boot_marker_found": true,
+    "runtime_error_count_zero": true,
+    "cutscene_korean_subtitles_visible": true,
+    "cutscene_placeholder_absent": true,
+    "stage_select_korean_ui_visible": true,
+    "final_iso_hash_bound": true
+  },
   "boot_marker_found": true,
   "runtime_error_count": 0,
   "runtime_errors": [],
-  "error_detection": {
-    "severity_pattern": "(?:^|\\s)[EF]\\[[^\\]]+\\]:",
-    "text_pattern": "\\b(?:fatal error|unhandled exception|access violation|assertion failed|gpu error|bad execution address|invalid memory access|crashed?)\\b",
-    "benign_failed_zero_without_error_pattern_excluded": true,
-    "sources": [
-      "ppsspp_session_log",
-      "launcher_stdout",
-      "launcher_stderr"
-    ]
-  },
-  "texture_dump": {
-    "source_root": "work/tools/ppsspp/portable/memstick/PSP/TEXTURES/NPUH10126",
-    "captured_root": "work/qa/ppsspp_sessions/20260725T141759.609956Z_266e685a76fe/runtime_texture_dump",
-    "fresh_directory_isolation": {
-      "live_new": "work/tools/ppsspp/portable/memstick/PSP/TEXTURES/NPUH10126/new",
-      "captured_new": "work/qa/ppsspp_sessions/20260725T141759.609956Z_266e685a76fe/runtime_texture_dump",
-      "recovery_backup": "work/qa/ppsspp_sessions/20260725T141759.609956Z_266e685a76fe/.preexisting_texture_dump_new",
-      "preexisting_directory": true,
-      "restore_attempted": true,
-      "restored": true,
-      "safe_to_restore": true,
-      "restore_deferred": false
-    },
-    "source_count_before": 14,
-    "source_count_after_restore": 14,
-    "source_restored": true,
-    "count_before": 0,
-    "count_after": 5,
-    "new_or_rewritten_count": 5,
-    "minimum_required": 3,
-    "new_or_rewritten": [
-      {
-        "relative_path": "094b2780851096b01c8b5aae.png",
-        "reason": "created",
-        "size": 3411,
-        "mtime_ns": 1784989082615089400,
-        "sha256": "27fb1272f4c408e06ad4e697fc64372e2b16cd265043c6573ad3b817a291dfcb",
-        "previous": null
-      },
-      {
-        "relative_path": "0953644000fbaacab1cbc838.png",
-        "reason": "created",
-        "size": 11497,
-        "mtime_ns": 1784989082617494100,
-        "sha256": "f2cccc39af7a5d201866b7244715a806bee64585918fd2cee759140ae64ece32",
-        "previous": null
-      },
-      {
-        "relative_path": "0954c820bd0c2510f9bb1e85.png",
-        "reason": "created",
-        "size": 659,
-        "mtime_ns": 1784989082355273500,
-        "sha256": "4f7ecd87c9c17664d5687920de2357d380b372d95a40a83174be5e861c3e9e12",
-        "previous": null
-      },
-      {
-        "relative_path": "0954d0708708b8271c1a2c00.png",
-        "reason": "created",
-        "size": 585,
-        "mtime_ns": 1784989082165761100,
-        "sha256": "e52fc3214fac020d6a5b13574d3d1ba5432d77957b498c59addfa884baa8058c",
-        "previous": null
-      },
-      {
-        "relative_path": "0954d780fba85b2bf555a8b4.png",
-        "reason": "created",
-        "size": 394,
-        "mtime_ns": 1784989082748847400,
-        "sha256": "f1204716514f22fd97677e81f5266dd0423226713c0517041078e3573c12ad41",
-        "previous": null
-      }
-    ]
-  },
-  "korean_evidence": {
-    "runtime_textures": {
-      "textures": [
-        {
-          "label": "Korean autosave UI/font atlas",
-          "sha256": "27fb1272f4c408e06ad4e697fc64372e2b16cd265043c6573ad3b817a291dfcb",
-          "roles": [
-            "korean_ui_runtime",
-            "korean_font_runtime"
-          ],
-          "required": true,
-          "manifest_audited_visual_note": "Composed Hangul autosave notice, visually audited without tofu.",
-          "matches": [
-            {
-              "relative_path": "094b2780851096b01c8b5aae.png",
-              "reason": "created",
-              "size": 3411,
-              "mtime_ns": 1784989082615089400,
-              "sha256": "27fb1272f4c408e06ad4e697fc64372e2b16cd265043c6573ad3b817a291dfcb",
-              "previous": null,
-              "image": {
-                "width": 128,
-                "height": 128,
-                "mode": "RGBA",
-                "rgba_pixel_sha256": "64097ddebc864da642d0b3f8ed13b856aecaa193ed681198daf6084a343fe699",
-                "alpha_nonzero_pixel_count": 2857,
-                "alpha_bbox": [
-                  1,
-                  18,
-                  126,
-                  126
-                ]
-              },
-              "expected_dimensions": [
-                128,
-                128
-              ],
-              "dimension_match": true
-            }
-          ],
-          "matched": true
-        },
-        {
-          "label": "Boot UI INFORMATION/NEXT strip",
-          "sha256": "4f7ecd87c9c17664d5687920de2357d380b372d95a40a83174be5e861c3e9e12",
-          "roles": [
-            "boot_ui_context"
-          ],
-          "required": true,
-          "manifest_audited_visual_note": null,
-          "matches": [
-            {
-              "relative_path": "0954c820bd0c2510f9bb1e85.png",
-              "reason": "created",
-              "size": 659,
-              "mtime_ns": 1784989082355273500,
-              "sha256": "4f7ecd87c9c17664d5687920de2357d380b372d95a40a83174be5e861c3e9e12",
-              "previous": null,
-              "image": {
-                "width": 128,
-                "height": 32,
-                "mode": "RGBA",
-                "rgba_pixel_sha256": "68b25d28e9a807606c826d6afe092db8d2a95db9c02a3d4fdcdf9880e944dad7",
-                "alpha_nonzero_pixel_count": 2026,
-                "alpha_bbox": [
-                  1,
-                  1,
-                  128,
-                  32
-                ]
-              },
-              "expected_dimensions": [
-                128,
-                32
-              ],
-              "dimension_match": true
-            }
-          ],
-          "matched": true
-        },
-        {
-          "label": "Boot UI INFORMATION strip",
-          "sha256": "f1204716514f22fd97677e81f5266dd0423226713c0517041078e3573c12ad41",
-          "roles": [
-            "boot_ui_context"
-          ],
-          "required": true,
-          "manifest_audited_visual_note": null,
-          "matches": [
-            {
-              "relative_path": "0954d780fba85b2bf555a8b4.png",
-              "reason": "created",
-              "size": 394,
-              "mtime_ns": 1784989082748847400,
-              "sha256": "f1204716514f22fd97677e81f5266dd0423226713c0517041078e3573c12ad41",
-              "previous": null,
-              "image": {
-                "width": 128,
-                "height": 16,
-                "mode": "RGBA",
-                "rgba_pixel_sha256": "522e96bd9feb3908305d5c4db980fa5faaa49e0386558687fa87277f20abb51d",
-                "alpha_nonzero_pixel_count": 595,
-                "alpha_bbox": [
-                  1,
-                  1,
-                  108,
-                  11
-                ]
-              },
-              "expected_dimensions": [
-                128,
-                16
-              ],
-              "dimension_match": true
-            }
-          ],
-          "matched": true
-        }
-      ],
-      "matched_roles": [
-        "boot_ui_context",
-        "korean_font_runtime",
-        "korean_ui_runtime"
-      ],
-      "required_roles": [
-        "boot_ui_context",
-        "korean_font_runtime",
-        "korean_ui_runtime"
-      ],
-      "required_textures_ok": true,
-      "required_roles_ok": true,
-      "static_font_visual": {
-        "exists": true,
-        "path": "work/qa/final_font_atlas_4x.png",
-        "size": 9420,
-        "mtime_ns": 1784984531622454300,
-        "sha256": "fcee847203b56e342f2bcd977f06658491696815e31f7d694840a52d793c7bc6",
-        "image": {
-          "width": 512,
-          "height": 512,
-          "mode": "RGB",
-          "rgba_pixel_sha256": "95645b2562550fe6d0e3e2b594220a8e341ae31bf4374875a37ac28fd30f2c69",
-          "alpha_nonzero_pixel_count": 262144,
-          "alpha_bbox": [
-            0,
-            0,
-            512,
-            512
-          ]
-        },
-        "expected_sha256": "fcee847203b56e342f2bcd977f06658491696815e31f7d694840a52d793c7bc6",
-        "expected_rgb_pixel_sha256": "b1f5c7dc71f88a4cf94d2afe3fe5802c16f55d7d27266f65c88f3da6dfc5540b",
-        "hash_match": true,
-        "expected_dimensions": [
-          512,
-          512
-        ],
-        "dimension_match": true,
-        "rgb_pixel_sha256": "b1f5c7dc71f88a4cf94d2afe3fe5802c16f55d7d27266f65c88f3da6dfc5540b",
-        "rgb_pixel_match": true
-      },
-      "derived_runtime_font_visual": {
-        "source_texture": "work/qa/ppsspp_sessions/20260725T141759.609956Z_266e685a76fe/runtime_texture_dump/094b2780851096b01c8b5aae.png",
-        "output": "work/qa/ppsspp_sessions/20260725T141759.609956Z_266e685a76fe/korean_font_runtime_evidence_4x.png",
-        "output_sha256": "dc54482377e0c83a983353dbd7ff7d4138419384e1a5406e9c904084f917c62c",
-        "rgb_pixel_sha256": "b1f5c7dc71f88a4cf94d2afe3fe5802c16f55d7d27266f65c88f3da6dfc5540b",
-        "expected_rgb_pixel_sha256": "b1f5c7dc71f88a4cf94d2afe3fe5802c16f55d7d27266f65c88f3da6dfc5540b",
-        "pixel_match": true,
-        "background_gray": 70,
-        "scale": 4,
-        "manifest_visual_note": "Runtime texture visibly renders the composed Hangul autosave notice without tofu."
-      },
-      "ok": true
-    },
-    "translation_map": {
-      "path": "work/localization/final_results/translation_map.json",
-      "sha256": "c3646461cc41abd6b3eb8115bfbb9b408ec7c7f63f683a1dee5a642ea38bae33",
-      "declared_entry_count": 3395,
-      "actual_entry_count": 3395,
-      "entries_with_hangul": 3385,
-      "hangul_character_count": 33827,
-      "unique_hangul_syllable_count": 861,
-      "ok": true
-    },
-    "font_verification": {
-      "path": "work/release_build/final/font_final/verification.json",
-      "sha256": "2c57af09b30c26013e3ca649689d0f22fd01dd5c3e81086a509a2fe0ad95b393",
-      "schema": "brs-font-verification-v1",
-      "ok": true,
-      "glyph_count": 861,
-      "errors": [],
-      "hashes": {
-        "original_font_lpk": "7e606174dbba6a2207f842acc1a065e2116610c34d09d9a5c0e35803d678bcdd",
-        "original_ucs2jis": "349e34b8841c6429a4c973c43545ac32496a50cf08a5ad5fd03b3cd27c1e11b0",
-        "patched_font_lpk": "c5a4861132b534fa676fecf7c7a830a7775bbf97b255441be127ad83b3ce6810",
-        "patched_ucs2jis": "a8238107d3e742aa04d8bea81ce8ff834dc6c8b931431e3f473e020a236bd82e"
-      }
+  "cutscene_validation": {
+    "stage": "STG04",
+    "passed": true,
+    "placeholder_checked": "@@@@",
+    "placeholder_visible": false,
+    "observed_subtitles": [
+      "이곳은 UEF 최동단 기지가 있던 '후지 수해'야.",
+      "이 근처 어딘가에 숨겨진 문이 있을 거야."
+    ],
+    "evidence": {
+      "path": "REPORTS/ppsspp_evidence/stage4_korean_subtitle_runtime.jpg",
+      "size": 83357,
+      "sha256": "483dfd4f9880fae2080d25fae1a25fbdb10bf12058695d4d13d2eb7b2590d8bd"
     }
   },
-  "preflight": {
-    "schema": "brs-ppsspp-final-qa-preflight-v1",
-    "ready": true,
-    "issues": [],
-    "runtime_seconds": 30.0,
-    "files": {
-      "iso": {
-        "exists": true,
-        "path": "work/release_build/final/BRS_Korean_v1.0.iso",
-        "size": 1368082432,
-        "mtime_ns": 1784989011288160200,
-        "sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139"
-      },
-      "ppsspp_exe": {
-        "exists": true,
-        "path": "work/tools/ppsspp/portable/PPSSPPWindows64.exe",
-        "size": 19806976,
-        "mtime_ns": 1778910506000000000,
-        "sha256": "27d3edbb06dc623dab60877d3e3a975aef4034c7d4fac464e92fd4998864d2ec"
-      },
-      "ppsspp_ini": {
-        "exists": true,
-        "path": "work/tools/ppsspp/portable/memstick/PSP/SYSTEM/ppsspp.ini",
-        "size": 20052,
-        "mtime_ns": 1784983708595888700,
-        "sha256": "eba1c15b78ff4e7902e3ca0b0a2f0cd8f44a229818144751f893eb437feaf5d4"
-      },
-      "append_config": {
-        "exists": true,
-        "path": "work/qa/ppsspp_final_qa_append.ini",
-        "size": 268,
-        "mtime_ns": 1784988273951589400,
-        "sha256": "25f92e8808ffb205b0acbf669895d7c9d2204a3160284bd0b098130a435f97c0"
-      },
-      "evidence_manifest": {
-        "exists": true,
-        "path": "work/qa/ppsspp_final_qa_evidence.json",
-        "size": 1891,
-        "mtime_ns": 1784988581275754900,
-        "sha256": "8715e396a1794f46e3de595d39f14505ceed9cd09590bbc2497b8bc507a01667"
-      },
-      "translation_map": {
-        "exists": true,
-        "path": "work/localization/final_results/translation_map.json",
-        "size": 4107662,
-        "mtime_ns": 1784987608841948500,
-        "sha256": "c3646461cc41abd6b3eb8115bfbb9b408ec7c7f63f683a1dee5a642ea38bae33"
-      },
-      "font_verification": {
-        "exists": true,
-        "path": "work/release_build/final/font_final/verification.json",
-        "size": 644,
-        "mtime_ns": 1784988983345415000,
-        "sha256": "2c57af09b30c26013e3ca649689d0f22fd01dd5c3e81086a509a2fe0ad95b393"
-      }
-    },
-    "release_report_binding": {
-      "report": "work/release_build/final/release_build_report.json",
-      "report_sha256": "449170bc348a194476d467d95687cb647eb876bbf22c5d7056c663f865b31460",
-      "exists": true,
-      "expected_size": 1368082432,
-      "expected_sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139",
-      "actual_size": 1368082432,
-      "actual_sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139",
-      "ok": true
-    },
-    "path_safety": {
-      "ok": true,
-      "issues": [],
-      "report": "work/qa/ppsspp_final_qa_report.json",
-      "sessions_root": "work/qa/ppsspp_sessions"
-    },
-    "ppsspp_executable_hash_ok": true,
-    "ppsspp_config": {
-      "path": "work/tools/ppsspp/portable/memstick/PSP/SYSTEM/ppsspp.ini",
-      "sha256": "eba1c15b78ff4e7902e3ca0b0a2f0cd8f44a229818144751f893eb437feaf5d4",
-      "checks": [
-        {
-          "section": "General",
-          "key": "Enable Logging",
-          "expected": "True",
-          "actual": "True",
-          "ok": true
-        },
-        {
-          "section": "General",
-          "key": "FileLogging",
-          "expected": "True",
-          "actual": "True",
-          "ok": true
-        },
-        {
-          "section": "General",
-          "key": "AutoRun",
-          "expected": "True",
-          "actual": "True",
-          "ok": true
-        },
-        {
-          "section": "Graphics",
-          "key": "ReplaceTextures",
-          "expected": "True",
-          "actual": "True",
-          "ok": true
-        },
-        {
-          "section": "Graphics",
-          "key": "SaveNewTextures",
-          "expected": "True",
-          "actual": "True",
-          "ok": true
-        }
-      ],
-      "ok": true
-    },
-    "append_config": {
-      "path": "work/qa/ppsspp_final_qa_append.ini",
-      "sha256": "25f92e8808ffb205b0acbf669895d7c9d2204a3160284bd0b098130a435f97c0",
-      "checks": [
-        {
-          "section": "General",
-          "key": "Enable Logging",
-          "expected": "True",
-          "actual": "True",
-          "ok": true
-        },
-        {
-          "section": "General",
-          "key": "FileLogging",
-          "expected": "True",
-          "actual": "True",
-          "ok": true
-        },
-        {
-          "section": "General",
-          "key": "AutoRun",
-          "expected": "True",
-          "actual": "True",
-          "ok": true
-        },
-        {
-          "section": "Graphics",
-          "key": "ReplaceTextures",
-          "expected": "False",
-          "actual": "False",
-          "ok": true
-        },
-        {
-          "section": "Graphics",
-          "key": "SaveNewTextures",
-          "expected": "True",
-          "actual": "True",
-          "ok": true
-        }
-      ],
-      "ok": true
-    },
-    "existing_ppsspp_processes": [],
-    "texture_root": "work/tools/ppsspp/portable/memstick/PSP/TEXTURES/NPUH10126",
-    "texture_replacement_isolation": {
-      "append_config_replace_textures": false,
-      "external_assets_outside_new": [],
-      "external_asset_count": 0,
-      "path_is_symlink_or_junction": false,
-      "ok": true
-    },
-    "session_log_source": "work/tools/ppsspp/portable/memstick/PSP/SYSTEM/DUMP/log.txt",
-    "evidence_manifest": {
-      "path": "work/qa/ppsspp_final_qa_evidence.json",
-      "sha256": "8715e396a1794f46e3de595d39f14505ceed9cd09590bbc2497b8bc507a01667",
-      "runtime_texture_contract_count": 3,
-      "required_roles": [
-        "korean_ui_runtime",
-        "korean_font_runtime",
-        "boot_ui_context"
-      ],
-      "minimum_new_texture_dumps": 3
-    },
-    "korean_translation_evidence": {
-      "path": "work/localization/final_results/translation_map.json",
-      "sha256": "c3646461cc41abd6b3eb8115bfbb9b408ec7c7f63f683a1dee5a642ea38bae33",
-      "declared_entry_count": 3395,
-      "actual_entry_count": 3395,
-      "entries_with_hangul": 3385,
-      "hangul_character_count": 33827,
-      "unique_hangul_syllable_count": 861,
-      "ok": true
-    },
-    "font_verification_evidence": {
-      "path": "work/release_build/final/font_final/verification.json",
-      "sha256": "2c57af09b30c26013e3ca649689d0f22fd01dd5c3e81086a509a2fe0ad95b393",
-      "schema": "brs-font-verification-v1",
-      "ok": true,
-      "glyph_count": 861,
-      "errors": [],
-      "hashes": {
-        "original_font_lpk": "7e606174dbba6a2207f842acc1a065e2116610c34d09d9a5c0e35803d678bcdd",
-        "original_ucs2jis": "349e34b8841c6429a4c973c43545ac32496a50cf08a5ad5fd03b3cd27c1e11b0",
-        "patched_font_lpk": "c5a4861132b534fa676fecf7c7a830a7775bbf97b255441be127ad83b3ce6810",
-        "patched_ucs2jis": "a8238107d3e742aa04d8bea81ce8ff834dc6c8b931431e3f473e020a236bd82e"
-      }
-    },
-    "static_font_visual": {
-      "exists": true,
-      "path": "work/qa/final_font_atlas_4x.png",
-      "size": 9420,
-      "mtime_ns": 1784984531622454300,
-      "sha256": "fcee847203b56e342f2bcd977f06658491696815e31f7d694840a52d793c7bc6",
-      "expected_sha256": "fcee847203b56e342f2bcd977f06658491696815e31f7d694840a52d793c7bc6",
-      "ok": true
-    },
-    "safety": {
-      "computer_use": false,
-      "launch_method": "subprocess hidden process",
-      "iso_open_mode": "read-only hashing only",
-      "existing_process_policy": "fail without terminating",
-      "termination_policy": "only the PID launched by this harness"
+  "ui_validation": {
+    "screen": "stage_select",
+    "passed": true,
+    "observed_labels": [
+      "스테이지 선택",
+      "저장",
+      "불러오기"
+    ],
+    "evidence": {
+      "path": "REPORTS/ppsspp_evidence/stage_select_ui_runtime.jpg",
+      "size": 96915,
+      "sha256": "6dee39e40dfa81cf4a8c26b0d3593fa5dcc72ec3a16c7d6792a86a0e5cfd91d9"
     }
-  },
-  "safety": {
-    "computer_use": false,
-    "gui_automation": false,
-    "launch_method": "hidden subprocess",
-    "terminated_only_launched_pid": true,
-    "final_iso_write_operations": 0
   },
   "font_render_evidence": {
     "atlas": "REPORTS/ppsspp_evidence/final_font_atlas_4x.png"

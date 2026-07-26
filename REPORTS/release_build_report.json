@@ -12,6 +12,7 @@
   },
   "font": {
     "mapping_sha256": "697a0516e2d9bc23992a42b2ea5184b5da01c31be9c2eebff76e9be4a99451f9",
+    "bscr_encoding": "utf8_cjk_alias",
     "verification": {
       "schema": "brs-font-verification-v1",
       "ok": true,
@@ -39,12 +40,27 @@
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/IF_MISSION_FAILED.GZ",
         "size": 4924,
         "sha256": "4d47209dc13ef288f2afca902a539ddfc173d0124f145ea17a59b35ea52227b2",
+        "ui_snapshot_sha256": "4d47209dc13ef288f2afca902a539ddfc173d0124f145ea17a59b35ea52227b2",
+        "merge": {
+          "kind": "lpk_ptmd_entries",
+          "entry_indexes": [
+            0
+          ]
+        },
         "overrode": null
       },
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/IF_REC_INFO.GZ",
-        "size": 60547,
-        "sha256": "c9a8efa3a33305d20b68f09f259f3fcdd4c224cfe82264ddb626b476bc7a54bc",
+        "size": 60435,
+        "sha256": "339762e7f4d14ed72ee18e8121f9d261aff835a6f8800f6a9ac6f66189fc8c6c",
+        "ui_snapshot_sha256": "339762e7f4d14ed72ee18e8121f9d261aff835a6f8800f6a9ac6f66189fc8c6c",
+        "merge": {
+          "kind": "lpk_ptmd_entries",
+          "entry_indexes": [
+            5,
+            7
+          ]
+        },
         "overrode": {
           "size": 60531,
           "sha256": "c0a35a595a9ecffe6341864776cdffbf6b7d0f2c2c4ce333666527ffca908f75"
@@ -52,8 +68,18 @@
       },
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/IF_STAGE_SELECT.GZ",
-        "size": 220478,
-        "sha256": "60afb7c5775d7f7511bdb7041a16230991b4f549d0212e35c2d938dc9a8e45b4",
+        "size": 220433,
+        "sha256": "d24bab23d6a10e4e97a9b1bc832b5fc55c96eb09d38dfcf172ee9e8f9832770a",
+        "ui_snapshot_sha256": "d24bab23d6a10e4e97a9b1bc832b5fc55c96eb09d38dfcf172ee9e8f9832770a",
+        "merge": {
+          "kind": "lpk_ptmd_entries",
+          "entry_indexes": [
+            14,
+            18,
+            21,
+            23
+          ]
+        },
         "overrode": {
           "size": 224111,
           "sha256": "cfba7b08c049caa6721cc6a9fafb9231f01d3838e24f6f0fd513866287420b2a"
@@ -63,6 +89,15 @@
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_CUSTOM.GZ",
         "size": 22049,
         "sha256": "52cc94954c76fb0ca74ad14c6f3794792e60a86a30bd1ce1546aa9e0d873cbc7",
+        "ui_snapshot_sha256": "52cc94954c76fb0ca74ad14c6f3794792e60a86a30bd1ce1546aa9e0d873cbc7",
+        "merge": {
+          "kind": "lpk_ptmd_entries",
+          "entry_indexes": [
+            6,
+            7,
+            9
+          ]
+        },
         "overrode": {
           "size": 22671,
           "sha256": "38777389abf2ee2caef050d54f30ab80d77ff5c44d0d9a0c134cd510d08f8844"
@@ -72,6 +107,14 @@
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_GALLERY.GZ",
         "size": 380552,
         "sha256": "e878599e554aaf87430565c3166e85d581042d09d2a04a155b6b676beae40ccd",
+        "ui_snapshot_sha256": "e878599e554aaf87430565c3166e85d581042d09d2a04a155b6b676beae40ccd",
+        "merge": {
+          "kind": "lpk_ptmd_entries",
+          "entry_indexes": [
+            9,
+            10
+          ]
+        },
         "overrode": {
           "size": 381478,
           "sha256": "b628fc3f6d0e91314bb2bd15c7e5b4acbe3ccf2a62428f7fce08bc0de6ef496c"
@@ -81,6 +124,14 @@
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_ITEM.GZ",
         "size": 18392,
         "sha256": "8183a856032dcf568a33e2ddc5ea496d6feea25947077f3ab615af3916b8ed66",
+        "ui_snapshot_sha256": "8183a856032dcf568a33e2ddc5ea496d6feea25947077f3ab615af3916b8ed66",
+        "merge": {
+          "kind": "lpk_ptmd_entries",
+          "entry_indexes": [
+            5,
+            6
+          ]
+        },
         "overrode": {
           "size": 18819,
           "sha256": "5bb23a147e76475cb1060bfaae4e5c1e7858ea0155cb0d5348af6e1465bda69e"
@@ -88,8 +139,16 @@
       },
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_LIBRARY.GZ",
-        "size": 60743,
-        "sha256": "fb1afaeeaf2ea025b8a0f29b6dc052dbbf45c933e8d1a9b1ea64ba18e58350e3",
+        "size": 60628,
+        "sha256": "1553af4d986b04396140c3734b047ffe39d523f18e3ed7ff1d9c3a53b4a66e48",
+        "ui_snapshot_sha256": "1553af4d986b04396140c3734b047ffe39d523f18e3ed7ff1d9c3a53b4a66e48",
+        "merge": {
+          "kind": "lpk_ptmd_entries",
+          "entry_indexes": [
+            5,
+            7
+          ]
+        },
         "overrode": {
           "size": 60714,
           "sha256": "b765058f2053f8ee12e25cc32b5b03a4901bd99d2fde0af122a212586ea68458"
@@ -97,8 +156,17 @@
       },
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_OPTION.GZ",
-        "size": 16487,
-        "sha256": "50610d4ebeeaf2204b4674f2523d5516ca572d8fa2af2ed1da2f6b4fda8bf908",
+        "size": 16498,
+        "sha256": "f79e51dbe008d0389a289fff7b98604357eabcf077111ee04c72aaa3af5cda53",
+        "ui_snapshot_sha256": "f79e51dbe008d0389a289fff7b98604357eabcf077111ee04c72aaa3af5cda53",
+        "merge": {
+          "kind": "lpk_ptmd_entries",
+          "entry_indexes": [
+            5,
+            6,
+            7
+          ]
+        },
         "overrode": {
           "size": 16792,
           "sha256": "58b9cd157f1c2950469151ac560a39f0028e6214b5f3dd6d4cd2f53f7f307166"
@@ -107,7 +175,25 @@
       {
         "relative_path": "PSP_GAME/USRDIR/GAMEDATA/SYSTEM.VOL",
         "size": 4018080,
-        "sha256": "4ef745b1c9ac6af60a3775be1f650186399e2a27c11c604b46cb5fee60f11134",
+        "sha256": "0a15a77cec8344d8c60f298c5b93bef49c74288a8cc92b6cf5aecf112baac36f",
+        "ui_snapshot_sha256": "0a15a77cec8344d8c60f298c5b93bef49c74288a8cc92b6cf5aecf112baac36f",
+        "merge": {
+          "kind": "rtdp_nested_lpk_ptmd_entries",
+          "volume_entries": {
+            "6": [
+              15,
+              17,
+              18,
+              21
+            ],
+            "7": [
+              3,
+              4,
+              5,
+              10
+            ]
+          }
+        },
         "overrode": {
           "size": 4018080,
           "sha256": "c82f860425d922fe4f84e8dbdf6b1eed44d63851307681045c6064f1b5812a96"
@@ -118,14 +204,14 @@
   "replacement_file_count": 186,
   "patched_iso": {
     "path": "work/release_build/final/BRS_Korean_v1.0.iso",
-    "size": 1368082432,
-    "sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139"
+    "size": 1370918912,
+    "sha256": "0cfbb39f574e4230ed3e47de35520c31c3ad32ad7bad6fa0c5710aefd83b1126"
   },
   "delta": {
     "path": "work/release_build/final/BRS_Korean_NPUH10126_v1.0.brspatch",
-    "size": 39426892,
-    "sha256": "6f7f56d43ab2506b82e415813d3a8efc8fa4ef9ade2e3e45abcaebff18ec6b53"
+    "size": 39495805,
+    "sha256": "5fc5adbbb18e22ef48f7899e69aaade8ab37e879bad098cd2bbfeeb692ae58a0"
   },
-  "delta_roundtrip_sha256": "266e685a76fe6df11b9b3b049f2cff6cc5b4cdcf18cdec15c9e86a986bd24139",
+  "delta_roundtrip_sha256": "0cfbb39f574e4230ed3e47de35520c31c3ad32ad7bad6fa0c5710aefd83b1126",
   "passed": true
 }
