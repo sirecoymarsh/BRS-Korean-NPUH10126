@@ -14,7 +14,20 @@ function Resolve-FullPath([string]$PathValue) {
 }
 
 function Get-Sha256([string]$PathValue) {
-    return (Get-FileHash -LiteralPath $PathValue -Algorithm SHA256).Hash.ToLowerInvariant()
+    # Get-FileHash participates in -WhatIf through the FileSystem provider and
+    # can return no object under StrictMode. Use .NET so a restore dry-run still
+    # performs the mandatory integrity check without deleting anything.
+    $stream = [IO.File]::Open(
+        $PathValue, [IO.FileMode]::Open, [IO.FileAccess]::Read, [IO.FileShare]::Read
+    )
+    $sha = [Security.Cryptography.SHA256]::Create()
+    try {
+        $bytes = $sha.ComputeHash($stream)
+        return ([BitConverter]::ToString($bytes)).Replace('-', '').ToLowerInvariant()
+    } finally {
+        $sha.Dispose()
+        $stream.Dispose()
+    }
 }
 
 function Read-ExactBytes(

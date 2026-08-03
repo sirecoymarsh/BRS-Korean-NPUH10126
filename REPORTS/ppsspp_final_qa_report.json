@@ -1,138 +1,25 @@
 {
-  "schema": "brs-ppsspp-final-qa-v5",
+  "schema": "brs-current-target-ppsspp-runtime-status-v1",
   "ok": true,
   "passed": true,
-  "created_at": "2026-07-26T17:11:02.394749+00:00",
-  "error_count": 0,
-  "issue_count": 0,
-  "boot_marker_found": true,
-  "runtime_error_count": 0,
-  "runtime_errors": [],
-  "ppsspp_version": null,
-  "iso": {
-    "path": "work/release_build/final/BRS_Korean_v1.0.iso",
-    "size": 1370918912,
-    "sha256": "cd475f41f918e918415ed3b15e6b4a7428a3bdd927917326c980c040f9752bec",
-    "unchanged": true,
-    "opened_for_write": false
-  },
-  "release_report_binding": {
-    "path": "work/release_build/final/release_build_report.json",
-    "sha256": "7a50a1a0d4d70fc723448d30058c09e2b05b423e568d2af0b92fb28fe9ba4669",
-    "expected_size": 1370918912,
-    "expected_sha256": "cd475f41f918e918415ed3b15e6b4a7428a3bdd927917326c980c040f9752bec",
-    "actual_size": 1370918912,
-    "actual_sha256": "cd475f41f918e918415ed3b15e6b4a7428a3bdd927917326c980c040f9752bec",
-    "ok": true
-  },
-  "runtime_test_binding": {
-    "tested_candidate": "work/release_build/governor_fix/BRS_Korean_v1.0.iso",
-    "tested_candidate_sha256": "cd475f41f918e918415ed3b15e6b4a7428a3bdd927917326c980c040f9752bec",
-    "bit_identical_to_final": true
-  },
-  "checks": {
+  "target_sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
+  "runtime_smoke_status": "passed",
+  "runtime_smoke_passed": true,
+  "runtime": {
+    "emulator": "PPSSPP v1.20.4",
+    "product_id": "NPUH10126",
+    "target_sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
     "boot_marker_found": true,
-    "runtime_error_count_zero": true,
-    "cutscene_korean_subtitles_visible": true,
-    "cutscene_placeholder_absent": true,
-    "stage_select_korean_ui_visible": true,
-    "menu_uv_rows_not_crossed": true,
-    "menu_split_fragments_absent": true,
-    "terminology_general_to_governor_static_verified": true,
-    "terminology_old_term_absent": true,
-    "automated_runtime_boot_after_terminology_fix": true,
-    "final_iso_hash_bound": true
-  },
-  "terminology_validation": {
-    "source_term": "General",
-    "corrected_term": "총독",
-    "rejected_term": "장군",
-    "corrected_entry_count": 31,
-    "corrected_file_count": 9,
-    "translation_map": {
-      "path": "work/localization/final_results/translation_map.json",
-      "size": 4107662,
-      "sha256": "3e34a20cde1082c0553d8417a96fee8f3226dc444b2512565bef4bbf18da6b1c"
-    },
-    "translation_map_totaldok_count": 31,
-    "translation_map_janggun_count": 0,
-    "manifest_totaldok_count": 202,
-    "manifest_janggun_count": 0,
-    "correction_report": {
-      "path": "work/localization/governor_term_correction_report.json",
-      "size": 11909,
-      "sha256": "fefdd8da060410f0003ab4bad4afd4340aecbad9b7c3d4df44b72139df1cda51"
-    },
-    "passed": true,
-    "runtime_capture_note": "용어가 등장하는 특정 장면의 수동 스크린샷은 새로 촬영하지 않았다. 검토 번역 31개, 최종 번역 맵, 빌드 매니페스트를 정적으로 검사하고 그 결과로 재빌드한 동일 비트 ISO의 부팅·런타임을 검증했다."
-  },
-  "automated_runtime_qa": {
-    "report": {
-      "path": "work/qa/ppsspp_governor_fix_qa.json",
-      "size": 21704,
-      "sha256": "d9c84f8d46ced965194e28376af12323b826b2e3297b121c15483415aaadbeb8"
-    },
-    "boot_marker_found": true,
-    "runtime_error_count": 0,
-    "new_texture_dump_count": 5,
-    "korean_runtime_evidence_ok": true,
+    "boot_marker": "release_build/git_candidate_20260803/BRS_Korean_v1.0.iso",
+    "current_session_runtime_error_count": 0,
+    "clean_shutdown_cache_marker_found": true,
+    "replace_textures": true,
+    "save_new_textures": false,
+    "user_play_confirmation": "잘 돌아간다",
+    "confirmed_local_date": "2026-08-03",
     "passed": true
   },
-  "cutscene_validation": {
-    "stage": "STG04",
-    "passed": true,
-    "placeholder_checked": "@@@@",
-    "placeholder_visible": false,
-    "observed_subtitles": [
-      "이곳은 UEF 최동단 기지가 있던 '후지 수해'야.",
-      "이 근처 어딘가에 숨겨진 문이 있을 거야."
-    ],
-    "evidence": {
-      "path": "work/qa/ppsspp_sessions/20260726_cutscene_fix_complete/stage4_korean_subtitle_runtime.jpg",
-      "size": 83357,
-      "sha256": "483dfd4f9880fae2080d25fae1a25fbdb10bf12058695d4d13d2eb7b2590d8bd"
-    },
-    "rebuild_note": "이 스크린샷은 한국어 컷씬 자막과 @@@@ 미출력을 확인한 대표 증거다. 용어 수정 후 재빌드 ISO는 별도의 자동 부팅·런타임·글꼴 검증을 통과했다."
-  },
-  "ui_validation": {
-    "screen": "stage_select",
-    "passed": true,
-    "observed_labels": [
-      "스테이지",
-      "저장",
-      "로드",
-      "메뉴"
-    ],
-    "split_fragments_visible": false,
-    "uv_rows": [
-      [
-        0,
-        10
-      ],
-      [
-        11,
-        21
-      ],
-      [
-        22,
-        32
-      ],
-      [
-        32,
-        42
-      ],
-      [
-        43,
-        48
-      ]
-    ],
-    "evidence": {
-      "path": "work/qa/ppsspp_sessions/20260726_uvfix_stage_select_runtime_pass.png",
-      "size": 91779,
-      "sha256": "54c41b7b23bb18f6f7c51e647ed8c91772be2d18f9f45fb9a75997bea01f95d0"
-    }
-  },
-  "font_render_evidence": {
-    "atlas": "REPORTS/ppsspp_evidence/final_font_atlas_4x.png"
-  }
+  "historical_evidence_available": true,
+  "historical_evidence_scope": "earlier target hashes only",
+  "note": "현재 대상은 별도 부팅 로그와 사용자 플레이 확인으로 검증했습니다."
 }

@@ -7,211 +7,72 @@
   },
   "translation_map": {
     "path": "work/localization/final_results/translation_map.json",
-    "entry_count": 3395,
-    "sha256": "3e34a20cde1082c0553d8417a96fee8f3226dc444b2512565bef4bbf18da6b1c"
+    "entry_count": 4777,
+    "sha256": "2f7c9fc43129efedb0a03817d22f57407380eebf5794e51307afec6ffe20c7fb"
   },
   "font": {
-    "mapping_sha256": "bc1fe7996437b214c691508b8cd8a85e4668d0e023fd10ef5d0d9342e4f051f1",
+    "mapping_sha256": "05457e3b5f181b55a86683ebb45f6a4865888500c9dafe473de5d4cb2c1a0aec",
+    "cjk_mapping_sha256": "fd8e93e6d130a332a3b7487e874a259b2170c6b0d62f2cda3305f070b1fdb074",
     "bscr_encoding": "utf8_cjk_alias",
+    "fevt_encoding": "utf8_cjk_alias",
     "verification": {
       "schema": "brs-font-verification-v1",
       "ok": true,
       "errors": [],
-      "glyph_count": 861,
-      "font_changed_byte_count": 79479,
-      "ucs2jis_changed_byte_count": 1722,
+      "glyph_count": 923,
+      "font_changed_byte_count": 85216,
+      "ucs2jis_changed_byte_count": 1846,
       "unexpected_font_byte_count": 0,
       "unexpected_ucs2jis_byte_count": 0,
       "hashes": {
         "original_font_lpk": "7e606174dbba6a2207f842acc1a065e2116610c34d09d9a5c0e35803d678bcdd",
         "original_ucs2jis": "349e34b8841c6429a4c973c43545ac32496a50cf08a5ad5fd03b3cd27c1e11b0",
-        "patched_font_lpk": "a5de202d3b3cbed590705e1e350a5e88ef0dc991901e999ff154227044c86145",
-        "patched_ucs2jis": "a8238107d3e742aa04d8bea81ce8ff834dc6c8b931431e3f473e020a236bd82e"
+        "patched_font_lpk": "5cf464605c7c39fba86b14d01bf686b129987375981ac9fbb4a1d83750c04fc1",
+        "patched_ucs2jis": "3925e5200235cf79acd3385c7ddee97f6b1a2cd6de6a7ea5483b62a8edbd8d0d"
       }
     }
   },
-  "volume_count": 89,
-  "volume_entry_replacement_count": 96,
-  "direct_gzip_count": 96,
+  "fevt": {
+    "manifest": "work/release_build/git_candidate_20260803/manifests/fevt.json",
+    "file_count": 465,
+    "change_count": 1598,
+    "nameplate_manifest": "work/release_build/git_candidate_20260803/manifests/fevt_nameplates.json",
+    "nameplate_output_file_count": 471,
+    "nameplate_modified_occurrence_count": 6518
+  },
+  "volume_count": 74,
+  "volume_entry_replacement_count": 81,
+  "direct_gzip_count": 567,
   "additional_replacements": {
-    "count": 9,
+    "count": 2,
     "files": [
       {
-        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/IF_MISSION_FAILED.GZ",
-        "size": 4924,
-        "sha256": "4d47209dc13ef288f2afca902a539ddfc173d0124f145ea17a59b35ea52227b2",
-        "ui_snapshot_sha256": "4d47209dc13ef288f2afca902a539ddfc173d0124f145ea17a59b35ea52227b2",
-        "merge": {
-          "kind": "lpk_ptmd_entries",
-          "entry_indexes": [
-            0
-          ]
-        },
-        "overrode": null
+        "surface": "FEVT embedded speaker nameplates",
+        "manifest": "work/release_build/git_candidate_20260803/manifests/fevt_nameplates.json",
+        "asset_count": 32,
+        "modified_occurrence_count": 6518,
+        "output_file_count": 471
       },
       {
-        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/IF_REC_INFO.GZ",
-        "size": 60299,
-        "sha256": "a3ab381986ca18522d37952401cf85724959166d128e246b34388feb8a2281c7",
-        "ui_snapshot_sha256": "96e28224a73d2c9477147e4f76a84df29c75ce5bc3f1f036ed2bb46eb170dbac",
-        "merge": {
-          "kind": "lpk_ptmd_entries",
-          "entry_indexes": [
-            5,
-            7
-          ]
-        },
-        "overrode": {
-          "size": 60531,
-          "sha256": "2d5c04f0848d13217a1d5fd1957a3b0dc8e44e0cf47c2e7e5f5c41e2817084e3"
-        }
-      },
-      {
-        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/IF_STAGE_SELECT.GZ",
-        "size": 219884,
-        "sha256": "56107d9d53f6ac245bf2157cabaa4f5b63faa26d0ad00d4b33e294bd2bedf240",
-        "ui_snapshot_sha256": "0220171e4b602fe048f134be0d9e9fca499f0128cb62d447e133ef43d98d5380",
-        "merge": {
-          "kind": "lpk_ptmd_entries",
-          "entry_indexes": [
-            14,
-            18,
-            21,
-            23
-          ]
-        },
-        "overrode": {
-          "size": 224113,
-          "sha256": "c52eac4e7ee569ca926b15762d67a91a8b91f52701632408156d8cb0b91b1a02"
-        }
-      },
-      {
-        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_CUSTOM.GZ",
-        "size": 22049,
-        "sha256": "69ba7e9100958ebd921297d1b8e43d6a75614feebda4dcc4855176cbc436ec0c",
-        "ui_snapshot_sha256": "52cc94954c76fb0ca74ad14c6f3794792e60a86a30bd1ce1546aa9e0d873cbc7",
-        "merge": {
-          "kind": "lpk_ptmd_entries",
-          "entry_indexes": [
-            6,
-            7,
-            9
-          ]
-        },
-        "overrode": {
-          "size": 22672,
-          "sha256": "2396975fe1c16c8f3ffe4aad054918b272f34675e75fe322fcccfd3cfd4a9a78"
-        }
-      },
-      {
-        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_GALLERY.GZ",
-        "size": 380548,
-        "sha256": "fae60c0b23b44f7bf786f7572d0368b79337ac992faccd2cc4b5a43021e755de",
-        "ui_snapshot_sha256": "e878599e554aaf87430565c3166e85d581042d09d2a04a155b6b676beae40ccd",
-        "merge": {
-          "kind": "lpk_ptmd_entries",
-          "entry_indexes": [
-            9,
-            10
-          ]
-        },
-        "overrode": {
-          "size": 381473,
-          "sha256": "6675cc0119b281acae7af4ebfe1dcd48e1ba07b98e7fe49f2d10fd562581ecfe"
-        }
-      },
-      {
-        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_ITEM.GZ",
-        "size": 18394,
-        "sha256": "09745aefa0561d3233db04bea1d4b72489d6eb0b5137cb430ec24fe10a9ec02d",
-        "ui_snapshot_sha256": "8183a856032dcf568a33e2ddc5ea496d6feea25947077f3ab615af3916b8ed66",
-        "merge": {
-          "kind": "lpk_ptmd_entries",
-          "entry_indexes": [
-            5,
-            6
-          ]
-        },
-        "overrode": {
-          "size": 18817,
-          "sha256": "216dca2a9c1e213fe1e1133404c77fdf4d3075e379f990829ee1f39ece50c256"
-        }
-      },
-      {
-        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_LIBRARY.GZ",
-        "size": 60493,
-        "sha256": "912be1ad5c4f353c91dd35dadb1b2ab1b72dad940f254edbdaac6003e3fff45e",
-        "ui_snapshot_sha256": "f121598de03fc3ca5e934a5c5bcfe74a0549a7193a85369f16a1da3cf82122c1",
-        "merge": {
-          "kind": "lpk_ptmd_entries",
-          "entry_indexes": [
-            5,
-            7
-          ]
-        },
-        "overrode": {
-          "size": 60714,
-          "sha256": "a71adc0848b7e3f8bb8e56cc03d265ad5cac0db4597ca73ab73376ab98a58802"
-        }
-      },
-      {
-        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/IF/MENU/MENU_OPTION.GZ",
-        "size": 16049,
-        "sha256": "4791609e1a08960c8de969536c54cd60d0929f463d8f651df1ab01f3b820976c",
-        "ui_snapshot_sha256": "26a4a969d5904965ea62bd49c3c4272346583f1a46ec4ad2c1581b8eaed0eeef",
-        "merge": {
-          "kind": "lpk_ptmd_entries",
-          "entry_indexes": [
-            5,
-            6,
-            7
-          ]
-        },
-        "overrode": {
-          "size": 16792,
-          "sha256": "21d30e7f13cdeb582cb1be2489b33ac44c7f922b406aa75e6c86b1b23caef32d"
-        }
-      },
-      {
-        "relative_path": "PSP_GAME/USRDIR/GAMEDATA/SYSTEM.VOL",
-        "size": 4018080,
-        "sha256": "a90a8128111d8788ac83ca94ae62a17ef5f90d33ab758b16e69daecfce0f5f38",
-        "ui_snapshot_sha256": "3c65eeef4cafa5a754252304238c1e283cdf3d653c04297721be5a41b1521a48",
-        "merge": {
-          "kind": "rtdp_nested_lpk_ptmd_entries",
-          "volume_entries": {
-            "6": [
-              15,
-              17,
-              18,
-              21
-            ],
-            "7": [
-              3,
-              4,
-              5,
-              10
-            ]
-          }
-        },
-        "overrode": {
-          "size": 4018080,
-          "sha256": "1a35dd2ddc2c9ba63fd2cb27e7c9f854f5b5321e62070a222a3c719ed2b4a3d7"
-        }
+        "surface": "IF_STAGE_SELECT sender-name atlas",
+        "manifest": "work/release_build/git_candidate_20260803/manifests/stage_select_nameplates.json",
+        "entry_index": 23,
+        "label_count": 14,
+        "entry_sha256_after": "634b3d77a4160394d08131bc47e8c50de0a08be9660f55cf298ce552073becb8"
       }
     ]
   },
-  "replacement_file_count": 186,
+  "replacement_file_count": 641,
   "patched_iso": {
-    "path": "work/release_build/governor_fix/BRS_Korean_v1.0.iso",
-    "size": 1370918912,
-    "sha256": "cd475f41f918e918415ed3b15e6b4a7428a3bdd927917326c980c040f9752bec"
+    "path": "work/release_build/git_candidate_20260803/BRS_Korean_v1.0.iso",
+    "size": 1379434496,
+    "sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9"
   },
   "delta": {
-    "path": "work/release_build/governor_fix/BRS_Korean_NPUH10126_v1.0.brspatch",
-    "size": 39495566,
-    "sha256": "659d975b08c7cbedfbb2ee1cf2fa1f8fd07690bee3cd02dc994eb201067f7efb"
+    "path": "work/release_build/git_candidate_20260803/BRS_Korean_NPUH10126_v1.0.brspatch",
+    "size": 91513924,
+    "sha256": "bf1e5acca39dc432aebcb58c0dabca5b85f3179b5737c0a370deaf47e76c1404"
   },
-  "delta_roundtrip_sha256": "cd475f41f918e918415ed3b15e6b4a7428a3bdd927917326c980c040f9752bec",
+  "delta_roundtrip_sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
   "passed": true
 }

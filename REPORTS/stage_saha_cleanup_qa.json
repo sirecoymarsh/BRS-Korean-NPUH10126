@@ -1,0 +1,176 @@
+{
+  "schema": "brs-stage-saha-trailing-i-cleanup-qa-v1",
+  "before": "work/nameplate_audit/hd_alien_name_revert/stage_saha_cleanup/backup/000000006b38aa9e00000000.english-original.png",
+  "before_sha256": "4d7f316914c71e844ba86f8362d18f08de6a1af75372b22fc95181388159f979",
+  "after": "work/tools/ppsspp/portable/memstick/PSP/TEXTURES/NPUH10126/done/000000006b38aa9e00000000.png",
+  "after_sha256": "50d275b956d6bca3a8be39810ae07c618cc663b83b4a78f7a8d306f35a997409",
+  "saha_band": [
+    204,
+    548,
+    408,
+    616
+  ],
+  "changed_pixel_count": 1077,
+  "changed_bbox": [
+    254,
+    590,
+    408,
+    613
+  ],
+  "outside_saha_changed_pixel_count": 0,
+  "trailing_i_region": [
+    374,
+    592,
+    378,
+    613
+  ],
+  "trailing_i_nonblack_before": 80,
+  "trailing_i_nonblack_after": 0,
+  "stale_edge_region": [
+    405,
+    590,
+    408,
+    613
+  ],
+  "stale_edge_nonblack_before": 69,
+  "stale_edge_nonblack_after": 0,
+  "saha_glyph_before": [
+    254,
+    592,
+    346,
+    613
+  ],
+  "saha_glyph_after": [
+    270,
+    592,
+    362,
+    613
+  ],
+  "final_a_region_before": [
+    326,
+    592,
+    346,
+    613
+  ],
+  "final_a_region_after": [
+    342,
+    592,
+    362,
+    613
+  ],
+  "final_a_nonblack_after": 256,
+  "bright_components_before": [
+    {
+      "bbox": [
+        254,
+        592,
+        274,
+        612
+      ],
+      "pixel_count": 272
+    },
+    {
+      "bbox": [
+        278,
+        592,
+        298,
+        612
+      ],
+      "pixel_count": 256
+    },
+    {
+      "bbox": [
+        302,
+        592,
+        322,
+        612
+      ],
+      "pixel_count": 208
+    },
+    {
+      "bbox": [
+        326,
+        592,
+        346,
+        612
+      ],
+      "pixel_count": 256
+    },
+    {
+      "bbox": [
+        374,
+        592,
+        378,
+        612
+      ],
+      "pixel_count": 80
+    },
+    {
+      "bbox": [
+        405,
+        592,
+        408,
+        612
+      ],
+      "pixel_count": 60
+    }
+  ],
+  "bright_components_after": [
+    {
+      "bbox": [
+        270,
+        592,
+        290,
+        612
+      ],
+      "pixel_count": 272
+    },
+    {
+      "bbox": [
+        294,
+        592,
+        314,
+        612
+      ],
+      "pixel_count": 256
+    },
+    {
+      "bbox": [
+        318,
+        592,
+        338,
+        612
+      ],
+      "pixel_count": 208
+    },
+    {
+      "bbox": [
+        342,
+        592,
+        362,
+        612
+      ],
+      "pixel_count": 256
+    }
+  ],
+  "comparison": "work/nameplate_audit/hd_alien_name_revert/stage_saha_cleanup/saha_trailing_i_before_after.png",
+  "checks": {
+    "some_pixels_changed": true,
+    "only_saha_band_changed": true,
+    "trailing_i_existed_before": true,
+    "trailing_i_is_black_after": true,
+    "stale_edge_existed_before": true,
+    "stale_edge_is_black_after": true,
+    "genuine_saha_shape_preserved_after_recentering": true,
+    "final_a_preserved_exactly": true,
+    "final_a_still_visible": true,
+    "exactly_four_centered_letter_components": true,
+    "saha_center_matches_llwo_reference": true
+  },
+  "iso_or_patch_built": false,
+  "passed": true,
+  "release_candidate_context": {
+    "release_8x_atlas_sha256": "277603179cd96a97d5b48e84985b13661d2ca123cd6d6c7b501c45d9e43ef6f8",
+    "release_8x_qa": "REPORTS/release_hd_stage_atlas_qa.json"
+  }
+}

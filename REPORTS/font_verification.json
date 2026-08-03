@@ -2,15 +2,15 @@
   "schema": "brs-font-verification-v1",
   "ok": true,
   "errors": [],
-  "glyph_count": 861,
-  "font_changed_byte_count": 79479,
-  "ucs2jis_changed_byte_count": 1722,
+  "glyph_count": 923,
+  "font_changed_byte_count": 85216,
+  "ucs2jis_changed_byte_count": 1846,
   "unexpected_font_byte_count": 0,
   "unexpected_ucs2jis_byte_count": 0,
   "hashes": {
     "original_font_lpk": "7e606174dbba6a2207f842acc1a065e2116610c34d09d9a5c0e35803d678bcdd",
     "original_ucs2jis": "349e34b8841c6429a4c973c43545ac32496a50cf08a5ad5fd03b3cd27c1e11b0",
-    "patched_font_lpk": "a5de202d3b3cbed590705e1e350a5e88ef0dc991901e999ff154227044c86145",
-    "patched_ucs2jis": "a8238107d3e742aa04d8bea81ce8ff834dc6c8b931431e3f473e020a236bd82e"
+    "patched_font_lpk": "5cf464605c7c39fba86b14d01bf686b129987375981ac9fbb4a1d83750c04fc1",
+    "patched_ucs2jis": "3925e5200235cf79acd3385c7ddee97f6b1a2cd6de6a7ea5483b62a8edbd8d0d"
   }
 }

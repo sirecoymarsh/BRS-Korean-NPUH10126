@@ -1,62 +1,99 @@
 {
-  "schema": "brs-korean-distribution/v1",
+  "schema": "brs-korean-distribution/v2",
   "package_name": "BRS_Korean_NPUH10126_v1.0",
   "version": "1.0",
   "product_id": "NPUH10126",
   "passed": true,
+  "release_readiness": {
+    "git_commit_candidate_ready": true,
+    "public_release_upload_ready": true,
+    "current_target_ppsspp_runtime_smoke": "passed"
+  },
   "source": {
     "size": 1360363520,
     "sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e"
   },
   "target": {
-    "size": 1370918912,
-    "sha256": "cd475f41f918e918415ed3b15e6b4a7428a3bdd927917326c980c040f9752bec",
+    "size": 1379434496,
+    "sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
     "iso_included": false
   },
   "patch": {
     "name": "BRS_Korean_NPUH10126_v1.0.brspatch",
-    "size": 39495566,
-    "sha256": "659d975b08c7cbedfbb2ee1cf2fa1f8fd07690bee3cd02dc994eb201067f7efb",
+    "size": 91513924,
+    "sha256": "bf1e5acca39dc432aebcb58c0dabca5b85f3179b5737c0a370deaf47e76c1404",
     "schema": "brs-binary-delta/v1",
     "compression": "zlib",
-    "record_count": 3652
+    "record_count": 4080,
+    "changed_bytes": 101607375,
+    "github_file_limit": 100000000,
+    "bytes_below_github_limit": 8486076
   },
   "translation": {
-    "entry_count": 3395,
-    "semantic_id_count": 3395,
-    "hangul_closure_count": 861,
+    "entry_count": 4777,
+    "semantic_id_count": 4777,
+    "hangul_closure_count": 924,
     "error_count": 0,
-    "warning_count": 0,
-    "independent_audit_count": 6
+    "warning_count": 0
+  },
+  "nameplates": {
+    "fevt_modified_human_system_occurrence_count": 6518,
+    "alien_text_names": [
+      "Mii",
+      "Mazuma",
+      "Shizu",
+      "Karli",
+      "Lilio",
+      "Nafe",
+      "Zaha"
+    ],
+    "alien_stage_codes": [
+      "MEFE",
+      "MZMA",
+      "SZZU",
+      "CKRY",
+      "LLWO",
+      "XNFE",
+      "SAHA"
+    ],
+    "alien_names_preserved_in_latin": true
   },
   "ui_graphics": {
-    "embedded_in_iso": true,
-    "requires_external_texture_pack": false,
-    "patched_ptmd_count": 27,
-    "labels_replaced_count": 100,
-    "integrated_output_count": 9,
-    "independent_visual_audit_passed": true,
-    "contact_sheet": "REPORTS/ui_graphics/root_ui_fallback_contact.png",
-    "contact_sheet_sha256": "57cfc0dd1828fd4fb4ab343985cdca14ec25d9e6cd1c1a5bd6f7872a96c659a7"
+    "fixed_pause_menu_labels_in_iso": "original English retained by design",
+    "optional_hd_pack": "BRS_Korean_HD_UI_Pack.zip",
+    "optional_hd_pack_size": 424955,
+    "optional_hd_pack_sha256": "e0735e7f9929d89ea707004699d825679a6c37b14640e4ca47fcf57523a9a274",
+    "optional_hd_asset_count": 27,
+    "stage_saha_cleanup_passed": true
   },
-  "ppsspp_qa": {
-    "ok": true,
-    "version": null,
-    "boot_marker_found": true,
-    "runtime_error_count": 0
-  },
-  "powershell_patcher_qa_included": false,
-  "textures": {
-    "included": false,
-    "file_count": 0,
-    "total_size": 0
+  "verification": {
+    "build_report_passed": true,
+    "builder_delta_roundtrip_passed": true,
+    "powershell_installer_roundtrip_passed": true,
+    "restore_whatif_passed": true,
+    "current_target_ppsspp_runtime_smoke": "passed",
+    "ppsspp_runtime": {
+      "emulator": "PPSSPP v1.20.4",
+      "product_id": "NPUH10126",
+      "target_sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
+      "boot_marker_found": true,
+      "boot_marker": "release_build/git_candidate_20260803/BRS_Korean_v1.0.iso",
+      "current_session_runtime_error_count": 0,
+      "clean_shutdown_cache_marker_found": true,
+      "replace_textures": true,
+      "save_new_textures": false,
+      "user_play_confirmation": "잘 돌아간다",
+      "confirmed_local_date": "2026-08-03",
+      "passed": true
+    },
+    "absolute_paths_redacted": true,
+    "iso_excluded": true
   },
   "package": {
     "archive_name": "BRS_Korean_NPUH10126_v1.0.zip",
     "checksum_file": "CHECKSUMS.sha256",
-    "deterministic_zip_timestamp": "2026-07-25T00:00:00",
-    "file_count_including_report_and_checksums": 26,
-    "absolute_paths_redacted": true
+    "deterministic_zip_timestamp": "2026-08-03T00:00:00",
+    "file_count_including_report_and_checksums": 38
   },
   "payload_before_report_and_checksums": [
     {
@@ -70,9 +107,14 @@
       "sha256": "9e86105772badba3c97b207a739e11b6b3cffea9959866b3801044d8da247b76"
     },
     {
+      "path": "BRS_Korean_HD_UI_Pack.zip",
+      "size": 424955,
+      "sha256": "e0735e7f9929d89ea707004699d825679a6c37b14640e4ca47fcf57523a9a274"
+    },
+    {
       "path": "BRS_Korean_NPUH10126_v1.0.brspatch",
-      "size": 39495566,
-      "sha256": "659d975b08c7cbedfbb2ee1cf2fa1f8fd07690bee3cd02dc994eb201067f7efb"
+      "size": 91513924,
+      "sha256": "bf1e5acca39dc432aebcb58c0dabca5b85f3179b5737c0a370deaf47e76c1404"
     },
     {
       "path": "LICENSES/Galmuri-OFL.txt",
@@ -90,19 +132,49 @@
       "sha256": "44b333b6f238a035b69de766bbaa995f6bfaa94f163a1a1d3c1088d92006e609"
     },
     {
+      "path": "README.md",
+      "size": 3524,
+      "sha256": "d0ea4c9ec4302ccf086c1543d8f28c761df818e59a9aa8ce0f0d3246abf842dc"
+    },
+    {
       "path": "README_KO.md",
-      "size": 4813,
-      "sha256": "fd91fc8592bc934c9e42e0f6583e5eebf82a990c3d459d567c27ede274df09eb"
+      "size": 3524,
+      "sha256": "d0ea4c9ec4302ccf086c1543d8f28c761df818e59a9aa8ce0f0d3246abf842dc"
+    },
+    {
+      "path": "REPORTS/CUTSCENE_AND_UI_FIX.md",
+      "size": 2776,
+      "sha256": "77926372154d79ebc5cb47f066b474c7f4f6477c634c3925dc9c13cb519513ae"
+    },
+    {
+      "path": "REPORTS/README.md",
+      "size": 1573,
+      "sha256": "f7d2eb23e9980fb75c744e2813574dcad5f0162459c358cf31ac9ca4f46b2629"
+    },
+    {
+      "path": "REPORTS/alien_name_reversion_final_validation.json",
+      "size": 23708,
+      "sha256": "2e8524e9105b06ece7aebe66f51e7b624641ac3edd4c8fa588598869a09a8e14"
+    },
+    {
+      "path": "REPORTS/current_candidate_qa.json",
+      "size": 1695,
+      "sha256": "d533ea200ec1a21d3df4cce79cab356a03c773edfc9af2a308cb2c66c7bafa9b"
     },
     {
       "path": "REPORTS/font_verification.json",
       "size": 628,
-      "sha256": "1989f49e064f64a1ff8f68702c0e63f33bba34a20462dc4dc120af52ae7baa54"
+      "sha256": "c3c73c7c14169366418948471630cb21eb876c4fbe60cff3b925c6ab4ee85bb9"
     },
     {
       "path": "REPORTS/governor_term_correction_report.json",
       "size": 11679,
       "sha256": "50dec27e9ddd447b75be5d170478133562a6ac03a80da30efd4c07256fa89cf9"
+    },
+    {
+      "path": "REPORTS/hd_ui_pack_report.json",
+      "size": 807,
+      "sha256": "de934cf25de7fc194911e3c05ef1cade7941f137bf2b3f94dfc2276d6124dab6"
     },
     {
       "path": "REPORTS/language_audits/independent_audit_sscr_challenges.json",
@@ -136,8 +208,13 @@
     },
     {
       "path": "REPORTS/language_release_gate_report.json",
-      "size": 3183,
-      "sha256": "22d734255ff4a35f7f381f10f878af584e78f4591674ccd24a8cc0262fa24df4"
+      "size": 3464,
+      "sha256": "a57c6179d6149a68caa5cdf3c8783ba9d7b19e121b0ce8ddd55dd47dfc96de58"
+    },
+    {
+      "path": "REPORTS/powershell_patcher_test_report.json",
+      "size": 1510,
+      "sha256": "fb81a319f0afafe9fe61e65ad07fc96c148c2da611ceeaf7b8fc656767d61b1f"
     },
     {
       "path": "REPORTS/ppsspp_evidence/final_font_atlas_4x.png",
@@ -145,14 +222,34 @@
       "sha256": "fcee847203b56e342f2bcd977f06658491696815e31f7d694840a52d793c7bc6"
     },
     {
+      "path": "REPORTS/ppsspp_evidence/stage4_korean_subtitle_runtime.jpg",
+      "size": 83357,
+      "sha256": "483dfd4f9880fae2080d25fae1a25fbdb10bf12058695d4d13d2eb7b2590d8bd"
+    },
+    {
+      "path": "REPORTS/ppsspp_evidence/stage_select_uvfix_runtime_pass.png",
+      "size": 91779,
+      "sha256": "54c41b7b23bb18f6f7c51e647ed8c91772be2d18f9f45fb9a75997bea01f95d0"
+    },
+    {
       "path": "REPORTS/ppsspp_final_qa_report.json",
-      "size": 4645,
-      "sha256": "d0ddff327893adcf4b5d37c7d7a7f709345679413c6bf6411fd0fa43f3bb6e5f"
+      "size": 1008,
+      "sha256": "cf7f59008b160387a4e1c9595349dabeb88da2ae8f605404495393dc3255bb29"
     },
     {
       "path": "REPORTS/release_build_report.json",
-      "size": 7376,
-      "sha256": "a9ccba58b964c97a4099b497d0149bb2568c27eade4b94b9304eccc6bc1dcac0"
+      "size": 3102,
+      "sha256": "9885d78cbd6d53a202deacad711509a09f100210be4382f20dbc36943ad1796d"
+    },
+    {
+      "path": "REPORTS/release_hd_stage_atlas_qa.json",
+      "size": 3589,
+      "sha256": "222d8cd7a8165b70f9ee47ff23d7b0acdd682c574a7aafd1054a6fe0fec35e4d"
+    },
+    {
+      "path": "REPORTS/stage_saha_cleanup_qa.json",
+      "size": 3273,
+      "sha256": "cbcbdb9cf5ff743285a30c024103b7aa2ef5dd2a295216f8789c4ba4da48177d"
     },
     {
       "path": "REPORTS/ui_graphics/independent_ui_visual_audit.json",
@@ -176,8 +273,8 @@
     },
     {
       "path": "Restore-Original.ps1",
-      "size": 3809,
-      "sha256": "6b7e2ceb2c7bc9d469ef74b4002c70e0d4d0ed660d339ef1a426f90157e197d1"
+      "size": 4333,
+      "sha256": "e66301d108939cadb9ffed47c79bd1b13f4c3a1aed07db1998b096fb54eb0571"
     }
   ]
 }

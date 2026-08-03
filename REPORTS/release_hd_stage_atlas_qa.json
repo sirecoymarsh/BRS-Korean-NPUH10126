@@ -1,0 +1,209 @@
+{
+  "schema": "brs-korean-release-hd-stage-atlas-qa-v1",
+  "atlas": "work/ui_graphics_pipeline/hd_ui_pack/PSP/TEXTURES/NPUH10126/ui/08_menu_if_stage_select_023_ptmd_8x.png",
+  "atlas_sha256": "277603179cd96a97d5b48e84985b13661d2ca123cd6d6c7b501c45d9e43ef6f8",
+  "before_sha256": "66fc3f6d232f93ceb7c36dec7f0727fb5a2e86d7f495a55b7820788bb11b0058",
+  "textures_ini": "work/ui_graphics_pipeline/hd_ui_pack/PSP/TEXTURES/NPUH10126/textures.ini",
+  "textures_ini_sha256": "fa19f008fc176180105397acd40d6845f26248a2f072a160e8891767acf4a29b",
+  "wildcard_mapping": "000000006b38aa9e00000000 = ui/08_menu_if_stage_select_023_ptmd_8x.png",
+  "changed_indices": [
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+  ],
+  "outside_alien_cells_changed_pixels": 0,
+  "per_cell": [
+    {
+      "index": 0,
+      "band": [
+        0,
+        480,
+        408,
+        616
+      ],
+      "changed_pixels": 0
+    },
+    {
+      "index": 1,
+      "band": [
+        408,
+        480,
+        816,
+        616
+      ],
+      "changed_pixels": 0
+    },
+    {
+      "index": 2,
+      "band": [
+        816,
+        480,
+        1232,
+        616
+      ],
+      "changed_pixels": 0
+    },
+    {
+      "index": 3,
+      "band": [
+        1232,
+        480,
+        1640,
+        616
+      ],
+      "changed_pixels": 0
+    },
+    {
+      "index": 4,
+      "band": [
+        1640,
+        480,
+        2048,
+        616
+      ],
+      "changed_pixels": 0
+    },
+    {
+      "index": 5,
+      "band": [
+        0,
+        1096,
+        408,
+        1232
+      ],
+      "changed_pixels": 8564
+    },
+    {
+      "index": 6,
+      "band": [
+        408,
+        1096,
+        816,
+        1232
+      ],
+      "changed_pixels": 8978
+    },
+    {
+      "index": 7,
+      "band": [
+        816,
+        1096,
+        1232,
+        1232
+      ],
+      "changed_pixels": 0
+    },
+    {
+      "index": 8,
+      "band": [
+        1232,
+        1096,
+        1640,
+        1232
+      ],
+      "changed_pixels": 0
+    },
+    {
+      "index": 9,
+      "band": [
+        1640,
+        1096,
+        2048,
+        1232
+      ],
+      "changed_pixels": 9206
+    },
+    {
+      "index": 10,
+      "band": [
+        0,
+        1720,
+        408,
+        1856
+      ],
+      "changed_pixels": 9154
+    },
+    {
+      "index": 11,
+      "band": [
+        408,
+        1720,
+        816,
+        1856
+      ],
+      "changed_pixels": 8200
+    },
+    {
+      "index": 12,
+      "band": [
+        816,
+        1720,
+        1232,
+        1856
+      ],
+      "changed_pixels": 8393
+    },
+    {
+      "index": 13,
+      "band": [
+        1232,
+        1720,
+        1640,
+        1856
+      ],
+      "changed_pixels": 0
+    }
+  ],
+  "saha_components": [
+    {
+      "bbox": [
+        540,
+        1184,
+        580,
+        1224
+      ],
+      "pixel_count": 1088
+    },
+    {
+      "bbox": [
+        588,
+        1184,
+        628,
+        1224
+      ],
+      "pixel_count": 1024
+    },
+    {
+      "bbox": [
+        636,
+        1184,
+        676,
+        1224
+      ],
+      "pixel_count": 832
+    },
+    {
+      "bbox": [
+        684,
+        1184,
+        724,
+        1224
+      ],
+      "pixel_count": 1024
+    }
+  ],
+  "comparison": "work/nameplate_audit/hd_alien_name_revert/release_hd_pack/release_hd_saha_before_after.png",
+  "checks": {
+    "only_alien_cells_changed": true,
+    "all_six_alien_cells_changed": true,
+    "saha_has_exactly_four_components": true,
+    "saha_centered_like_llwo": true,
+    "saha_artifact_trim_recorded": true,
+    "wildcard_mapping_unique": true,
+    "manifest_hash_matches": true
+  },
+  "passed": true
+}

@@ -1,0 +1,924 @@
+{
+  "schema": "brs-alien-name-reversion-final-qa-v1",
+  "scope": [
+    "Mii",
+    "Mazuma",
+    "Shizu",
+    "Karli",
+    "Lilio",
+    "Nafe",
+    "Zaha"
+  ],
+  "scope_rule": "only alien proper names use original Latin strings; surrounding Korean and human names remain unchanged",
+  "translation_maps": [
+    {
+      "path": "work/localization/final_results/translation_map.json",
+      "sha256": "2f7c9fc43129efedb0a03817d22f57407380eebf5794e51307afec6ffe20c7fb",
+      "entry_count": 4777,
+      "alien_entry_count": 188,
+      "by_name": {
+        "Mii": 31,
+        "Mazuma": 35,
+        "Shizu": 20,
+        "Karli": 27,
+        "Lilio": 23,
+        "Nafe": 50,
+        "Zaha": 24
+      },
+      "missing_latin_name_count": 0,
+      "korean_transliteration_residual_count": 0,
+      "missing_latin_names": [],
+      "korean_transliteration_residuals": [],
+      "passed": true
+    },
+    {
+      "path": "work/localization/final_results_codex/translation_map.json",
+      "sha256": "d2e2d319f84a7fc86e52a4ecad72564c024427986cbb26c439766ef77fff5f87",
+      "entry_count": 4742,
+      "alien_entry_count": 188,
+      "by_name": {
+        "Mii": 31,
+        "Mazuma": 35,
+        "Shizu": 20,
+        "Karli": 27,
+        "Lilio": 23,
+        "Nafe": 50,
+        "Zaha": 24
+      },
+      "missing_latin_name_count": 0,
+      "korean_transliteration_residual_count": 0,
+      "missing_latin_names": [],
+      "korean_transliteration_residuals": [],
+      "passed": true
+    }
+  ],
+  "change_report_validation": {
+    "path": "work/localization/alien_name_reversion_report.json",
+    "sha256": "d92b8d4ac84aab0602ded223a39afa61f4d71dcd4f8452c6776f8fecc93c1830",
+    "reported_passed": true,
+    "reported_changed_packet_entries": 980,
+    "verified_changed_packet_entries": 980,
+    "bad_change_count": 0,
+    "reported_residual_count": 0,
+    "iso_or_patch_built": false,
+    "bad_changes": [],
+    "passed": true
+  },
+  "hd_stage": {
+    "schema": "brs-stage-hd-alien-name-revert-qa-v3",
+    "passed": true,
+    "expected_changed_indices": [
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "changed_indices": [
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "outside_target_changed_pixels": 0,
+    "per_cell": [
+      {
+        "index": 0,
+        "name": null,
+        "changed_pixels": 0,
+        "band": [
+          0,
+          240,
+          204,
+          308
+        ]
+      },
+      {
+        "index": 1,
+        "name": null,
+        "changed_pixels": 0,
+        "band": [
+          204,
+          240,
+          408,
+          308
+        ]
+      },
+      {
+        "index": 2,
+        "name": null,
+        "changed_pixels": 0,
+        "band": [
+          408,
+          240,
+          616,
+          308
+        ]
+      },
+      {
+        "index": 3,
+        "name": null,
+        "changed_pixels": 0,
+        "band": [
+          616,
+          240,
+          820,
+          308
+        ]
+      },
+      {
+        "index": 4,
+        "name": null,
+        "changed_pixels": 0,
+        "band": [
+          820,
+          240,
+          1024,
+          308
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Nafe/XNFE",
+        "changed_pixels": 1333,
+        "band": [
+          0,
+          548,
+          204,
+          616
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Zaha/SAHA",
+        "changed_pixels": 1647,
+        "band": [
+          204,
+          548,
+          408,
+          616
+        ]
+      },
+      {
+        "index": 7,
+        "name": null,
+        "changed_pixels": 0,
+        "band": [
+          408,
+          548,
+          616,
+          616
+        ]
+      },
+      {
+        "index": 8,
+        "name": null,
+        "changed_pixels": 0,
+        "band": [
+          616,
+          548,
+          820,
+          616
+        ]
+      },
+      {
+        "index": 9,
+        "name": "Mii/MEFE",
+        "changed_pixels": 1475,
+        "band": [
+          820,
+          548,
+          1024,
+          616
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Mazuma/MZMA",
+        "changed_pixels": 1687,
+        "band": [
+          0,
+          860,
+          204,
+          928
+        ]
+      },
+      {
+        "index": 11,
+        "name": "Shizu/SZZU",
+        "changed_pixels": 1201,
+        "band": [
+          204,
+          860,
+          408,
+          928
+        ]
+      },
+      {
+        "index": 12,
+        "name": "Lilio/LLWO",
+        "changed_pixels": 1731,
+        "band": [
+          408,
+          860,
+          616,
+          928
+        ]
+      },
+      {
+        "index": 13,
+        "name": null,
+        "changed_pixels": 0,
+        "band": [
+          616,
+          860,
+          820,
+          928
+        ]
+      }
+    ],
+    "comparison": "work\\nameplate_audit\\hd_alien_name_revert\\stage\\stage_alien_names_before_after.jpg",
+    "alignment_qa": "work/nameplate_audit/hd_alien_name_revert/stage_centering/qa.json",
+    "live_texture": "work\\tools\\ppsspp\\portable\\memstick\\PSP\\TEXTURES\\NPUH10126\\done\\000000006b38aa9e00000000.png",
+    "live_sha256": "4d7f316914c71e844ba86f8362d18f08de6a1af75372b22fc95181388159f979"
+  },
+  "hd_stage_centering": {
+    "schema": "brs-stage-hd-alien-name-centering-qa-v1",
+    "passed": true,
+    "alignment_reference": {
+      "index": 12,
+      "name": "Lilio",
+      "original_code": "LLWO",
+      "source_center_offset": 2.5
+    },
+    "expected_changed_indices": [
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "changed_indices": [
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "outside_target_changed_pixels": 0,
+    "alignment": [
+      {
+        "index": 5,
+        "name": "Nafe/XNFE",
+        "centered_x": 66,
+        "glyph_width": 92,
+        "actual_center": 112.0,
+        "target_center": 112.0,
+        "center_error": 0.0
+      },
+      {
+        "index": 6,
+        "name": "Zaha/SAHA",
+        "centered_x": 254,
+        "glyph_width": 124,
+        "actual_center": 316.0,
+        "target_center": 316.0,
+        "center_error": 0.0
+      },
+      {
+        "index": 9,
+        "name": "Mii/MEFE",
+        "centered_x": 886,
+        "glyph_width": 92,
+        "actual_center": 932.0,
+        "target_center": 932.0,
+        "center_error": 0.0
+      },
+      {
+        "index": 10,
+        "name": "Mazuma/MZMA",
+        "centered_x": 66,
+        "glyph_width": 92,
+        "actual_center": 112.0,
+        "target_center": 112.0,
+        "center_error": 0.0
+      },
+      {
+        "index": 11,
+        "name": "Shizu/SZZU",
+        "centered_x": 270,
+        "glyph_width": 92,
+        "actual_center": 316.0,
+        "target_center": 316.0,
+        "center_error": 0.0
+      },
+      {
+        "index": 12,
+        "name": "Lilio/LLWO",
+        "centered_x": 476,
+        "glyph_width": 92,
+        "actual_center": 522.0,
+        "target_center": 522.0,
+        "center_error": 0.0
+      }
+    ],
+    "per_cell": [
+      {
+        "index": 0,
+        "name": null,
+        "band": [
+          0,
+          240,
+          204,
+          308
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "index": 1,
+        "name": null,
+        "band": [
+          204,
+          240,
+          408,
+          308
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "index": 2,
+        "name": null,
+        "band": [
+          408,
+          240,
+          616,
+          308
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "index": 3,
+        "name": null,
+        "band": [
+          616,
+          240,
+          820,
+          308
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "index": 4,
+        "name": null,
+        "band": [
+          820,
+          240,
+          1024,
+          308
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "index": 5,
+        "name": "Nafe/XNFE",
+        "band": [
+          0,
+          548,
+          204,
+          616
+        ],
+        "changed_pixels": 992
+      },
+      {
+        "index": 6,
+        "name": "Zaha/SAHA",
+        "band": [
+          204,
+          548,
+          408,
+          616
+        ],
+        "changed_pixels": 1316
+      },
+      {
+        "index": 7,
+        "name": null,
+        "band": [
+          408,
+          548,
+          616,
+          616
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "index": 8,
+        "name": null,
+        "band": [
+          616,
+          548,
+          820,
+          616
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "index": 9,
+        "name": "Mii/MEFE",
+        "band": [
+          820,
+          548,
+          1024,
+          616
+        ],
+        "changed_pixels": 992
+      },
+      {
+        "index": 10,
+        "name": "Mazuma/MZMA",
+        "band": [
+          0,
+          860,
+          204,
+          928
+        ],
+        "changed_pixels": 1232
+      },
+      {
+        "index": 11,
+        "name": "Shizu/SZZU",
+        "band": [
+          204,
+          860,
+          408,
+          928
+        ],
+        "changed_pixels": 848
+      },
+      {
+        "index": 12,
+        "name": "Lilio/LLWO",
+        "band": [
+          408,
+          860,
+          616,
+          928
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "index": 13,
+        "name": null,
+        "band": [
+          616,
+          860,
+          820,
+          928
+        ],
+        "changed_pixels": 0
+      }
+    ],
+    "comparison": "work\\nameplate_audit\\hd_alien_name_revert\\stage_centering\\stage_name_centering_before_after.jpg",
+    "live_texture": "work\\tools\\ppsspp\\portable\\memstick\\PSP\\TEXTURES\\NPUH10126\\done\\000000006b38aa9e00000000.png",
+    "live_sha256": "4d7f316914c71e844ba86f8362d18f08de6a1af75372b22fc95181388159f979",
+    "iso_or_patch_built": false
+  },
+  "hd_stage_saha_cleanup": {
+    "schema": "brs-stage-saha-trailing-i-cleanup-qa-v1",
+    "before": "work/nameplate_audit/hd_alien_name_revert/stage_saha_cleanup/backup/000000006b38aa9e00000000.english-original.png",
+    "before_sha256": "4d7f316914c71e844ba86f8362d18f08de6a1af75372b22fc95181388159f979",
+    "after": "work/tools/ppsspp/portable/memstick/PSP/TEXTURES/NPUH10126/done/000000006b38aa9e00000000.png",
+    "after_sha256": "50d275b956d6bca3a8be39810ae07c618cc663b83b4a78f7a8d306f35a997409",
+    "saha_band": [
+      204,
+      548,
+      408,
+      616
+    ],
+    "changed_pixel_count": 1077,
+    "changed_bbox": [
+      254,
+      590,
+      408,
+      613
+    ],
+    "outside_saha_changed_pixel_count": 0,
+    "trailing_i_region": [
+      374,
+      592,
+      378,
+      613
+    ],
+    "trailing_i_nonblack_before": 80,
+    "trailing_i_nonblack_after": 0,
+    "stale_edge_region": [
+      405,
+      590,
+      408,
+      613
+    ],
+    "stale_edge_nonblack_before": 69,
+    "stale_edge_nonblack_after": 0,
+    "saha_glyph_before": [
+      254,
+      592,
+      346,
+      613
+    ],
+    "saha_glyph_after": [
+      270,
+      592,
+      362,
+      613
+    ],
+    "final_a_region_before": [
+      326,
+      592,
+      346,
+      613
+    ],
+    "final_a_region_after": [
+      342,
+      592,
+      362,
+      613
+    ],
+    "final_a_nonblack_after": 256,
+    "bright_components_before": [
+      {
+        "bbox": [
+          254,
+          592,
+          274,
+          612
+        ],
+        "pixel_count": 272
+      },
+      {
+        "bbox": [
+          278,
+          592,
+          298,
+          612
+        ],
+        "pixel_count": 256
+      },
+      {
+        "bbox": [
+          302,
+          592,
+          322,
+          612
+        ],
+        "pixel_count": 208
+      },
+      {
+        "bbox": [
+          326,
+          592,
+          346,
+          612
+        ],
+        "pixel_count": 256
+      },
+      {
+        "bbox": [
+          374,
+          592,
+          378,
+          612
+        ],
+        "pixel_count": 80
+      },
+      {
+        "bbox": [
+          405,
+          592,
+          408,
+          612
+        ],
+        "pixel_count": 60
+      }
+    ],
+    "bright_components_after": [
+      {
+        "bbox": [
+          270,
+          592,
+          290,
+          612
+        ],
+        "pixel_count": 272
+      },
+      {
+        "bbox": [
+          294,
+          592,
+          314,
+          612
+        ],
+        "pixel_count": 256
+      },
+      {
+        "bbox": [
+          318,
+          592,
+          338,
+          612
+        ],
+        "pixel_count": 208
+      },
+      {
+        "bbox": [
+          342,
+          592,
+          362,
+          612
+        ],
+        "pixel_count": 256
+      }
+    ],
+    "comparison": "work/nameplate_audit/hd_alien_name_revert/stage_saha_cleanup/saha_trailing_i_before_after.png",
+    "checks": {
+      "some_pixels_changed": true,
+      "only_saha_band_changed": true,
+      "trailing_i_existed_before": true,
+      "trailing_i_is_black_after": true,
+      "stale_edge_existed_before": true,
+      "stale_edge_is_black_after": true,
+      "genuine_saha_shape_preserved_after_recentering": true,
+      "final_a_preserved_exactly": true,
+      "final_a_still_visible": true,
+      "exactly_four_centered_letter_components": true,
+      "saha_center_matches_llwo_reference": true
+    },
+    "iso_or_patch_built": false,
+    "passed": true
+  },
+  "hd_field_wildcard": {
+    "schema": "brs-field-hd-wildcard-alien-name-revert-qa-v1",
+    "passed": true,
+    "changed_files": [
+      "000000000683079a00000000.png",
+      "00000000519c778100000000.png",
+      "00000000ab72d01f00000000.png"
+    ],
+    "expected_changed_files": [
+      "00000000ab72d01f00000000.png",
+      "000000000683079a00000000.png",
+      "00000000519c778100000000.png"
+    ],
+    "records": [
+      {
+        "filename": "000000000683079a00000000.png",
+        "target_alien": true,
+        "changed": true,
+        "sha256_before": "69faa8d6c2c0895e008245ea2f2a9f3ecf4d86fdb6196d987071adca4c80b138",
+        "sha256_after": "777cdfe4a3a8a7a4c97d821ce18fdee541c5544e9275bc16890054f2aae1e2dc",
+        "matches_original_english_backup_bytes": true,
+        "matches_original_english_pixels": true
+      },
+      {
+        "filename": "000000003fe9244200000000.png",
+        "target_alien": false,
+        "changed": false,
+        "sha256_before": "92d3d736a3347fef62318bf14a1e9f9139c4c7cda4e8d400736a9a6a5ed0ceab",
+        "sha256_after": "92d3d736a3347fef62318bf14a1e9f9139c4c7cda4e8d400736a9a6a5ed0ceab"
+      },
+      {
+        "filename": "00000000519c778100000000.png",
+        "target_alien": true,
+        "changed": true,
+        "sha256_before": "9cde41c9bb0a56278e5d80ccc5a6b162679bf426ff04e0560a83c1da0333d0c8",
+        "sha256_after": "c4af8c20a83fdf86bdcc046c3ebbdaf28914b4989b58e9a439ceee4324629c24",
+        "matches_original_english_backup_bytes": true,
+        "matches_original_english_pixels": true
+      },
+      {
+        "filename": "00000000756541c500000000.png",
+        "target_alien": false,
+        "changed": false,
+        "sha256_before": "6bca8309427b146c3b80aaa414edf7d71f889e301fa6d250d79617efcd858cd8",
+        "sha256_after": "6bca8309427b146c3b80aaa414edf7d71f889e301fa6d250d79617efcd858cd8"
+      },
+      {
+        "filename": "0000000086ed57a800000000.png",
+        "target_alien": false,
+        "changed": false,
+        "sha256_before": "bbad3af98f9ec1f12a9d41e9b2220616048a38de23ecd6d67d953b38894efe1b",
+        "sha256_after": "bbad3af98f9ec1f12a9d41e9b2220616048a38de23ecd6d67d953b38894efe1b"
+      },
+      {
+        "filename": "0000000086ed57a900000000.png",
+        "target_alien": false,
+        "changed": false,
+        "sha256_before": "168596afe3f5af2a3558f41412b9a861028734729f5c98ba9968725ce24841a3",
+        "sha256_after": "168596afe3f5af2a3558f41412b9a861028734729f5c98ba9968725ce24841a3"
+      },
+      {
+        "filename": "000000008e44f6dc00000000.png",
+        "target_alien": false,
+        "changed": false,
+        "sha256_before": "6fa24afbeca566208c87b89bc93b2372a901710ca509c9385553b713ca527297",
+        "sha256_after": "6fa24afbeca566208c87b89bc93b2372a901710ca509c9385553b713ca527297"
+      },
+      {
+        "filename": "0000000094588e6500000000.png",
+        "target_alien": false,
+        "changed": false,
+        "sha256_before": "f59cb2682fd155d30e40d3e008d6d2c62fe9c1680135ca0a9a8e464042f854cf",
+        "sha256_after": "f59cb2682fd155d30e40d3e008d6d2c62fe9c1680135ca0a9a8e464042f854cf"
+      },
+      {
+        "filename": "00000000965be6fa00000000.png",
+        "target_alien": false,
+        "changed": false,
+        "sha256_before": "e3ed18be741eb291d37b9cdbc7f09e036a0829a3692ac5ff782980f2f09aef97",
+        "sha256_after": "e3ed18be741eb291d37b9cdbc7f09e036a0829a3692ac5ff782980f2f09aef97"
+      },
+      {
+        "filename": "0000000099219ac400000000.png",
+        "target_alien": false,
+        "changed": false,
+        "sha256_before": "d5cdb81e349d4390dab5477464966a67ebaa3ce86ba2468466e32ef86cc7a155",
+        "sha256_after": "d5cdb81e349d4390dab5477464966a67ebaa3ce86ba2468466e32ef86cc7a155"
+      },
+      {
+        "filename": "00000000ab72d01f00000000.png",
+        "target_alien": true,
+        "changed": true,
+        "sha256_before": "b9bdbc6f265a169914ce7fe7ebd0fbfa769634d8919092f8f601f6995ff24954",
+        "sha256_after": "9d59c0ff8ddcc21ab24f31876792b40c21527dec3bc5d5ae1510018e43e2e568",
+        "matches_original_english_backup_bytes": true,
+        "matches_original_english_pixels": true
+      },
+      {
+        "filename": "00000000c3448cc800000000.png",
+        "target_alien": false,
+        "changed": false,
+        "sha256_before": "a502ac1f2e5d05413d6131b5f861ae54ff618c072c3986f62232f50d77e556cb",
+        "sha256_after": "a502ac1f2e5d05413d6131b5f861ae54ff618c072c3986f62232f50d77e556cb"
+      },
+      {
+        "filename": "00000000eaf6cbe400000000.png",
+        "target_alien": false,
+        "changed": false,
+        "sha256_before": "38eaede2231ee784198903e643b7b3ab5c3ec8b5a91f14e4640f80ab11e52e43",
+        "sha256_after": "38eaede2231ee784198903e643b7b3ab5c3ec8b5a91f14e4640f80ab11e52e43"
+      },
+      {
+        "filename": "00000000f374466c00000000.png",
+        "target_alien": false,
+        "changed": false,
+        "sha256_before": "cab08def3faf1b54249f3ed0327e871df8a033d178e8fa19638b77fb0e669092",
+        "sha256_after": "cab08def3faf1b54249f3ed0327e871df8a033d178e8fa19638b77fb0e669092"
+      }
+    ],
+    "comparison": "work\\nameplate_audit\\hd_alien_name_revert\\field_wildcard\\alien_wildcard_before_after.jpg"
+  },
+  "hd_field_exact": {
+    "report": "work/nameplate_audit/hd_alien_name_revert/field_exact/install_report.json",
+    "passed": true,
+    "mapping_counts": {
+      "00000000691863ef07cfa5b2": 1,
+      "00000000ca25063369a4ac7d": 1,
+      "000000001caf8264559682bc": 1,
+      "00000000a61b84d128729c0c": 1
+    },
+    "collision_scan_passed": true,
+    "collision_scan_files": 454,
+    "expected_runtime_occurrences": {
+      "Mazuma": 464,
+      "Karli": 464,
+      "Shizu": 464,
+      "Mii": 464
+    },
+    "mii_runtime_hash_validation": {
+      "available": true,
+      "prior_exact_key": "00000000a61b84d128729c0c",
+      "derived_exact_key": "00000000a61b84d128729c0c",
+      "prior_runtime_dump_match": true,
+      "matched": true
+    },
+    "iso_or_patch_built": false
+  },
+  "ppsspp": {
+    "texture_root": "work/tools/ppsspp/portable/memstick/PSP/TEXTURES/NPUH10126",
+    "textures_ini": "work/tools/ppsspp/portable/memstick/PSP/TEXTURES/NPUH10126/textures.ini",
+    "textures_ini_sha256": "5447bf2d71955e8a905667d760fc452730bd673c1045670b6eda059dbfccec79",
+    "required_mapping_counts": {
+      "000000006b38aa9e00000000.png = done/000000006b38aa9e00000000.png": 1,
+      "00000000ab72d01f00000000.png = done/00000000ab72d01f00000000.png": 1,
+      "000000000683079a00000000.png = done/000000000683079a00000000.png": 1,
+      "00000000519c778100000000.png = done/00000000519c778100000000.png": 1,
+      "00000000691863ef07cfa5b2.png = done/00000000691863ef07cfa5b2.png": 1,
+      "00000000ca25063369a4ac7d.png = done/00000000ca25063369a4ac7d.png": 1,
+      "000000001caf8264559682bc.png = done/000000001caf8264559682bc.png": 1,
+      "00000000a61b84d128729c0c.png = done/00000000a61b84d128729c0c.png": 1
+    },
+    "required_mapping_files_exist": {
+      "000000006b38aa9e00000000.png = done/000000006b38aa9e00000000.png": true,
+      "00000000ab72d01f00000000.png = done/00000000ab72d01f00000000.png": true,
+      "000000000683079a00000000.png = done/000000000683079a00000000.png": true,
+      "00000000519c778100000000.png = done/00000000519c778100000000.png": true,
+      "00000000691863ef07cfa5b2.png = done/00000000691863ef07cfa5b2.png": true,
+      "00000000ca25063369a4ac7d.png = done/00000000ca25063369a4ac7d.png": true,
+      "000000001caf8264559682bc.png = done/000000001caf8264559682bc.png": true,
+      "00000000a61b84d128729c0c.png = done/00000000a61b84d128729c0c.png": true
+    },
+    "ReplaceTextures": true,
+    "SaveNewTextures": false
+  },
+  "existing_test_iso": {
+    "path": "work/release_build/nameplate_fix/BRS_Korean_v1.0.iso",
+    "exists": true,
+    "size": 1378951168,
+    "mtime_ns": 1785645158908793500,
+    "sha256": "e6b683b2cd635c72969fc505011c020e9557b4f28f6df36fbf796e414eef9b87",
+    "matches_exact_overlay_report": true,
+    "rebuilt_this_operation": false
+  },
+  "syntax": {
+    "python": [
+      {
+        "path": "work/localization/revert_alien_names.py",
+        "result": "ok"
+      },
+      {
+        "path": "work/localization/fix_mii_term.py",
+        "result": "ok"
+      },
+      {
+        "path": "work/localization/build_final_results.py",
+        "result": "ok"
+      },
+      {
+        "path": "work/nameplate_audit/build_korean_nameplates.py",
+        "result": "ok"
+      },
+      {
+        "path": "work/ui_graphics_pipeline/root_generate_ui_fallback.py",
+        "result": "ok"
+      },
+      {
+        "path": "work/ui_graphics_pipeline/hd_pack_field_nameplates.py",
+        "result": "ok"
+      },
+      {
+        "path": "work/ui_graphics_pipeline/hd_pack_korean_names.py",
+        "result": "ok"
+      },
+      {
+        "path": "work/ui_graphics_pipeline/install_alien_english_exact_overlays.py",
+        "result": "ok"
+      },
+      {
+        "path": "work/font_pipeline/explore_final_translation_map.py",
+        "result": "ok"
+      },
+      {
+        "path": "work/nameplate_audit/hd_alien_name_revert/stage_saha_cleanup/validate_cleanup.py",
+        "result": "ok"
+      }
+    ],
+    "mjs": [
+      {
+        "path": "work/localization/review_scripts/review_xtc_gallery.mjs",
+        "returncode": 0,
+        "stderr": ""
+      },
+      {
+        "path": "work/localization/review_scripts/review_xtc_gameplay_ui.mjs",
+        "returncode": 0,
+        "stderr": ""
+      },
+      {
+        "path": "work/localization/review_scripts/verify_xtc_gallery.mjs",
+        "returncode": 0,
+        "stderr": ""
+      },
+      {
+        "path": "work/localization/review_scripts/verify_xtc_gameplay_ui.mjs",
+        "returncode": 0,
+        "stderr": ""
+      }
+    ],
+    "passed": true
+  },
+  "derived_translation_audit": {
+    "json": "work/font_pipeline/final_translation_map_exploration.json",
+    "tsv": "work/font_pipeline/final_translation_map_pairs.tsv"
+  },
+  "overview": "work/nameplate_audit/hd_alien_name_revert/alien_name_reversion_overview.jpg",
+  "overview_sha256": "545b0b20ad58b8029fb75eaa904566916b477d50344f7f1efc3ab7a17c797f25",
+  "iso_or_patch_built": false,
+  "passed": true,
+  "release_candidate_context": {
+    "patch_built_after_audit": true,
+    "target_sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
+    "note": "보고서 안의 iso_or_patch_built=false는 원래 감사 실행 시점의 기록입니다."
+  }
+}

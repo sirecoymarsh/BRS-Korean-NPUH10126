@@ -1,0 +1,54 @@
+{
+  "schema": "brs-git-commit-candidate-qa-v1",
+  "passed": true,
+  "git_commit_candidate_ready": true,
+  "public_release_upload_ready": true,
+  "public_release_blocker": null,
+  "source": {
+    "size": 1360363520,
+    "sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e"
+  },
+  "target": {
+    "size": 1379434496,
+    "sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
+    "iso_included": false
+  },
+  "patch": {
+    "size": 91513924,
+    "sha256": "bf1e5acca39dc432aebcb58c0dabca5b85f3179b5737c0a370deaf47e76c1404",
+    "github_file_limit": 100000000,
+    "bytes_below_github_limit": 8486076,
+    "record_count": 4080
+  },
+  "translation": {
+    "entry_count": 4777,
+    "error_count": 0,
+    "warning_count": 0
+  },
+  "runtime": {
+    "emulator": "PPSSPP v1.20.4",
+    "product_id": "NPUH10126",
+    "target_sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
+    "boot_marker_found": true,
+    "boot_marker": "release_build/git_candidate_20260803/BRS_Korean_v1.0.iso",
+    "current_session_runtime_error_count": 0,
+    "clean_shutdown_cache_marker_found": true,
+    "replace_textures": true,
+    "save_new_textures": false,
+    "user_play_confirmation": "잘 돌아간다",
+    "confirmed_local_date": "2026-08-03",
+    "passed": true
+  },
+  "checks": {
+    "cumulative_build": true,
+    "builder_delta_roundtrip": true,
+    "powershell_installer_roundtrip": true,
+    "restore_whatif": true,
+    "release_gate": true,
+    "alien_latin_name_policy": true,
+    "hd_stage_atlas": true,
+    "no_iso_in_distribution": true,
+    "absolute_paths_redacted": true,
+    "current_target_ppsspp_runtime_smoke": "passed"
+  }
+}
