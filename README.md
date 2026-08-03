@@ -1,5 +1,11 @@
 # BLACK★ROCK SHOOTER THE GAME 한국어 패치 v1.0
 
+<p align="center">
+  <img src="docs/images/black-rock-shooter-the-game-artwork.jpg" alt="BLACK★ROCK SHOOTER THE GAME artwork" width="480">
+</p>
+
+> 게임 이미지와 로고의 권리는 각 권리자에게 있습니다. 자세한 내용은 [제3자 자산 및 권리 고지](ASSET_NOTICE.md)를 확인하십시오.
+
 대상은 미국 PSN판 `NPUH10126`입니다. 배포본에는 게임 ISO가 들어 있지 않으며,
 사용자가 보유한 지원 원본으로 새 한국어판 ISO를 생성합니다. 원본 ISO는 수정하지 않습니다.
 
