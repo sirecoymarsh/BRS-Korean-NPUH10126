@@ -1,0 +1,16 @@
+{
+  "schema": "brs-stage-3-2-portal-static-audit-v1",
+  "ok": true,
+  "scope": [
+    "MAP_D_STG03_02",
+    "MAP_D_STG03_02A",
+    "MAP_D_STG03_02B",
+    "MAP_D_STG03_02C"
+  ],
+  "files_checked": 4,
+  "all_tail_byte_identical": true,
+  "all_string_start_offsets_identical": true,
+  "runtime_status": "pending_user_runtime_test",
+  "errors": [],
+  "absolute_paths_redacted": true
+}

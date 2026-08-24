@@ -1,25 +1,18 @@
 {
-  "schema": "brs-current-target-ppsspp-runtime-status-v1",
-  "ok": true,
-  "passed": true,
-  "target_sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
-  "runtime_smoke_status": "passed",
-  "runtime_smoke_passed": true,
-  "runtime": {
-    "emulator": "PPSSPP v1.20.4",
-    "product_id": "NPUH10126",
-    "target_sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
-    "boot_marker_found": true,
-    "boot_marker": "release_build/git_candidate_20260803/BRS_Korean_v1.0.iso",
-    "current_session_runtime_error_count": 0,
-    "clean_shutdown_cache_marker_found": true,
-    "replace_textures": true,
-    "save_new_textures": false,
-    "user_play_confirmation": "잘 돌아간다",
-    "confirmed_local_date": "2026-08-03",
-    "passed": true
+  "schema": "brs-ppsspp-hotfix-qa-public-v1",
+  "passed_for_hotfix_scope": true,
+  "emulator": "PPSSPP",
+  "product_id": "NPUH10126",
+  "target_iso_sha256": "525b5d2b7d8f4723be25b026e72b69d07d30c2cf84d8a48235577ca3728fc92a",
+  "stage_2_mission_3": {
+    "status": "passed",
+    "evidence": "user_runtime_confirmation",
+    "confirmed_at": "2026-08-23T21:12:10.5474862+09:00"
   },
-  "historical_evidence_available": true,
-  "historical_evidence_scope": "earlier target hashes only",
-  "note": "현재 대상은 별도 부팅 로그와 사용자 플레이 확인으로 검증했습니다."
+  "stage_3_mission_2": {
+    "status": "pending_user_runtime_test",
+    "required_check": "movement portal transition"
+  },
+  "claim_scope": "2-3 runtime regression only; 3-2 runtime remains pending",
+  "absolute_paths_redacted": true
 }

@@ -1,37 +1,29 @@
 {
-  "schema": "brs-powershell-installer-roundtrip-qa-v1",
+  "schema": "brs-powershell-patcher-test-public-v2",
   "passed": true,
-  "installer": "Apply-KoreanPatch.ps1",
-  "installer_sha256": "9e86105772badba3c97b207a739e11b6b3cffea9959866b3801044d8da247b76",
-  "restore_script": "Restore-Original.ps1",
-  "restore_script_sha256": "e66301d108939cadb9ffed47c79bd1b13f4c3a1aed07db1998b096fb54eb0571",
+  "powershell": "Windows PowerShell 5.1-compatible installer",
   "source": {
     "size": 1360363520,
     "sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e"
   },
-  "target": {
-    "size": 1379434496,
-    "sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9"
-  },
   "patch": {
-    "size": 91513924,
-    "sha256": "bf1e5acca39dc432aebcb58c0dabca5b85f3179b5737c0a370deaf47e76c1404"
+    "name": "BRS_Korean_NPUH10126_v1.0.1.brspatch",
+    "size": 91464923,
+    "sha256": "9b00259384529a3222fffc14da432b1bb62692f143100cf22f6a98374c18136f",
+    "schema": "brs-binary-delta/v1",
+    "compression": "zlib",
+    "record_count": 4084,
+    "changed_bytes": 101588230
   },
-  "install_journal": {
-    "schema": "brs-korean-install-journal/v1",
-    "source_iso": "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
-    "source_sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e",
-    "patched_iso": "work/release_build/git_candidate_20260803/delta_roundtrip.iso",
-    "patched_sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
-    "patch_file": "work/release_build/git_candidate_20260803/BRS_Korean_NPUH10126_v1.0.brspatch",
-    "installed_utc": "2026-08-03T10:39:45.9491859Z"
+  "actual_target": {
+    "size": 1378271232,
+    "sha256": "525b5d2b7d8f4723be25b026e72b69d07d30c2cf84d8a48235577ca3728fc92a"
   },
-  "checks": {
-    "source_hash_matched": true,
-    "patch_header_matched": true,
-    "output_size_matched": true,
-    "output_sha256_matched": true,
-    "source_iso_untouched": true,
-    "restore_whatif_passed": true
-  }
+  "expected_target": {
+    "size": 1378271232,
+    "sha256": "525b5d2b7d8f4723be25b026e72b69d07d30c2cf84d8a48235577ca3728fc92a"
+  },
+  "hash_match": true,
+  "original_preserved": true,
+  "absolute_paths_redacted": true
 }

@@ -1,53 +1,43 @@
 {
-  "schema": "brs-korean-distribution/v2",
-  "package_name": "BRS_Korean_NPUH10126_v1.0",
-  "version": "1.0",
+  "schema": "brs-korean-distribution/v3",
+  "package_name": "BRS_Korean_NPUH10126_v1.0.1",
+  "version": "1.0.1",
   "product_id": "NPUH10126",
   "passed": true,
-  "release_readiness": {
-    "git_commit_candidate_ready": true,
-    "public_release_upload_ready": true,
-    "current_target_ppsspp_runtime_smoke": "passed"
-  },
+  "release_scope": "stage 2 mission 3 emergency runtime hotfix",
   "source": {
     "size": 1360363520,
     "sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e"
   },
   "target": {
-    "size": 1379434496,
-    "sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
+    "size": 1378271232,
+    "sha256": "525b5d2b7d8f4723be25b026e72b69d07d30c2cf84d8a48235577ca3728fc92a",
     "iso_included": false
   },
   "patch": {
-    "name": "BRS_Korean_NPUH10126_v1.0.brspatch",
-    "size": 91513924,
-    "sha256": "bf1e5acca39dc432aebcb58c0dabca5b85f3179b5737c0a370deaf47e76c1404",
+    "name": "BRS_Korean_NPUH10126_v1.0.1.brspatch",
+    "size": 91464923,
+    "sha256": "9b00259384529a3222fffc14da432b1bb62692f143100cf22f6a98374c18136f",
     "schema": "brs-binary-delta/v1",
     "compression": "zlib",
-    "record_count": 4080,
-    "changed_bytes": 101607375,
+    "record_count": 4084,
+    "changed_bytes": 101588230,
     "github_file_limit": 100000000,
-    "bytes_below_github_limit": 8486076
+    "bytes_below_github_limit": 8535077
+  },
+  "hotfix": {
+    "issue": "stage 2 mission 3 stops or crashes after the intro cutscene",
+    "root_cause": "translated BSCR string relocation changed bytecode-referenced addresses",
+    "fix": "immutable original string slots with compact aliases and space padding before the original NUL",
+    "user_runtime_confirmation": "passed",
+    "confirmed_target_sha256": "525b5d2b7d8f4723be25b026e72b69d07d30c2cf84d8a48235577ca3728fc92a"
   },
   "translation": {
-    "entry_count": 4777,
-    "semantic_id_count": 4777,
-    "hangul_closure_count": 924,
-    "error_count": 0,
-    "warning_count": 0
-  },
-  "nameplates": {
-    "fevt_modified_human_system_occurrence_count": 6518,
-    "alien_text_names": [
-      "Mii",
-      "Mazuma",
-      "Shizu",
-      "Karli",
-      "Lilio",
-      "Nafe",
-      "Zaha"
-    ],
-    "alien_stage_codes": [
+    "entry_count": 4742,
+    "translation_map_sha256": "05cec6db406293057dcf8a4e440c47f185df41f1168be59a10c5388d4279fc2a",
+    "translator_model": "Codex internal",
+    "ordinary_alien_name_korean_update": "prepared separately; excluded from exact runtime-confirmed hotfix target",
+    "communication_sender_codes": [
       "MEFE",
       "MZMA",
       "SZZU",
@@ -55,226 +45,31 @@
       "LLWO",
       "XNFE",
       "SAHA"
-    ],
-    "alien_names_preserved_in_latin": true
+    ]
   },
-  "ui_graphics": {
-    "fixed_pause_menu_labels_in_iso": "original English retained by design",
-    "optional_hd_pack": "BRS_Korean_HD_UI_Pack.zip",
-    "optional_hd_pack_size": 424955,
-    "optional_hd_pack_sha256": "e0735e7f9929d89ea707004699d825679a6c37b14640e4ca47fcf57523a9a274",
-    "optional_hd_asset_count": 27,
-    "stage_saha_cleanup_passed": true
+  "bscr": {
+    "file_count": 88,
+    "change_count": 22413,
+    "total_growth": 0,
+    "relocated_string_pointers": 0,
+    "address_change_count": 0,
+    "same_size_structure_tail_allowlist_files": 88
   },
   "verification": {
-    "build_report_passed": true,
-    "builder_delta_roundtrip_passed": true,
-    "powershell_installer_roundtrip_passed": true,
-    "restore_whatif_passed": true,
-    "current_target_ppsspp_runtime_smoke": "passed",
-    "ppsspp_runtime": {
-      "emulator": "PPSSPP v1.20.4",
-      "product_id": "NPUH10126",
-      "target_sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
-      "boot_marker_found": true,
-      "boot_marker": "release_build/git_candidate_20260803/BRS_Korean_v1.0.iso",
-      "current_session_runtime_error_count": 0,
-      "clean_shutdown_cache_marker_found": true,
-      "replace_textures": true,
-      "save_new_textures": false,
-      "user_play_confirmation": "잘 돌아간다",
-      "confirmed_local_date": "2026-08-03",
-      "passed": true
-    },
+    "builder_delta_roundtrip": "passed",
+    "powershell_installer_roundtrip": "passed",
+    "iso_replacement_entries": 641,
+    "iso_replacement_verification": "passed",
+    "stage_2_mission_3_runtime": "passed",
+    "stage_3_mission_2_static": "passed",
+    "stage_3_mission_2_runtime": "pending_user_runtime_test",
     "absolute_paths_redacted": true,
     "iso_excluded": true
   },
-  "package": {
-    "archive_name": "BRS_Korean_NPUH10126_v1.0.zip",
-    "checksum_file": "CHECKSUMS.sha256",
-    "deterministic_zip_timestamp": "2026-08-03T00:00:00",
-    "file_count_including_report_and_checksums": 38
-  },
-  "payload_before_report_and_checksums": [
-    {
-      "path": "Apply-KoreanPatch.bat",
-      "size": 752,
-      "sha256": "4fd3871bd7950016aa0ee884347cd3fbdf4af929083fae791e82618188a6b383"
-    },
-    {
-      "path": "Apply-KoreanPatch.ps1",
-      "size": 12336,
-      "sha256": "9e86105772badba3c97b207a739e11b6b3cffea9959866b3801044d8da247b76"
-    },
-    {
-      "path": "BRS_Korean_HD_UI_Pack.zip",
-      "size": 424955,
-      "sha256": "e0735e7f9929d89ea707004699d825679a6c37b14640e4ca47fcf57523a9a274"
-    },
-    {
-      "path": "BRS_Korean_NPUH10126_v1.0.brspatch",
-      "size": 91513924,
-      "sha256": "bf1e5acca39dc432aebcb58c0dabca5b85f3179b5737c0a370deaf47e76c1404"
-    },
-    {
-      "path": "LICENSES/Galmuri-OFL.txt",
-      "size": 4360,
-      "sha256": "86a3ee9495f942f0243f18c103da9faca27adb88142613edb8bb852e56c892c1"
-    },
-    {
-      "path": "LICENSES/NotoSansKR-NOTICE_KO.txt",
-      "size": 492,
-      "sha256": "a7d17ad85a245f79f8a7618dc666991236629d3f094ca00541b98998c652a281"
-    },
-    {
-      "path": "LICENSES/NotoSansKR-OFL.txt",
-      "size": 4237,
-      "sha256": "44b333b6f238a035b69de766bbaa995f6bfaa94f163a1a1d3c1088d92006e609"
-    },
-    {
-      "path": "README.md",
-      "size": 3524,
-      "sha256": "d0ea4c9ec4302ccf086c1543d8f28c761df818e59a9aa8ce0f0d3246abf842dc"
-    },
-    {
-      "path": "README_KO.md",
-      "size": 3524,
-      "sha256": "d0ea4c9ec4302ccf086c1543d8f28c761df818e59a9aa8ce0f0d3246abf842dc"
-    },
-    {
-      "path": "REPORTS/CUTSCENE_AND_UI_FIX.md",
-      "size": 2776,
-      "sha256": "77926372154d79ebc5cb47f066b474c7f4f6477c634c3925dc9c13cb519513ae"
-    },
-    {
-      "path": "REPORTS/README.md",
-      "size": 1573,
-      "sha256": "f7d2eb23e9980fb75c744e2813574dcad5f0162459c358cf31ac9ca4f46b2629"
-    },
-    {
-      "path": "REPORTS/alien_name_reversion_final_validation.json",
-      "size": 23708,
-      "sha256": "2e8524e9105b06ece7aebe66f51e7b624641ac3edd4c8fa588598869a09a8e14"
-    },
-    {
-      "path": "REPORTS/current_candidate_qa.json",
-      "size": 1695,
-      "sha256": "d533ea200ec1a21d3df4cce79cab356a03c773edfc9af2a308cb2c66c7bafa9b"
-    },
-    {
-      "path": "REPORTS/font_verification.json",
-      "size": 628,
-      "sha256": "c3c73c7c14169366418948471630cb21eb876c4fbe60cff3b925c6ab4ee85bb9"
-    },
-    {
-      "path": "REPORTS/governor_term_correction_report.json",
-      "size": 11679,
-      "sha256": "50dec27e9ddd447b75be5d170478133562a6ac03a80da30efd4c07256fa89cf9"
-    },
-    {
-      "path": "REPORTS/hd_ui_pack_report.json",
-      "size": 807,
-      "sha256": "de934cf25de7fc194911e3c05ef1cade7941f137bf2b3f94dfc2276d6124dab6"
-    },
-    {
-      "path": "REPORTS/language_audits/independent_audit_sscr_challenges.json",
-      "size": 1459,
-      "sha256": "5c19aa3e5925bb8255349f90d22044429bce9fab7167d499e6aab634751b8209"
-    },
-    {
-      "path": "REPORTS/language_audits/independent_audit_stage_01_stage_02_01.json",
-      "size": 1422,
-      "sha256": "3ad5cf9a2a3033c64d01d9c73ed59f4946b72b89b01fb866876a32e44e3948b6"
-    },
-    {
-      "path": "REPORTS/language_audits/independent_audit_stage_03_02_stage_06.json",
-      "size": 2950,
-      "sha256": "9e43f966734f25b2846c22b9ed95c0e2be99a5ca4ea26d5f83be95429b7363f9"
-    },
-    {
-      "path": "REPORTS/language_audits/independent_final_language_audit.json",
-      "size": 3609,
-      "sha256": "2cc0711e026a9d566d32691b5c2df2875dd28bd0513a87cc93598ae9d9284785"
-    },
-    {
-      "path": "REPORTS/language_audits/independent_validation_bscr_stage_02_02_02_03_03_01.json",
-      "size": 5080,
-      "sha256": "9f31af34470f214522c56060731e9edd3c0291c1fa08bf6f4b19d64e2768426f"
-    },
-    {
-      "path": "REPORTS/language_audits/independent_validation_sscr_missions_maps.json",
-      "size": 790,
-      "sha256": "58a4bbd21ce3495e926b67188fcc0989e1d3441a9c16bf752795d518673da9aa"
-    },
-    {
-      "path": "REPORTS/language_release_gate_report.json",
-      "size": 3464,
-      "sha256": "a57c6179d6149a68caa5cdf3c8783ba9d7b19e121b0ce8ddd55dd47dfc96de58"
-    },
-    {
-      "path": "REPORTS/powershell_patcher_test_report.json",
-      "size": 1510,
-      "sha256": "fb81a319f0afafe9fe61e65ad07fc96c148c2da611ceeaf7b8fc656767d61b1f"
-    },
-    {
-      "path": "REPORTS/ppsspp_evidence/final_font_atlas_4x.png",
-      "size": 9420,
-      "sha256": "fcee847203b56e342f2bcd977f06658491696815e31f7d694840a52d793c7bc6"
-    },
-    {
-      "path": "REPORTS/ppsspp_evidence/stage4_korean_subtitle_runtime.jpg",
-      "size": 83357,
-      "sha256": "483dfd4f9880fae2080d25fae1a25fbdb10bf12058695d4d13d2eb7b2590d8bd"
-    },
-    {
-      "path": "REPORTS/ppsspp_evidence/stage_select_uvfix_runtime_pass.png",
-      "size": 91779,
-      "sha256": "54c41b7b23bb18f6f7c51e647ed8c91772be2d18f9f45fb9a75997bea01f95d0"
-    },
-    {
-      "path": "REPORTS/ppsspp_final_qa_report.json",
-      "size": 1008,
-      "sha256": "cf7f59008b160387a4e1c9595349dabeb88da2ae8f605404495393dc3255bb29"
-    },
-    {
-      "path": "REPORTS/release_build_report.json",
-      "size": 3102,
-      "sha256": "9885d78cbd6d53a202deacad711509a09f100210be4382f20dbc36943ad1796d"
-    },
-    {
-      "path": "REPORTS/release_hd_stage_atlas_qa.json",
-      "size": 3589,
-      "sha256": "222d8cd7a8165b70f9ee47ff23d7b0acdd682c574a7aafd1054a6fe0fec35e4d"
-    },
-    {
-      "path": "REPORTS/stage_saha_cleanup_qa.json",
-      "size": 3273,
-      "sha256": "cbcbdb9cf5ff743285a30c024103b7aa2ef5dd2a295216f8789c4ba4da48177d"
-    },
-    {
-      "path": "REPORTS/ui_graphics/independent_ui_visual_audit.json",
-      "size": 9187,
-      "sha256": "f8e566bea15d282eee92ddd6beae546b05ed1103bad6eddd7dcb94c31b952e72"
-    },
-    {
-      "path": "REPORTS/ui_graphics/root_ui_fallback_contact.png",
-      "size": 404554,
-      "sha256": "57cfc0dd1828fd4fb4ab343985cdca14ec25d9e6cd1c1a5bd6f7872a96c659a7"
-    },
-    {
-      "path": "REPORTS/ui_graphics/ui_integration_report.json",
-      "size": 29279,
-      "sha256": "909702d5fbb6e0c4a83c651b3ef5dc6dca5f291bb2ca8aa5298a8bf277a5fb96"
-    },
-    {
-      "path": "Restore-Original.bat",
-      "size": 571,
-      "sha256": "cb0aec17b7bb5cfd79a4207e851218f7494b503fcd0964b7de56e5593ed2d1cb"
-    },
-    {
-      "path": "Restore-Original.ps1",
-      "size": 4333,
-      "sha256": "e66301d108939cadb9ffed47c79bd1b13f4c3a1aed07db1998b096fb54eb0571"
-    }
-  ]
+  "optional_hd_ui_pack": {
+    "name": "BRS_Korean_HD_UI_Pack.zip",
+    "size": 424955,
+    "sha256": "e0735e7f9929d89ea707004699d825679a6c37b14640e4ca47fcf57523a9a274",
+    "changed_in_hotfix": false
+  }
 }

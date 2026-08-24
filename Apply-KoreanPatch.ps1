@@ -124,7 +124,7 @@ function Expand-ZlibPayload([byte[]]$Compressed) {
 }
 
 if (-not $PatchFile) {
-    $PatchFile = Join-Path $PSScriptRoot 'BRS_Korean_NPUH10126_v1.0.brspatch'
+    $PatchFile = Join-Path $PSScriptRoot 'BRS_Korean_NPUH10126_v1.0.1.brspatch'
 }
 $source = Resolve-FullPath $SourceIso
 $patch = Resolve-FullPath $PatchFile
@@ -137,7 +137,7 @@ if (-not (Test-Path -LiteralPath $patch -PathType Leaf)) {
 if (-not $OutputIso) {
     $sourceDirectory = Split-Path -Parent $source
     $sourceBase = [IO.Path]::GetFileNameWithoutExtension($source)
-    $OutputIso = Join-Path $sourceDirectory ($sourceBase + '_Korean_v1.0.iso')
+    $OutputIso = Join-Path $sourceDirectory ($sourceBase + '_Korean_v1.0.1.iso')
 }
 $outputPath = Resolve-FullPath $OutputIso
 if ($source -eq $outputPath) {

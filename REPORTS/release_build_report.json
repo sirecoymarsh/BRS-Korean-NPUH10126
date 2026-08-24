@@ -1,78 +1,67 @@
 {
-  "schema": "brs-korean-release-build-v1",
+  "schema": "brs-korean-v1.0.1-hotfix-build-public-v1",
+  "passed": true,
   "source": {
-    "path": "<external>/Black_Rock_Shooter_The_Game_USA_PSN_PSP-PLAYASiA.iso",
     "size": 1360363520,
     "sha256": "4735b0d0f59d480991fd8cf034e5b0f2d98798cec275ab4162df09b8a6d23f0e"
   },
+  "target": {
+    "size": 1378271232,
+    "sha256": "525b5d2b7d8f4723be25b026e72b69d07d30c2cf84d8a48235577ca3728fc92a"
+  },
+  "patch": {
+    "name": "BRS_Korean_NPUH10126_v1.0.1.brspatch",
+    "size": 91464923,
+    "sha256": "9b00259384529a3222fffc14da432b1bb62692f143100cf22f6a98374c18136f",
+    "schema": "brs-binary-delta/v1",
+    "compression": "zlib",
+    "record_count": 4084,
+    "changed_bytes": 101588230
+  },
   "translation_map": {
-    "path": "work/localization/final_results/translation_map.json",
-    "entry_count": 4777,
-    "sha256": "2f7c9fc43129efedb0a03817d22f57407380eebf5794e51307afec6ffe20c7fb"
+    "entry_count": 4742,
+    "sha256": "05cec6db406293057dcf8a4e440c47f185df41f1168be59a10c5388d4279fc2a",
+    "translator_model": "Codex internal",
+    "translation_provenance": {
+      "model": "GPT-5.5 / Codex internal",
+      "task_id": "019f98ca-0f4b-7bf3-a357-e8b34271b1c6",
+      "date": "2026-08-23",
+      "reason": "Prevent BSCR bytecode address changes by fitting every translation into its immutable original string slot."
+    }
   },
   "font": {
-    "mapping_sha256": "05457e3b5f181b55a86683ebb45f6a4865888500c9dafe473de5d4cb2c1a0aec",
-    "cjk_mapping_sha256": "fd8e93e6d130a332a3b7487e874a259b2170c6b0d62f2cda3305f070b1fdb074",
-    "bscr_encoding": "utf8_cjk_alias",
+    "mapping_sha256": "dd97b1e3fb6bfbbe08889a955215b7b2c86afce9932547cb657f0af934c42353",
+    "cjk_mapping_sha256": "8f10bc8bcdcfe60b69534b9c0fa7375406a99593429ab794a2482f7d2ae15230",
+    "bscr_mapping_sha256": "dd97b1e3fb6bfbbe08889a955215b7b2c86afce9932547cb657f0af934c42353",
+    "bscr_encoding": "utf8_compact_alias_fixed_slot",
     "fevt_encoding": "utf8_cjk_alias",
     "verification": {
       "schema": "brs-font-verification-v1",
       "ok": true,
       "errors": [],
-      "glyph_count": 923,
-      "font_changed_byte_count": 85216,
-      "ucs2jis_changed_byte_count": 1846,
+      "glyph_count": 919,
+      "font_changed_byte_count": 84818,
+      "ucs2jis_changed_byte_count": 1836,
       "unexpected_font_byte_count": 0,
       "unexpected_ucs2jis_byte_count": 0,
       "hashes": {
         "original_font_lpk": "7e606174dbba6a2207f842acc1a065e2116610c34d09d9a5c0e35803d678bcdd",
         "original_ucs2jis": "349e34b8841c6429a4c973c43545ac32496a50cf08a5ad5fd03b3cd27c1e11b0",
-        "patched_font_lpk": "5cf464605c7c39fba86b14d01bf686b129987375981ac9fbb4a1d83750c04fc1",
-        "patched_ucs2jis": "3925e5200235cf79acd3385c7ddee97f6b1a2cd6de6a7ea5483b62a8edbd8d0d"
+        "patched_font_lpk": "9503336b92ecd829b0e4e21113482e1a9bf433a0f1cca160565ffde4c7ffa67c",
+        "patched_ucs2jis": "d532fd0c87efa68e7c1ebb90ffdcb33421a2d1d37ec45b078afbe9d94cd830e3"
       }
     }
   },
-  "fevt": {
-    "manifest": "work/release_build/git_candidate_20260803/manifests/fevt.json",
-    "file_count": 465,
-    "change_count": 1598,
-    "nameplate_manifest": "work/release_build/git_candidate_20260803/manifests/fevt_nameplates.json",
-    "nameplate_output_file_count": 471,
-    "nameplate_modified_occurrence_count": 6518
+  "bscr": {
+    "file_count": 88,
+    "change_count": 22413,
+    "total_growth": 0,
+    "fixed_slot_audit": "passed"
   },
-  "volume_count": 74,
-  "volume_entry_replacement_count": 81,
-  "direct_gzip_count": 567,
-  "additional_replacements": {
-    "count": 2,
-    "files": [
-      {
-        "surface": "FEVT embedded speaker nameplates",
-        "manifest": "work/release_build/git_candidate_20260803/manifests/fevt_nameplates.json",
-        "asset_count": 32,
-        "modified_occurrence_count": 6518,
-        "output_file_count": 471
-      },
-      {
-        "surface": "IF_STAGE_SELECT sender-name atlas",
-        "manifest": "work/release_build/git_candidate_20260803/manifests/stage_select_nameplates.json",
-        "entry_index": 23,
-        "label_count": 14,
-        "entry_sha256_after": "634b3d77a4160394d08131bc47e8c50de0a08be9660f55cf298ce552073becb8"
-      }
-    ]
+  "iso_replacement_verification": {
+    "ok": true,
+    "entry_count": 641
   },
-  "replacement_file_count": 641,
-  "patched_iso": {
-    "path": "work/release_build/git_candidate_20260803/BRS_Korean_v1.0.iso",
-    "size": 1379434496,
-    "sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9"
-  },
-  "delta": {
-    "path": "work/release_build/git_candidate_20260803/BRS_Korean_NPUH10126_v1.0.brspatch",
-    "size": 91513924,
-    "sha256": "bf1e5acca39dc432aebcb58c0dabca5b85f3179b5737c0a370deaf47e76c1404"
-  },
-  "delta_roundtrip_sha256": "e62bcb20ed9e341626a41e27c561a490a023a0b5339d6c1058901b281968c7b9",
-  "passed": true
+  "delta_roundtrip_sha256": "525b5d2b7d8f4723be25b026e72b69d07d30c2cf84d8a48235577ca3728fc92a",
+  "absolute_paths_redacted": true
 }

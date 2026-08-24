@@ -53,7 +53,7 @@ function Assert-Sha256Text(
 }
 
 if (-not $PatchFile) {
-    $PatchFile = Join-Path $PSScriptRoot 'BRS_Korean_NPUH10126_v1.0.brspatch'
+    $PatchFile = Join-Path $PSScriptRoot 'BRS_Korean_NPUH10126_v1.0.1.brspatch'
 }
 $patched = Resolve-FullPath $PatchedIso
 $patch = Resolve-FullPath $PatchFile
